@@ -1,15 +1,15 @@
-import 'package:cashcalculator/model/ip_phone_model.dart';
+import 'package:cashcalculator/model/sector_code_model.dart';
 import 'package:flutter/material.dart';
 
-class IpNumber extends StatefulWidget {
-  const IpNumber({super.key});
+class SectorCode extends StatefulWidget {
+  const SectorCode({super.key});
 
   @override
-  State<IpNumber> createState() => _IpNumberState();
+  State<SectorCode> createState() => _SectorCodeState();
 }
 
-class _IpNumberState extends State<IpNumber> {
-  // TextEditingController controllerSearch = TextEditingController();
+class _SectorCodeState extends State<SectorCode> {
+  TextEditingController controllerSearch = TextEditingController();
 
   List results = [];
 
@@ -23,7 +23,7 @@ class _IpNumberState extends State<IpNumber> {
     super.initState();
     tc;
 
-    datalist = IpModel.ipDataList;
+    datalist = SectorCodeModel.sectorDataList;
   }
 
   @override
@@ -32,7 +32,7 @@ class _IpNumberState extends State<IpNumber> {
       appBar: AppBar(
         title: const Center(
           child: Text(
-            "IP Number",
+            "Sector Code",
             style: TextStyle(
               color: Colors.white,
             ),
@@ -51,7 +51,7 @@ class _IpNumberState extends State<IpNumber> {
                   child: TextField(
                     controller: tc,
                     decoration: InputDecoration(
-                        hintText: 'Search Deparetment or Ip Number',
+                        hintText: 'Sector Name Or Sector Code ...',
                         hintStyle: TextStyle(color: Colors.pink[200])),
                     onChanged: (v) {
                       setState(() {
@@ -61,6 +61,7 @@ class _IpNumberState extends State<IpNumber> {
                     },
                   ),
                 ),
+               
                 Expanded(
                   child: Card(
                     elevation: 3,
@@ -73,19 +74,18 @@ class _IpNumberState extends State<IpNumber> {
                             itemBuilder: (con, ind) {
                               return Card(
                                 elevation: 3,
-                                shadowColor: Colors.pink,
+                                shadowColor: Colors.cyan,
                                 child: ListTile(
                                   title: Text(
-                                      "Department: ${datalist[ind]['Department']}"),
-                                  // ignore: prefer_interpolation_to_compose_strings
+                                      datalist[ind]['sectorName'].toString()),
                                   subtitle: Text(
-                                      'IpNumber :  ${datalist[ind]['IpNumber']}',
+                                      datalist[ind]['sectorCode'].toString(),
                                       style: const TextStyle(
-                                          fontSize: 18, color: Colors.purple)),
+                                          fontSize: 18, color: Colors.amber)),
                                   onTap: () {
                                     setState(() {
-                                      tc.text = datalist[ind]['Department'];
-                                      query = datalist[ind]['Department'];
+                                      tc.text = datalist[ind]['sectorName'];
+                                      query = datalist[ind]['sectorName'];
                                       setResults(query);
                                     });
                                   },
@@ -93,18 +93,24 @@ class _IpNumberState extends State<IpNumber> {
                               );
                             },
                           )
+
+                        //
+                        //    "Sl": 659,
+                        //    "BranchName": "Arambagh Uposhakha  Dhaka",
+                        //    "Code": 7206
+
                         : ListView.builder(
                             shrinkWrap: true,
                             itemCount: results.length,
                             itemBuilder: (con, ind) {
                               return ListTile(
                                 title: Text(
-                                  'Department :  ${results[ind]['Department']}',
+                                  results[ind]['sectorName'].toString(),
                                   style: const TextStyle(fontSize: 20),
                                 ),
 
                                 subtitle: Text(
-                                  'Ip Number :  ${results[ind]['IpNumber']}',
+                                  results[ind]['sectorCode'].toString(),
                                   style: const TextStyle(
                                       fontSize: 18, color: Colors.blue),
                                 ),
@@ -113,9 +119,10 @@ class _IpNumberState extends State<IpNumber> {
 
                                 onTap: () {
                                   setState(() {
-                                    tc.text = results[ind]['Department'];
-                                    query = results[ind]['Department'];
-                                    query = results[ind]['IpNumber'].toString();
+                                    tc.text = results[ind]['sectorName'];
+                                    query = results[ind]['sectorName'];
+                                    query =
+                                        results[ind]['sectorCode'].toString();
                                     setResults(query);
                                   });
                                 },
@@ -135,14 +142,11 @@ class _IpNumberState extends State<IpNumber> {
   void setResults(String query) {
     results = datalist
         .where((elem) =>
-            elem['Department']
+            elem['sectorName']
                 .toString()
                 .toLowerCase()
                 .contains(query.toLowerCase()) ||
-            elem['IpNumber']
-                .toString()
-                .toLowerCase()
-                .contains(query.toLowerCase()))
+            elem['sectorCode'].toString().contains(query))
         .toList();
   }
 }

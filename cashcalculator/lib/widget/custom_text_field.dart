@@ -26,24 +26,30 @@ class CustomTextField extends StatelessWidget {
       child: Wrap(
         direction: Axis.vertical,
         children: [
-          Container(
+          SizedBox(
             width: 110,
             child: TextField(
               cursorHeight: 20,
+              style: const TextStyle(
+                color: Colors.black,
+                fontSize: 18,
+                fontWeight: FontWeight.w600,
+              ),
               onChanged: onChanged,
               textAlignVertical: TextAlignVertical.bottom,
               controller: controller,
               keyboardType: TextInputType.number,
               cursorColor: Colors.pink[200],
-              style: const TextStyle(
-                color: Colors.black,
-                fontSize: 28,
-                fontWeight: FontWeight.w600,
-              ),
               decoration: InputDecoration(
-                border:
-                    OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
-                hintText: hint,
+                border: const OutlineInputBorder(),
+                label: Text(
+                  hint,
+                  style: GoogleFonts.roboto(
+                      fontSize: 18,
+                      color: Colors.pink[200],
+                      fontWeight: FontWeight.bold),
+                ),
+                // hintText: hint,
                 hintStyle: GoogleFonts.openSans(fontSize: 25),
               ),
               textInputAction: TextInputAction.next,

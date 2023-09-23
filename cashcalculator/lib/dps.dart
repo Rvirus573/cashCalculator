@@ -86,13 +86,18 @@ class _DpsCalculatorState extends State<DpsCalculator> {
                 margin: const EdgeInsets.only(top: 10),
                 child: TextField(
                   controller: controllerDepositAmount,
+                  style: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 25,
+                    fontWeight: FontWeight.w600,
+                  ),
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10)),
                     label: Text('Deposit Amount',
                         style: GoogleFonts.roboto(
-                            fontSize: 22,
+                            fontSize: 18,
                             color: Colors.pink[200],
                             fontWeight: FontWeight.bold)),
                     hintText: 'Type Here...',
@@ -104,12 +109,17 @@ class _DpsCalculatorState extends State<DpsCalculator> {
               TextField(
                 controller: controllerInterest,
                 keyboardType: TextInputType.number,
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontSize: 25,
+                  fontWeight: FontWeight.w600,
+                ),
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10)),
                   label: Text('Interest Rate',
                       style: GoogleFonts.roboto(
-                          fontSize: 22,
+                          fontSize: 18,
                           color: Colors.pink[200],
                           fontWeight: FontWeight.bold)),
                   hintText: 'Type Here...',
@@ -175,7 +185,15 @@ class _DpsCalculatorState extends State<DpsCalculator> {
               _getsizeboxed(hight: 10, width: 0),
               customButton('CALCULATE', () {
                 setState(() {
-                  calculateDPS();
+                  if (controllerDepositAmount.text == "" ||
+                      controllerInterest.text == "" ||
+                      _value == 0) {
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                      content: Text("Please Input Value"),
+                    ));
+                  } else {
+                    calculateDPS();
+                  }
                 });
               }, Colors.pink[200]),
               _getsizeboxed(hight: 10, width: 0),

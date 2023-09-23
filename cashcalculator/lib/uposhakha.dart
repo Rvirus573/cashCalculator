@@ -1,15 +1,17 @@
-import 'package:cashcalculator/model/ip_phone_model.dart';
+// ignore_for_file: avoid_print, prefer_const_literals_to_create_immutables, prefer_const_constructors, body_might_complete_normally_nullable
+
+import 'package:cashcalculator/model/uposhakha_model.dart';
 import 'package:flutter/material.dart';
 
-class IpNumber extends StatefulWidget {
-  const IpNumber({super.key});
+class Uposhakha extends StatefulWidget {
+  const Uposhakha({super.key});
 
   @override
-  State<IpNumber> createState() => _IpNumberState();
+  State<Uposhakha> createState() => _UposhakhaState();
 }
 
-class _IpNumberState extends State<IpNumber> {
-  // TextEditingController controllerSearch = TextEditingController();
+class _UposhakhaState extends State<Uposhakha> {
+  TextEditingController controllerSearch = TextEditingController();
 
   List results = [];
 
@@ -23,7 +25,7 @@ class _IpNumberState extends State<IpNumber> {
     super.initState();
     tc;
 
-    datalist = IpModel.ipDataList;
+    datalist = UposhakhaModel.datalist;
   }
 
   @override
@@ -32,7 +34,7 @@ class _IpNumberState extends State<IpNumber> {
       appBar: AppBar(
         title: const Center(
           child: Text(
-            "IP Number",
+            "Uposhakha List",
             style: TextStyle(
               color: Colors.white,
             ),
@@ -51,7 +53,7 @@ class _IpNumberState extends State<IpNumber> {
                   child: TextField(
                     controller: tc,
                     decoration: InputDecoration(
-                        hintText: 'Search Deparetment or Ip Number',
+                        hintText: 'Search Branch Name Or Branch Code ...',
                         hintStyle: TextStyle(color: Colors.pink[200])),
                     onChanged: (v) {
                       setState(() {
@@ -76,16 +78,15 @@ class _IpNumberState extends State<IpNumber> {
                                 shadowColor: Colors.pink,
                                 child: ListTile(
                                   title: Text(
-                                      "Department: ${datalist[ind]['Department']}"),
-                                  // ignore: prefer_interpolation_to_compose_strings
+                                      'BranchName :  ${datalist[ind]['BranchName']}'),
                                   subtitle: Text(
-                                      'IpNumber :  ${datalist[ind]['IpNumber']}',
-                                      style: const TextStyle(
-                                          fontSize: 18, color: Colors.purple)),
+                                      'BranchCode :  ${datalist[ind]['Code']}'),
+                                  trailing:
+                                      Text(datalist[ind]['Sl'].toString()),
                                   onTap: () {
                                     setState(() {
-                                      tc.text = datalist[ind]['Department'];
-                                      query = datalist[ind]['Department'];
+                                      tc.text = datalist[ind]['BranchName'];
+                                      query = datalist[ind]['BranchName'];
                                       setResults(query);
                                     });
                                   },
@@ -93,29 +94,35 @@ class _IpNumberState extends State<IpNumber> {
                               );
                             },
                           )
+
+                        //
+                        //    "Sl": 659,
+                        //    "BranchName": "Arambagh Uposhakha  Dhaka",
+                        //    "Code": 7206
+
                         : ListView.builder(
                             shrinkWrap: true,
                             itemCount: results.length,
                             itemBuilder: (con, ind) {
                               return ListTile(
                                 title: Text(
-                                  'Department :  ${results[ind]['Department']}',
-                                  style: const TextStyle(fontSize: 20),
+                                  'BranchName :  ${results[ind]['BranchName']}',
+                                  style: const TextStyle(
+                                      fontSize: 20, color: Colors.deepOrange),
                                 ),
 
                                 subtitle: Text(
-                                  'Ip Number :  ${results[ind]['IpNumber']}',
-                                  style: const TextStyle(
-                                      fontSize: 18, color: Colors.blue),
+                                  'Branch Code :  ${results[ind]['Code']}',
+                                  style: TextStyle(color: Colors.green[800]),
                                 ),
 
                                 //   trailing:  Text(results[ind]['Sl'].toString()),
 
                                 onTap: () {
                                   setState(() {
-                                    tc.text = results[ind]['Department'];
-                                    query = results[ind]['Department'];
-                                    query = results[ind]['IpNumber'].toString();
+                                    tc.text = results[ind]['BranchName'];
+                                    query = results[ind]['BranchName'];
+                                    query = results[ind]['Code'].toString();
                                     setResults(query);
                                   });
                                 },
@@ -135,14 +142,37 @@ class _IpNumberState extends State<IpNumber> {
   void setResults(String query) {
     results = datalist
         .where((elem) =>
-            elem['Department']
+            elem['BranchName']
                 .toString()
                 .toLowerCase()
                 .contains(query.toLowerCase()) ||
-            elem['IpNumber']
-                .toString()
-                .toLowerCase()
-                .contains(query.toLowerCase()))
+            elem['Code'].toString().contains(query))
         .toList();
   }
 }
+  
+
+
+
+
+//  Column(
+//             children: [
+//               ListView.builder(
+//                   scrollDirection: Axis.vertical,
+//                   shrinkWrap: true,
+//                   itemCount: _data.length,
+//                   itemBuilder: (_, index) {
+//                     return Card(
+//                       elevation: 3,
+//                       shadowColor: Colors.black,
+//                       margin: const EdgeInsets.all(3),
+//                       color: index == 0 ? Colors.amber : Colors.blue,
+//                       child: ListTile(
+//                         leading: Text(_data[index][0].toString()),
+//                         title: Text(_data[index][1].toString()),
+//                         trailing: Text(_data[index][2].toString()),
+//                       ),
+//                     );
+//                   })
+//             ],
+//           ),

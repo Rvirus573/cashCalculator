@@ -119,7 +119,7 @@ class _EMICalculatorState extends State<EMICalculator> {
                   style: _getStyle(size: 35, color: Colors.red)),
               _getsizeboxed(hight: 5, width: 0),
               Container(
-                margin: EdgeInsets.only(top: 10),
+                margin: const EdgeInsets.only(top: 10),
                 child: TextField(
                   controller: controllerPrincipalAmount,
                   keyboardType: TextInputType.number,
@@ -214,12 +214,21 @@ class _EMICalculatorState extends State<EMICalculator> {
               _getsizeboxed(hight: 10, width: 0),
               customButton('CALCULATE', () {
                 setState(() {
-                  calculateEMI();
+                  if (controllerPrincipalAmount.text == "" ||
+                      controllerInterest.text == "" ||
+                      _value == 0) {
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                      content: Text("Please Input Value"),
+                    ));
+                  } else {
+                    calculateEMI();
 
-                  dataMap = {
-                    "Principle Amount": principalAmount,
-                    "Interest": interestPayable,
-                  };
+                    dataMap = {
+                      "Principle Amount": principalAmount,
+                      "Interest": interestPayable,
+                    };
+                  }
+
                   // print(principalAmount);
                   // print(dataMap);
                 });
@@ -317,7 +326,7 @@ class _EMICalculatorState extends State<EMICalculator> {
                   ),
                   _getsizeboxed(hight: 20, width: 0),
                   Container(
-                    height: 150,
+                    height: 165,
                     decoration: BoxDecoration(
                         border: Border.all(
                           width: 1,

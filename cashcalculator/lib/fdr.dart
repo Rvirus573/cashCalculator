@@ -1,6 +1,5 @@
-// ignore_for_file: non_constant_identifier_names
+// ignore_for_file: non_constant_identifier_names, unnecessary_null_comparison, unrelated_type_equality_checks
 
-import 'package:cashcalculator/widget/customtextfieldsingle.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -25,13 +24,13 @@ class _FdrState extends State<Fdr> {
   _getStyle(
       {required double size,
       required Color color,
-      // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
+      // ignore: avoid_types_as_parameter_names
       FontWeight = FontWeight.bold}) {
     return GoogleFonts.oswald(
         fontSize: size, fontWeight: FontWeight, color: color);
   }
 
-  List<String> tenorList = ['3M', '6M', '1Y', '2Y', '3Y'];
+  List<String> tenorList = ['3M', '6M', '1Y', '2Y', '3Y', '5Y', '10Y'];
   String? dropdownValue;
 
   num tenor_list_value = 0;
@@ -43,7 +42,7 @@ class _FdrState extends State<Fdr> {
   String? result_1M = '0';
   String? result = '0';
   String? result_with_principal = '0';
-  String? month = '0';
+  String? month = '';
 
   String? fdr_interest_1m_TW = '0';
   String? fdr_interest_1m_TX = '0';
@@ -75,23 +74,17 @@ class _FdrState extends State<Fdr> {
                     child: TextField(
                       controller: controllerAmount,
                       keyboardType: TextInputType.number,
-                      // onChanged: (val) {
-                      //   setState(() {
-                      //     if (val == "") {
-                      //       principel_Amout = 0;
-                      //     } else {
-                      //       principel_Amout = num.parse(val);
-                      //     }
-
-                      //     //   print(principel_Amout);
-                      //   });
-                      // },
+                      style: const TextStyle(
+                        color: Colors.black,
+                        fontSize: 25,
+                        fontWeight: FontWeight.w600,
+                      ),
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(10)),
                         label: Text('Fixed Deposit Amount',
                             style: GoogleFonts.roboto(
-                                fontSize: 22,
+                                fontSize: 18,
                                 color: Colors.pink[200],
                                 fontWeight: FontWeight.bold)),
                         hintText: 'Type Here...',
@@ -103,12 +96,17 @@ class _FdrState extends State<Fdr> {
                   TextField(
                     controller: controllerInterest,
                     keyboardType: TextInputType.number,
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 25,
+                      fontWeight: FontWeight.w600,
+                    ),
                     decoration: InputDecoration(
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10)),
                       label: Text('Interest Rate',
                           style: GoogleFonts.roboto(
-                              fontSize: 22,
+                              fontSize: 18,
                               color: Colors.pink[200],
                               fontWeight: FontWeight.bold)),
                       hintText: "3M = 7.25% , 6M = 7.50%, 1Y/2Y/3Y = 7.75%.",
@@ -118,21 +116,6 @@ class _FdrState extends State<Fdr> {
                   const SizedBox(
                     height: 20,
                   ),
-                  // Customfdr(
-                  //     title: "Amount          : ",
-                  //     controller: controllerAmount,
-                  //     onChanged: (val) {
-                  //       setState(() {
-                  //         if (val == "") {
-                  //           principel_Amout = 0;
-                  //         } else {
-                  //           principel_Amout = num.parse(val);
-                  //         }
-
-                  //         //   print(principel_Amout);
-                  //       });
-                  //     }),
-
                   Container(
                     height: 60,
                     decoration: BoxDecoration(
@@ -203,8 +186,10 @@ class _FdrState extends State<Fdr> {
                                         //fdrcalculate();
                                       } else if (newValue == '3Y') {
                                         tenor_list_value = 36;
-                                        // interest_Rate = 7.75;
-                                        // fdrcalculate();
+                                      } else if (newValue == '5Y') {
+                                        tenor_list_value = 60;
+                                      } else if (newValue == '10Y') {
+                                        tenor_list_value = 120;
                                       }
                                     });
                                   },
@@ -216,11 +201,9 @@ class _FdrState extends State<Fdr> {
                       ),
                     ),
                   ),
-
                   const SizedBox(
                     height: 20,
                   ),
-
                   Center(
                     child: SizedBox(
                       width: 300,
@@ -231,9 +214,19 @@ class _FdrState extends State<Fdr> {
                         ),
                         onPressed: () {
                           setState(() {
-                            fdrcalculate();
-                            withoutTinCalculate();
-                            withTinCalculate();
+                            if (controllerAmount.text == "" ||
+                                controllerInterest.text == "" ||
+                                tenor_list_value == 0) {
+                              ScaffoldMessenger.of(context)
+                                  .showSnackBar(const SnackBar(
+                                content: Text("Please Input Value"),
+                              ));
+                            } else {
+                              fdrcalculate();
+                              withoutTinCalculate();
+                              withTinCalculate();
+                              FocusManager.instance.primaryFocus!.unfocus();
+                            }
                           });
                         },
                         child: const Text(
@@ -245,11 +238,9 @@ class _FdrState extends State<Fdr> {
                       ),
                     ),
                   ),
-
                   const SizedBox(
                     height: 10,
                   ),
-
                   Container(
                     // height: 130,
                     decoration: BoxDecoration(
@@ -267,7 +258,7 @@ class _FdrState extends State<Fdr> {
                           children: [
                             Center(
                               child: Text(
-                                "Principal Amount",
+                                "FDR Calculation",
                                 style: TextStyle(
                                     color: Colors.purple[600],
                                     fontSize: 20,
@@ -303,7 +294,6 @@ class _FdrState extends State<Fdr> {
                       ),
                     ),
                   ),
-
                   const SizedBox(
                     height: 10,
                   ),
@@ -366,7 +356,6 @@ class _FdrState extends State<Fdr> {
 
   withoutTin() {
     return Container(
-      height: 130,
       decoration: BoxDecoration(
           border: Border.all(
             width: 1,
@@ -405,7 +394,7 @@ class _FdrState extends State<Fdr> {
                     color: Colors.black),
               ),
               Text(
-                "Int. + Principle of of $month : $result_with_principal_TW ",
+                "Int. + Principle of $month : $result_with_principal_TW ",
                 style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w700,
@@ -460,7 +449,7 @@ class _FdrState extends State<Fdr> {
                     color: Colors.black),
               ),
               Text(
-                "Int. + Principle of of $month : $result_with_principal_TX ",
+                "Int. + Principle of $month : $result_with_principal_TX ",
                 style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w700,

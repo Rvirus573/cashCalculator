@@ -40,6 +40,13 @@ dependencies:
   google_fonts: ^5.1.0
   pie_chart: ^5.3.2
   syncfusion_flutter_sliders: ^22.2.9
+  excel: ^2.1.0
+  csv: ^5.0.2
+  searchfield: ^0.8.4
+  dropdown_search: ^5.0.6
+  searchable_listview: ^2.7.0
+  lite_rolling_switch: ^1.0.1
+  
 
 
 flutter_launcher_icons:
@@ -75,6 +82,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/images/
+     - assets/files/
+     - assets/files/ur.csv
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

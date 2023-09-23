@@ -60,27 +60,25 @@ class _CpState extends State<Cp> {
         result1;
   }
 
-  String mul_1000 = "";
-  String mul_500 = "";
-  String mul_200 = "";
-  String mul_100 = "";
-  String mul_50 = "";
-  String mul_20 = "";
-  String mul_10 = "";
-  String mul_5 = "";
-  String mul_2 = "";
-  String mul_1 = "";
+  String mul_1000 = "0";
+  String mul_500 = "0";
+  String mul_200 = "0";
+  String mul_100 = "0";
+  String mul_50 = "0";
+  String mul_20 = "0";
+  String mul_10 = "0";
+  String mul_5 = "0";
+  String mul_2 = "0";
+  String mul_1 = "0";
   String s = '';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   backgroundColor: Colors.pink[200],
-      //   title: const Center(child: Text("Cash Calculator")),
-      // ),
-
-      // backgroundColor: Colors.cyan,
+      appBar: AppBar(
+        backgroundColor: Colors.pink[200],
+        title: const Center(child: Text("Cash Calculator")),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
@@ -135,7 +133,6 @@ class _CpState extends State<Cp> {
                   total: mul_1000,
                   hint: '1000',
                 ),
-
                 const SizedBox(
                   height: 5,
                 ),
@@ -343,55 +340,6 @@ class _CpState extends State<Cp> {
                 const SizedBox(
                   width: 35,
                 ),
-                // Center(
-                //   child: SizedBox(
-                //       width: 300,
-                //       child: ElevatedButton(
-                //           style: ElevatedButton.styleFrom(
-                //             backgroundColor: Colors.pink, // background
-                //             foregroundColor: Colors.orange, // foreground
-                //           ),
-                //           onPressed: () {
-                //             //addData();
-
-                //             ScaffoldMessenger.of(context)
-                //                 .showSnackBar(const SnackBar(
-                //               content: Text("Comming Soon..."),
-                //             ));
-                //           },
-                //           child: const Text(
-                //             'Save',
-                //             style: TextStyle(
-                //               color: Colors.black,
-                //             ),
-                //           ))),
-                // ),
-                // const SizedBox(
-                //   width: 15,
-                // ),
-                // Center(
-                //   child: SizedBox(
-                //     width: 300,
-                //     child: ElevatedButton(
-                //       style: ElevatedButton.styleFrom(
-                //         backgroundColor: Colors.pink, // background
-                //         foregroundColor: Colors.orange, // foreground
-                //       ),
-                //       onPressed: () {
-                //         ScaffoldMessenger.of(context)
-                //             .showSnackBar(const SnackBar(
-                //           content: Text("Comming Soon..."),
-                //         ));
-                //       },
-                //       child: const Text(
-                //         'Show Previous Data',
-                //         style: TextStyle(
-                //           color: Colors.black,
-                //         ),
-                //       ),
-                //     ),
-                //   ),
-                // ),
               ],
             ),
           ),
@@ -412,10 +360,6 @@ class _CpState extends State<Cp> {
       String t5,
       String t2,
       String t1) async {
-    // controllerName.text = name;
-    // controllerAge.text = age;
-    // controllerMobile.text = mobile;
-
     controller_1000.text = t1000;
     controller_500.text = t500;
     controller_200.text = t200;
@@ -426,75 +370,5 @@ class _CpState extends State<Cp> {
     controller_5.text = t5;
     controller_2.text = t2;
     controller_1.text = t1;
-    // return showDialog(
-    //     context: context,
-    //     builder: (_) {
-    //       return Dialog(
-    //         child: Container(
-    //           height: 500,
-    //           width: 500,
-    //           color: Colors.cyan[50],
-    //           child: Padding(
-    //             padding: const EdgeInsets.all(10),
-    //             child: Column(
-    //               children: [
-    //                 TextFormField(
-    //                   controller: controllerName,
-    //                   decoration: const InputDecoration(
-    //                     border: OutlineInputBorder(),
-    //                     labelText: 'Edit Name',
-    //                     hintText: 'Edit Your Name',
-    //                   ),
-    //                 ),
-    //                 const SizedBox(
-    //                   height: 10,
-    //                 ),
-    //                 TextFormField(
-    //                   controller: controllerAge,
-    //                   decoration: const InputDecoration(
-    //                     border: OutlineInputBorder(),
-    //                     labelText: 'Edit Age',
-    //                     hintText: 'Edit Your Age',
-    //                   ),
-    //                 ),
-    //                 const SizedBox(
-    //                   height: 10,
-    //                 ),
-    //                 TextFormField(
-    //                   controller: controllerMobile,
-    //                   decoration: const InputDecoration(
-    //                     border: OutlineInputBorder(),
-    //                     labelText: 'Edit Mobile Number',
-    //                     hintText: 'Edit Mobile Number',
-    //                   ),
-    //                 ),
-    //                 const SizedBox(
-    //                   height: 20,
-    //                 ),
-    //                 ElevatedButton(
-    //                   onPressed: () async {
-    //                     // *! On Press Update
-
-    //                     notesModel.name = controllerName.text.toString();
-    //                     notesModel.age = controllerAge.text.toString();
-    //                     notesModel.mobile = controllerMobile.text.toString();
-    //                     // notesModel.save();
-    //                     controllerName.clear();
-
-    //                     controllerAge.clear();
-    //                     controllerMobile.clear();
-    //                     FocusManager.instance.primaryFocus!.unfocus();
-    //                     Navigator.pop(context);
-    //                   },
-    //                   child: const Text("Update Data"),
-    //                 ),
-    //               ],
-    //             ),
-    //           ),
-    //         ),
-    //       );
-    //     }
-
-    //     );
   }
 }
