@@ -78,15 +78,16 @@ class _UposhakhaState extends State<Uposhakha> {
                                 shadowColor: Colors.pink,
                                 child: ListTile(
                                   title: Text(
-                                      'BranchName :  ${datalist[ind]['BranchName']}'),
+                                      'BranchName :  ${datalist[ind]['Branch_Name']}'),
                                   subtitle: Text(
                                       'BranchCode :  ${datalist[ind]['Code']}'),
-                                  trailing:
-                                      Text(datalist[ind]['Sl'].toString()),
+                                  trailing: Text(datalist[ind]
+                                          ['Branch_Mnemonic']
+                                      .toString()),
                                   onTap: () {
                                     setState(() {
-                                      tc.text = datalist[ind]['BranchName'];
-                                      query = datalist[ind]['BranchName'];
+                                      tc.text = datalist[ind]['Branch_Name'];
+                                      query = datalist[ind]['Branch_Name'];
                                       setResults(query);
                                     });
                                   },
@@ -106,7 +107,7 @@ class _UposhakhaState extends State<Uposhakha> {
                             itemBuilder: (con, ind) {
                               return ListTile(
                                 title: Text(
-                                  'BranchName :  ${results[ind]['BranchName']}',
+                                  'BranchName :  ${results[ind]['Branch_Name']}',
                                   style: const TextStyle(
                                       fontSize: 20, color: Colors.deepOrange),
                                 ),
@@ -120,8 +121,8 @@ class _UposhakhaState extends State<Uposhakha> {
 
                                 onTap: () {
                                   setState(() {
-                                    tc.text = results[ind]['BranchName'];
-                                    query = results[ind]['BranchName'];
+                                    tc.text = results[ind]['Branch_Name'];
+                                    query = results[ind]['Branch_Name'];
                                     query = results[ind]['Code'].toString();
                                     setResults(query);
                                   });
@@ -142,11 +143,15 @@ class _UposhakhaState extends State<Uposhakha> {
   void setResults(String query) {
     results = datalist
         .where((elem) =>
-            elem['BranchName']
+            elem['Branch_Name']
                 .toString()
                 .toLowerCase()
                 .contains(query.toLowerCase()) ||
-            elem['Code'].toString().contains(query))
+            elem['Code'].toString().contains(query) ||
+            elem['Branch_Mnemonic']
+                .toString()
+                .toLowerCase()
+                .contains(query.toLowerCase()))
         .toList();
   }
 }

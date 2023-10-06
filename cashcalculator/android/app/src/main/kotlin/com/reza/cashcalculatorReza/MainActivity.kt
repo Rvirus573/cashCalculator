@@ -1,4 +1,4 @@
-package com.example.cashcalculator
+package com.reza.cashcalculatorReza
 
 import io.flutter.embedding.android.FlutterActivity
 

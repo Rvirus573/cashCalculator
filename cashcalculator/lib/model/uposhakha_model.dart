@@ -1,1992 +1,6496 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 class UposhakhaModel {
   static var datalist = [
-    {"Sl": 1, "BranchName": "Sorail Upzilla Uposhakha", "Code": 1},
-    {"Sl": 2, "BranchName": "Kawtali Uposhakha  Brahmanbaria", "Code": 2},
-    {"Sl": 3, "BranchName": "Sarak Bazar Uposhakha Brahmanbaria", "Code": 3},
-    {"Sl": 4, "BranchName": "Nandanpur Uposhakha Brahmanbaria", "Code": 4},
-    {"Sl": 5, "BranchName": "Nasirnagar Uposhakha Brahmanbaria", "Code": 5},
-    {"Sl": 6, "BranchName": "Nobinagar Uposhakha Brahmanbaria", "Code": 6},
-    {"Sl": 7, "BranchName": "Biswaroad Point Brahmanbaria", "Code": 7},
-    {"Sl": 8, "BranchName": "Fulbaria Brahmanbaria Uposhakha", "Code": 8},
-    {"Sl": 9, "BranchName": "Krishnanagar Bazar Uposhakha Bbaria", "Code": 9},
-    {"Sl": 10, "BranchName": "Islampur Bazar Upo. Brahmanbaria", "Code": 10},
-    {"Sl": 11, "BranchName": "Gas Field Gate  Brahmanbaria", "Code": 11},
-    {"Sl": 12, "BranchName": "Bijoynagar Amtoli Bazar", "Code": 12},
-    {"Sl": 13, "BranchName": "Ramu Uposhakha Coxs Bazar", "Code": 20},
-    {"Sl": 14, "BranchName": "Court Bazar Uposhakha Coxs Bazar", "Code": 21},
-    {"Sl": 15, "BranchName": "Eidgah Bazar Uposhakha Coxs Bazar", "Code": 22},
-    {"Sl": 16, "BranchName": "Sonar Para Uposhakha Coxs Bazar", "Code": 23},
-    {"Sl": 17, "BranchName": "Teknaf Uposhakha Coxs Bazar", "Code": 24},
-    {"Sl": 18, "BranchName": "Link Road Coxs Bazar Uposhakha", "Code": 25},
-    {"Sl": 19, "BranchName": "Naikhongchari Uposhakha Bandarban", "Code": 26},
-    {"Sl": 20, "BranchName": "Hnila Bazar Uposhakha Coxs Bazar", "Code": 27},
-    {"Sl": 21, "BranchName": "Shamlapur Bazar Upo Coxs Bazar", "Code": 28},
-    {"Sl": 22, "BranchName": "Moricha Uposhakha Coxs Bazar", "Code": 29},
-    {"Sl": 23, "BranchName": "Oxygen MoorUposhakha Chattogram", "Code": 30},
-    {"Sl": 24, "BranchName": "Kaptai Rastar Matha Uposhakha", "Code": 31},
-    {"Sl": 25, "BranchName": "Sharafvata Uposhakha Chattagram", "Code": 32},
-    {"Sl": 26, "BranchName": "Marium Nagar Uposhakha Chattogram", "Code": 33},
-    {"Sl": 27, "BranchName": "Madunaghat Uposhakha  Chattogram.", "Code": 34},
-    {"Sl": 28, "BranchName": "Dovashi Bazar Uposhakha", "Code": 35},
-    {"Sl": 29, "BranchName": "Rangunia Uposhakha Chattogram", "Code": 36},
-    {"Sl": 30, "BranchName": "Sarkerhat Uposhakha  Chattogram", "Code": 40},
-    {"Sl": 31, "BranchName": "Aman Bazar Uposhakha  Chattogram", "Code": 41},
-    {"Sl": 32, "BranchName": "Raozan Uposhakha Chattogram", "Code": 42},
-    {"Sl": 33, "BranchName": "Gohira Uposhakha Chattogram", "Code": 43},
-    {"Sl": 34, "BranchName": "Madanhat Uposhakha Chattrogram", "Code": 44},
-    {"Sl": 35, "BranchName": "Katirhat Uposhakha Chattogram", "Code": 45},
-    {"Sl": 36, "BranchName": "Chowdhuryhat Uposhakha Chattogram", "Code": 46},
-    {"Sl": 37, "BranchName": "Temohoni Bazar Uposhakha Chattogram", "Code": 55},
-    {"Sl": 38, "BranchName": "Nazirhat Uposhakha Chattogram", "Code": 56},
-    {"Sl": 39, "BranchName": "Boidyer Hat Uposhakha Chattogram", "Code": 57},
-    {"Sl": 40, "BranchName": "Noajishpur Uposhakha Chattogram", "Code": 58},
-    {"Sl": 41, "BranchName": "Kazirhat Uposhakha Chattogram", "Code": 59},
-    {"Sl": 42, "BranchName": "Narayanhat Uposhakha Chattogram", "Code": 60},
-    {"Sl": 43, "BranchName": "Choto Kumira Uposhakha Chattogram", "Code": 70},
-    {"Sl": 44, "BranchName": "Baro Awlia Uposhakha Chattogram", "Code": 71},
-    {"Sl": 45, "BranchName": "Shiberhat Uposhakha Chattogram", "Code": 72},
-    {"Sl": 46, "BranchName": "Bhairab Bazar Uposhakha Kishoreganj", "Code": 85},
-    {"Sl": 47, "BranchName": "Talshahar Uposhakha Brahmanbaria", "Code": 86},
-    {"Sl": 48, "BranchName": "Kamolpur Uposhakha Kishoreganj", "Code": 87},
-    {"Sl": 49, "BranchName": "Lalpur Brahmanbaria UPOSHAKHA", "Code": 88},
-    {"Sl": 50, "BranchName": "Araisidha Bazar Upo Brahmanbaria", "Code": 89},
-    {"Sl": 51, "BranchName": "Reserve Bazar Uposhakha Rangamati", "Code": 105},
-    {"Sl": 52, "BranchName": "Debashish Nagor Upo. Rangamati", "Code": 106},
-    {"Sl": 53, "BranchName": "Tabalchari Uposhakha Rangamati", "Code": 107},
-    {"Sl": 54, "BranchName": "Ranirhat Uposhakha Chattogram", "Code": 108},
-    {"Sl": 55, "BranchName": "Dighinala Khagrachhari", "Code": 109},
-    {"Sl": 56, "BranchName": "Shantirhat Uposhakha Chattogram", "Code": 115},
-    {"Sl": 57, "BranchName": "College Bazar Uposhakha Chattogram", "Code": 116},
-    {"Sl": 58, "BranchName": "Rawshanhat Uposhakha Chattogram", "Code": 117},
-    {"Sl": 59, "BranchName": "Jaldi Uposhakha Chattogram", "Code": 118},
-    {"Sl": 60, "BranchName": "Kala Bibi Dighi Chattogram", "Code": 119},
-    {"Sl": 61, "BranchName": "Bailchari Uposhakha Chattogram", "Code": 120},
-    {"Sl": 62, "BranchName": "Time Bazar Uposhakha Chattogram", "Code": 121},
-    {"Sl": 63, "BranchName": "Rustomhat Uposhakha Chattogram", "Code": 122},
-    {"Sl": 64, "BranchName": "Char Patharghata Upo  Chattogram", "Code": 123},
-    {
-      "Sl": 65,
-      "BranchName": "Tantar Bazar Uposhakha Brahmanbaria",
-      "Code": 125
-    },
-    {"Sl": 66, "BranchName": "Kasba Uposhakha Brahmanbaria", "Code": 126},
-    {"Sl": 67, "BranchName": "Champaknagar Upo. Brahmanbaria", "Code": 127},
-    {"Sl": 68, "BranchName": "Kuti Chowmohani Upo. Brahmanbaria", "Code": 128},
-    {"Sl": 69, "BranchName": "Nayanpur Bazar Upo Brahmanbaria", "Code": 129},
-    {"Sl": 70, "BranchName": "Bazalia Uposhakha Chattogram", "Code": 136},
-    {"Sl": 71, "BranchName": "Komol Munshir Hat Chattogram", "Code": 137},
-    {
-      "Sl": 72,
-      "BranchName": "Adunagar Bazar Uposhakha Chattogram",
-      "Code": 138
-    },
-    {"Sl": 73, "BranchName": "Balaghata Uposhakha Bandarban", "Code": 139},
-    {"Sl": 74, "BranchName": "Dohazari Uposhakha Chattogram", "Code": 140},
-    {"Sl": 75, "BranchName": "Padua Uposhakha Chattagram", "Code": 141},
-    {"Sl": 76, "BranchName": "Fultola Bazar Satkania Chattogram", "Code": 142},
-    {"Sl": 77, "BranchName": "Mirzakhil Uposhakha Chattogram", "Code": 143},
-    {"Sl": 78, "BranchName": "Chambal Bazar Uposhakha Chattogram", "Code": 144},
-    {"Sl": 79, "BranchName": "Gachbaria Uposhakha Chattogram", "Code": 145},
-    {"Sl": 80, "BranchName": "Chunti Bazar Uposhakha Chattogram", "Code": 146},
-    {"Sl": 81, "BranchName": "Matarbari Moheskhali Coxs Bazar", "Code": 147},
-    {"Sl": 82, "BranchName": "Pekua Uposhakha Coxs Bazar", "Code": 148},
-    {"Sl": 83, "BranchName": "Napura Uposhakha Chattogram", "Code": 149},
-    {"Sl": 84, "BranchName": "Dulahazara Coxs Bazar", "Code": 150},
-    {"Sl": 85, "BranchName": "Manu Fakir Bazar Chattogram", "Code": 176},
-    {"Sl": 86, "BranchName": "Satghatia Pukur Par Chattogram", "Code": 177},
-    {"Sl": 87, "BranchName": "Satkania Uposhakha Chattogram", "Code": 179},
-    {"Sl": 88, "BranchName": "Kadamtoli Uposhakha  Sylhet", "Code": 250},
-    {"Sl": 89, "BranchName": "Jitu Miah s Point Uposhakha Sylhet", "Code": 251},
-    {"Sl": 90, "BranchName": "Pirijpur Uposhakha Sylhet", "Code": 252},
-    {"Sl": 91, "BranchName": "Boroikandi Uposhakha Sylhet", "Code": 253},
-    {"Sl": 92, "BranchName": "TB Gate Sylhet Uposhakha Sylhet", "Code": 254},
-    {"Sl": 93, "BranchName": "Sylhet Station Road  Sylhet", "Code": 255},
-    {"Sl": 94, "BranchName": "Gowainghat Bazar Uposhakha Sylhet", "Code": 256},
-    {"Sl": 95, "BranchName": "Kanaighat Bazar Uposhakha Sylhet", "Code": 257},
-    {"Sl": 96, "BranchName": "Jaflong Uposhakha Sylhet", "Code": 258},
-    {"Sl": 97, "BranchName": "Golapganj Sylhet Sylhet", "Code": 259},
-    {"Sl": 98, "BranchName": "Tuker Bazar Uposhakha Sylhet", "Code": 260},
-    {"Sl": 99, "BranchName": "Modina Market Uposhakha Sylhet", "Code": 261},
-    {
-      "Sl": 100,
-      "BranchName": "Osmani Medical College Road  Sylhet",
-      "Code": 262
-    },
-    {"Sl": 101, "BranchName": "Shamsher NagarUpo. Moulvi Bazar", "Code": 270},
-    {
-      "Sl": 102,
-      "BranchName": "Sarkar Bazar Bus Stand  Moulvibazar",
-      "Code": 271
-    },
-    {"Sl": 103, "BranchName": "Tengra Bazar Moulvibazar", "Code": 272},
-    {
-      "Sl": 104,
-      "BranchName": "Adampur Bazar Uposhakha Moulvibazar",
-      "Code": 280
-    },
-    {"Sl": 105, "BranchName": "Bhoirab Bazar Sreemangal", "Code": 281},
-    {"Sl": 106, "BranchName": "Kamalganj Uposhakha Moulvi Bazar", "Code": 282},
-    {"Sl": 107, "BranchName": "Shibganj Bazar Uposhakha Sylhet", "Code": 290},
-    {"Sl": 108, "BranchName": "Fenchuganj Uposhakha Sylhet", "Code": 291},
-    {"Sl": 109, "BranchName": "Lala Bazar Uposhakha  Sylhet", "Code": 292},
-    {"Sl": 110, "BranchName": "Shahabazpur Uposhakha MoulviBazar", "Code": 300},
-    {"Sl": 111, "BranchName": "Ashirganj Bazar Uposhakha Sylhet", "Code": 301},
-    {"Sl": 112, "BranchName": "Majortila Uposhakha Sylhet", "Code": 310},
-    {"Sl": 113, "BranchName": "Khasdobir Point Uposhakha Sylhet", "Code": 311},
-    {"Sl": 114, "BranchName": "Lama Bazar Uposhakha Sylhet", "Code": 312},
-    {"Sl": 115, "BranchName": "Tajpur Uposhakha Sylhet", "Code": 320},
-    {"Sl": 116, "BranchName": "Khadimpur Bazar Uposhakha  Sylhet", "Code": 321},
-    {"Sl": 117, "BranchName": "Sherpur Sylhet Moulvibazar", "Code": 322},
-    {"Sl": 118, "BranchName": "Shahestaganj Bazar Uposhakha", "Code": 325},
-    {"Sl": 119, "BranchName": "Olipur Highway Uposhakha", "Code": 326},
-    {"Sl": 120, "BranchName": "Chunarughat Uposhakha", "Code": 327},
-    {
-      "Sl": 121,
-      "BranchName": "Court Station Road Uposhakha Habi.",
-      "Code": 328
-    },
-    {"Sl": 122, "BranchName": "Nabiganj Upozilla Habiganj", "Code": 329},
-    {"Sl": 123, "BranchName": "Mirpur Bazar Uposhakha Habiganj", "Code": 330},
-    {"Sl": 124, "BranchName": "Baniachang Uposhakha Habiganj", "Code": 331},
-    {"Sl": 125, "BranchName": "Umednagar Shilpa Elaka  Habiganj", "Code": 332},
-    {"Sl": 126, "BranchName": "Aushkandi Uposhakha Habiganj", "Code": 333},
-    {"Sl": 127, "BranchName": "Asampara Bazar Uposhakha Habiganj", "Code": 334},
-    {"Sl": 128, "BranchName": "Phandauk Bazar Upo. Brahmanbaria", "Code": 335},
-    {"Sl": 129, "BranchName": "Noapara Bazar Uposhakha Habiganj", "Code": 336},
-    {"Sl": 130, "BranchName": "Montola Bazar Uposhakha Habiganj", "Code": 337},
-    {
-      "Sl": 131,
-      "BranchName": "Dharmaghar Bazar Uposhakha Habiganj",
-      "Code": 338
-    },
-    {"Sl": 132, "BranchName": "Chatian Madhabpur Habiganj", "Code": 339},
-    {
-      "Sl": 133,
-      "BranchName": "Choumuhani Bazar Madhabpur Habiganj",
-      "Code": 340
-    },
-    {"Sl": 134, "BranchName": "Barlekha Uposhakha Moulvibazar", "Code": 345},
-    {"Sl": 135, "BranchName": "Kulaura Uposhakha Moulvi Bazar", "Code": 346},
-    {"Sl": 136, "BranchName": "Brahman Bazar Upo Moulvi Bazar", "Code": 347},
-    {"Sl": 137, "BranchName": "Gabindaganj Sunamganj Uposhakha", "Code": 351},
-    {"Sl": 138, "BranchName": "Puran Munsafi Road Upo Habiganj", "Code": 361},
-    {"Sl": 139, "BranchName": "Jaintapur Uposhakha Sylhet", "Code": 371},
-    {"Sl": 140, "BranchName": "Nathullahbad Uposhakha Barisal", "Code": 400},
-    {"Sl": 141, "BranchName": "Rupatali Uposhakha Barisal", "Code": 401},
-    {"Sl": 142, "BranchName": "Barishal Bazar Road Uposhakha", "Code": 402},
-    {
-      "Sl": 143,
-      "BranchName": "Barishal Chawk Bazar Upo. Barishal",
-      "Code": 403
-    },
-    {"Sl": 144, "BranchName": "Dhamura Bandar Uposhakha Barishal", "Code": 404},
-    {"Sl": 145, "BranchName": "Chowmatha Uposhakha Barishal", "Code": 405},
-    {
-      "Sl": 146,
-      "BranchName": "Kalaya Bandar Uposhakha Patuakhali",
-      "Code": 406
-    },
-    {
-      "Sl": 147,
-      "BranchName": "Bauphal Bazar Uposhakha Patuakhali",
-      "Code": 407
-    },
-    {"Sl": 148, "BranchName": "Bangla Bazar Barishal Barishal", "Code": 408},
-    {"Sl": 149, "BranchName": "Shikarpur Uposhakha Barishal", "Code": 409},
-    {
-      "Sl": 150,
-      "BranchName": "Amtali Chowrasta Uposhakha Barguna",
-      "Code": 410
-    },
-    {"Sl": 151, "BranchName": "Batajor Bazar Barishal Barishal", "Code": 411},
-    {"Sl": 152, "BranchName": "Torki Bandar Uposhakha Barishal", "Code": 412},
-    {"Sl": 153, "BranchName": "Bakerganj Uposhakha Barishal", "Code": 413},
-    {
-      "Sl": 154,
-      "BranchName": "Kalisuri Bazar Uposhakha Patuakhali",
-      "Code": 414
-    },
-    {"Sl": 155, "BranchName": "Alipur Uposhakha Patuakhali", "Code": 415},
-    {"Sl": 156, "BranchName": "Gouranadi Uposhakha Barishal", "Code": 416},
-    {"Sl": 157, "BranchName": "Daulatkhan Uposhakha Bhola", "Code": 420},
-    {"Sl": 158, "BranchName": "Bhola Banglabazar Uposhakha Bhola", "Code": 421},
-    {"Sl": 159, "BranchName": "Poranganj Uposhakha Bhola", "Code": 422},
-    {"Sl": 160, "BranchName": "Charfassion Uposhakha Bhola", "Code": 423},
-    {"Sl": 161, "BranchName": "Kunjer Hat Uposhakha Bhola", "Code": 424},
-    {"Sl": 162, "BranchName": "Rajapur Uposhakha Jhalokathi", "Code": 435},
-    {"Sl": 163, "BranchName": "Amua Bazar Uposhakha Jhalokathi", "Code": 436},
-    {"Sl": 164, "BranchName": "Pirojpur Sadar Uposhakha Pirojpur", "Code": 437},
-    {
-      "Sl": 165,
-      "BranchName": "Mathbaria Bazar Uposhakha  Pirojpur",
-      "Code": 438
-    },
-    {"Sl": 166, "BranchName": "Kawkhali Pirojpur", "Code": 439},
-    {"Sl": 167, "BranchName": "Bamna Uposhakha Barguna", "Code": 440},
-    {
-      "Sl": 168,
-      "BranchName": "Indurkani Bazar Uposhakha Pirojpur",
-      "Code": 441
-    },
-    {"Sl": 169, "BranchName": "Patuakhali Puran Bazar Uposhakha", "Code": 451},
-    {"Sl": 170, "BranchName": "Boga Bazar Uposhakha  Patuakhali", "Code": 452},
-    {
-      "Sl": 171,
-      "BranchName": "Tushkhali Bazar Uposhakha  Pirojpur",
-      "Code": 461
-    },
-    {"Sl": 172, "BranchName": "Nirala Uposhakha  Khulna", "Code": 550},
-    {"Sl": 173, "BranchName": "Daulatpur Uposhakha Khulna", "Code": 551},
-    {"Sl": 174, "BranchName": "Koiya Bazar Uposhakha Khulna", "Code": 552},
-    {"Sl": 175, "BranchName": "Batiaghata Uposhakha Khulna", "Code": 553},
-    {"Sl": 176, "BranchName": "Dumuria Uposhakha Khulna", "Code": 554},
-    {"Sl": 177, "BranchName": "Paikgacha Uposhakha Khulna", "Code": 555},
-    {"Sl": 178, "BranchName": "Sener Bazar Uposhakha Khulna", "Code": 556},
-    {"Sl": 179, "BranchName": "Rupsha Ghat Uposhakha Khulna", "Code": 557},
-    {"Sl": 180, "BranchName": "Keshabpur Bazar Uposhakha Jashore", "Code": 558},
-    {"Sl": 181, "BranchName": "Mongla Bazar Uposhakha Bagerhat", "Code": 559},
-    {"Sl": 182, "BranchName": "Pulerhat Uposhakha  Jashore", "Code": 560},
-    {"Sl": 183, "BranchName": "Palbari Moor Uposhakha  Jashore", "Code": 561},
-    {
-      "Sl": 184,
-      "BranchName": "Monihar Bus Stand Uposhakha Jashore",
-      "Code": 562
-    },
-    {"Sl": 185, "BranchName": "Monirampur Uposhakha Jashore", "Code": 563},
-    {
-      "Sl": 186,
-      "BranchName": "Jashore Kolabagan Uposhakha Jashore",
-      "Code": 564
-    },
-    {"Sl": 187, "BranchName": "Satmail Bazar Uposhakha Jashore", "Code": 565},
-    {"Sl": 188, "BranchName": "Narail Sadar Uposhakha Narail", "Code": 566},
-    {"Sl": 189, "BranchName": "Chowgacha Bazar Uposhakha Jashore", "Code": 567},
-    {"Sl": 190, "BranchName": "Lohagara Bazar Uposhakha Narail", "Code": 568},
-    {"Sl": 191, "BranchName": "Langalbandha Uposhakha Jhenaidah", "Code": 569},
-    {"Sl": 192, "BranchName": "Chourhash Uposhakha  Kushtia", "Code": 570},
-    {"Sl": 193, "BranchName": "Bheramara Uposhakha Kushtia", "Code": 571},
-    {"Sl": 194, "BranchName": "Gangni Uposhakha Kushtia", "Code": 572},
-    {"Sl": 195, "BranchName": "Meherpur Sadar Meherpur", "Code": 573},
-    {"Sl": 196, "BranchName": "Sheikhpara Bazar Jhinaidah", "Code": 574},
-    {
-      "Sl": 197,
-      "BranchName": "Chuadanga Sadar Uposhakha Chuadanga",
-      "Code": 575
-    },
-    {
-      "Sl": 198,
-      "BranchName": "Panch Raster More Uposhakha Kushtia",
-      "Code": 576
-    },
-    {"Sl": 199, "BranchName": "Kumarkhali Uposhakha Kushtia", "Code": 577},
-    {"Sl": 200, "BranchName": "Harinarayanpur Uposhakha Kushtia", "Code": 578},
-    {
-      "Sl": 201,
-      "BranchName": "Sarajganj Bazar Uposhakha Chuadanga",
-      "Code": 579
-    },
-    {"Sl": 202, "BranchName": "Kulia Bazar Uposhakha Satkhira", "Code": 580},
-    {
-      "Sl": 203,
-      "BranchName": "Jhawdanga Bazar Uposhakha Satkhira",
-      "Code": 581
-    },
-    {"Sl": 204, "BranchName": "Patkelghata Uposhakha Satkhira", "Code": 582},
-    {"Sl": 205, "BranchName": "Parulia Bazar Uposhakha", "Code": 583},
-    {"Sl": 206, "BranchName": "Kalaroa Uposhakha Satkhira", "Code": 584},
-    {"Sl": 207, "BranchName": "Brahmarajpur Bazar Upo Satkhira", "Code": 585},
-    {"Sl": 208, "BranchName": "Mujgunni Uposhakha Khulna", "Code": 590},
-    {
-      "Sl": 209,
-      "BranchName": "Rupsha Stand Road Uposhakha Khulna",
-      "Code": 591
-    },
-    {
-      "Sl": 210,
-      "BranchName": "Khulna New Market Uposhakha Khulna",
-      "Code": 592
-    },
-    {
-      "Sl": 211,
-      "BranchName": "Nurbag Main Road Uposhakha Jashore",
-      "Code": 600
-    },
-    {"Sl": 212, "BranchName": "Basundia More Uposhakha Jashore", "Code": 601},
-    {"Sl": 213, "BranchName": "Gobra Bazar Uposhakha Narail", "Code": 602},
-    {"Sl": 214, "BranchName": "Vatpara Bazar Uposhakha Jashore", "Code": 603},
-    {"Sl": 215, "BranchName": "Nehalpur Bazar Uposhakha Jashore", "Code": 604},
-    {"Sl": 216, "BranchName": "Maijpara Bazar Uposhakha Narail", "Code": 605},
-    {"Sl": 217, "BranchName": "Mohajan Bazar Uposhakha Narail", "Code": 606},
-    {"Sl": 218, "BranchName": "Fultola Bazar Uposhakha  Khulna", "Code": 607},
-    {"Sl": 219, "BranchName": "Baganchra Uposhakha Jashore", "Code": 610},
-    {"Sl": 220, "BranchName": "Navaron Uposhakha Jashore", "Code": 611},
-    {"Sl": 221, "BranchName": "Jhikargacha Uposhakha Jashore", "Code": 612},
-    {"Sl": 222, "BranchName": "Bankra Uposhakha Jashore", "Code": 613},
-    {"Sl": 223, "BranchName": "Chutipur Bazar Uposhakha Jashore", "Code": 614},
-    {"Sl": 224, "BranchName": "Kotchandpur Uposhakha Jhenaidah", "Code": 620},
-    {"Sl": 225, "BranchName": "Barobazar Uposhakha Jhenaidah", "Code": 621},
-    {"Sl": 226, "BranchName": "Bhatai Bazar Uposhakha Jhenidah", "Code": 622},
-    {
-      "Sl": 227,
-      "BranchName": "Jhenaidah Sadar Uposhakha Jhenaidah",
-      "Code": 623
-    },
-    {
-      "Sl": 228,
-      "BranchName": "Shailkupa Bazar Uposhakha Jhenaidah",
-      "Code": 624
-    },
-    {"Sl": 229, "BranchName": "Harinakunda Uposhakha Jhenaidah", "Code": 625},
-    {"Sl": 230, "BranchName": "Maheshpur Uposhakha Jhenaidah", "Code": 626},
-    {"Sl": 231, "BranchName": "Dak Bangla Bazar Jhenaidah", "Code": 627},
-    {"Sl": 232, "BranchName": "Hatgopalpur Jhenaidah", "Code": 628},
-    {"Sl": 233, "BranchName": "Amla Bazar Uposhakha  Kushtia", "Code": 630},
-    {
-      "Sl": 234,
-      "BranchName": "Trimohoni Bazar Uposhakha  Kushtia",
-      "Code": 631
-    },
-    {"Sl": 235, "BranchName": "Khoksha Uposhakha Kushtia", "Code": 632},
-    {"Sl": 236, "BranchName": "Kushtia Mirpur Bazar Kushtia", "Code": 633},
-    {"Sl": 237, "BranchName": "Halsha Bazar Uposhakha Kushtia", "Code": 634},
-    {"Sl": 238, "BranchName": "Alamdanga Uposhakha Chuadanga", "Code": 635},
-    {"Sl": 239, "BranchName": "Khajanagar Bazar Kushtia", "Code": 636},
-    {"Sl": 240, "BranchName": "Badhal Bazar Uposhakha Bagerhat", "Code": 640},
-    {"Sl": 241, "BranchName": "Jatrapur Uposhakha Bagerhat", "Code": 641},
-    {"Sl": 242, "BranchName": "Chitalmari Bazar Bagherhat", "Code": 642},
-    {"Sl": 243, "BranchName": "Fakirhat Uposhakha Bagerhat", "Code": 643},
-    {"Sl": 244, "BranchName": "Morrelganj Uposhakha", "Code": 644},
-    {"Sl": 245, "BranchName": "Foylahat Uposhakha Bagerhat", "Code": 645},
-    {"Sl": 246, "BranchName": "Digraj Bagerhat", "Code": 646},
-    {"Sl": 247, "BranchName": "Gollamari Uposhakha  Khulna", "Code": 650},
-    {"Sl": 248, "BranchName": "Labonchara Bazar Uposhakha Khulna", "Code": 651},
-    {
-      "Sl": 249,
-      "BranchName": "Sheikhpara Power House Upo.  Khulna",
-      "Code": 652
-    },
-    {"Sl": 250, "BranchName": "Boyra Uposhakha Khulna", "Code": 653},
-    {"Sl": 251, "BranchName": "Moylapota Uposhakha Khulna", "Code": 654},
-    {"Sl": 252, "BranchName": "Sachibunia Bazar Uposhakha Khulna", "Code": 655},
-    {"Sl": 253, "BranchName": "Kapilmuni Uposhakha Khulna", "Code": 661},
-    {"Sl": 254, "BranchName": "Chuknagar Bazar Uposhakha Khulna", "Code": 662},
-    {"Sl": 255, "BranchName": "Fulbari Gate Uposhakha Khulna", "Code": 663},
-    {"Sl": 256, "BranchName": "Chalna Bazar Uposhakha Khulna", "Code": 664},
-    {"Sl": 257, "BranchName": "Radhanagar Bazar Uposhakha Magura", "Code": 671},
-    {
-      "Sl": 258,
-      "BranchName": "Mohammadpur Magura Uposhakha Magura",
-      "Code": 672
-    },
-    {"Sl": 259, "BranchName": "Jashore University of SciT (JUST)", "Code": 673},
-    {"Sl": 260, "BranchName": "Sreepur Magura Uposhakha Magura", "Code": 674},
-    {"Sl": 261, "BranchName": "Shimakhali Bazar Uposhakha Magura", "Code": 675},
-    {"Sl": 262, "BranchName": "Rupdia Bazar Uposhakha Jashore", "Code": 676},
-    {"Sl": 263, "BranchName": "Bagherpara Uposhakha Jashore", "Code": 677},
-    {"Sl": 264, "BranchName": "Sachilapur Bazar Uposhakha Magura", "Code": 678},
-    {"Sl": 265, "BranchName": "Vaina Moor Uposhakha  Magura", "Code": 679},
-    {"Sl": 266, "BranchName": "Nohata Bazar Magura Upo  Magura", "Code": 680},
-    {"Sl": 267, "BranchName": "Damurhuda Chuadanga", "Code": 681},
-    {"Sl": 268, "BranchName": "Jibonnagar Uposhakha Chuadanga", "Code": 682},
-    {"Sl": 269, "BranchName": "Andulbaria Bazar Upo Chuadanga", "Code": 683},
-    {"Sl": 270, "BranchName": "Asmankhali Bazar Upo Chuadanga", "Code": 684},
-    {"Sl": 271, "BranchName": "Karpashdanga Uposhakha Chuadanga", "Code": 685},
-    {
-      "Sl": 272,
-      "BranchName": "Baradi Bazar Meherpur Upo Meherpur",
-      "Code": 686
-    },
-    {"Sl": 273, "BranchName": "Mujibnagar Uposhakha Meherpur", "Code": 687},
-    {"Sl": 274, "BranchName": "Lahini Bottola Uposhakha Kushtia", "Code": 691},
-    {"Sl": 275, "BranchName": "Allahar Dorga Uposhakha Kushtia", "Code": 692},
-    {"Sl": 276, "BranchName": "Bamundi Uposhakha Meherpur", "Code": 693},
-    {
-      "Sl": 277,
-      "BranchName": "Golapnagar Bazar Uposhakha Kushtia",
-      "Code": 694
-    },
-    {"Sl": 278, "BranchName": "Mahiganj Uposhakha Rangpur", "Code": 700},
-    {"Sl": 279, "BranchName": "Medical East Gate Upo. Rangpur", "Code": 701},
-    {"Sl": 280, "BranchName": "Dhap Uposhakha Rangpur", "Code": 702},
-    {"Sl": 281, "BranchName": "Rangpur Lalbagh Uposhakha Rangpur", "Code": 703},
-    {"Sl": 282, "BranchName": "Rangpur Bus Terminal Uposhakha", "Code": 704},
-    {"Sl": 283, "BranchName": "Badarganj Uposhakha Rangpur", "Code": 705},
-    {"Sl": 284, "BranchName": "Jaldhaka Uposhakha Nilphamari", "Code": 706},
-    {
-      "Sl": 285,
-      "BranchName": "Shathibari Bazar Uposhakha Rangpur",
-      "Code": 707
-    },
-    {"Sl": 286, "BranchName": "Phulbari Kurigram Uposhakha", "Code": 708},
-    {"Sl": 287, "BranchName": "Lalmonirhat Sadar Lalmonirhat", "Code": 709},
-    {"Sl": 288, "BranchName": "Gobindaganj Gaibandha Uposhakha", "Code": 710},
-    {"Sl": 289, "BranchName": "Kurigram Sadar Uposhakha Kurigram", "Code": 711},
-    {"Sl": 290, "BranchName": "Bhurungamari Uposhakha Kurigram", "Code": 712},
-    {"Sl": 291, "BranchName": "Dimla Uposhakha Nilphamari", "Code": 713},
-    {"Sl": 292, "BranchName": "Tushbhandar Uposhakha Lalmonirhat", "Code": 714},
-    {
-      "Sl": 293,
-      "BranchName": "Pirgacha Rangpur Uposhakha Rangpur",
-      "Code": 715
-    },
-    {"Sl": 294, "BranchName": "Saidpur Nilphamari", "Code": 716},
-    {"Sl": 295, "BranchName": "Gangachara Uposhakha Rangpur", "Code": 717},
-    {"Sl": 296, "BranchName": "Patgram Uposhakha Lalmonirhat", "Code": 718},
-    {"Sl": 297, "BranchName": "Nageshwari Uposhakha Kurigram", "Code": 719},
-    {"Sl": 298, "BranchName": "Pirganj Rangpur Uposhakha", "Code": 720},
-    {"Sl": 299, "BranchName": "Dhaperhat Uposhakha Gaibandha", "Code": 721},
-    {"Sl": 300, "BranchName": "Bonarpara Uposhakha Gaibandha", "Code": 722},
-    {"Sl": 301, "BranchName": "Mahimaganj Gaibandha", "Code": 723},
-    {"Sl": 302, "BranchName": "Sundarganj Uposhakha Gaibandha", "Code": 724},
-    {"Sl": 303, "BranchName": "Bahadur Bazar Uposhakha Dinajpur", "Code": 725},
-    {"Sl": 304, "BranchName": "Chirirbondor Uposhakha Dinajpur", "Code": 726},
-    {"Sl": 305, "BranchName": "Nimnagar Balubari Upo. Dinajpur", "Code": 727},
-    {"Sl": 306, "BranchName": "Ranirbandar Uposhakha Dinajpur", "Code": 728},
-    {"Sl": 307, "BranchName": "Birampur Uposhakha Dinajpur", "Code": 729},
-    {"Sl": 308, "BranchName": "Panchagarh Sadar  Panchagarh", "Code": 730},
-    {"Sl": 309, "BranchName": "Birganj Uposhakha Dinajpur", "Code": 731},
-    {"Sl": 310, "BranchName": "Boda Bazar Uposhakha Panchagarh", "Code": 732},
-    {"Sl": 311, "BranchName": "Atwari Uposhakha Panchagarh", "Code": 733},
-    {
-      "Sl": 312,
-      "BranchName": "Fulbari Dinajpur Uposhakha Dinajpur",
-      "Code": 734
-    },
-    {"Sl": 313, "BranchName": "Nawabganj Dinajpur Uposhakha", "Code": 735},
-    {"Sl": 314, "BranchName": "Pirganj Uposhakha Thakurgaon", "Code": 750},
-    {"Sl": 315, "BranchName": "Thakurgaon Sadar Thakurgaon", "Code": 751},
-    {"Sl": 316, "BranchName": "Ranisankail Uposhakha Thakurgaon", "Code": 752},
-    {"Sl": 317, "BranchName": "Thakurgoan Road Uposhakha", "Code": 753},
-    {
-      "Sl": 318,
-      "BranchName": "Nekmarad Bazar Uposhakha Thakurgoan",
-      "Code": 754
-    },
-    {"Sl": 319, "BranchName": "Boro Khochabari  THAKURGAON", "Code": 755},
-    {
-      "Sl": 320,
-      "BranchName": "Jadurani Bazar Uposhakha Thakurgaon",
-      "Code": 756
-    },
-    {"Sl": 321, "BranchName": "Baliadangi Uposhakha Thakurgaon", "Code": 757},
-    {"Sl": 322, "BranchName": "Haripur Thakurgoan Upo Thakurgaon", "Code": 758},
-    {"Sl": 323, "BranchName": "Bairchuna Uposhakha Thakurgaon", "Code": 759},
-    {"Sl": 324, "BranchName": "Dhukurjhari Uposhakha Dinajpur", "Code": 760},
-    {"Sl": 325, "BranchName": "Kaharole Uposhakha Dinajpur", "Code": 761},
-    {"Sl": 326, "BranchName": "Parbatipur Uposhakha Dinajpur", "Code": 762},
-    {"Sl": 327, "BranchName": "Domar Nilphamari", "Code": 771},
-    {"Sl": 328, "BranchName": "Ulipur Kurigram", "Code": 772},
-    {"Sl": 329, "BranchName": "Paglapir Bazar Uposhakha Rangpur", "Code": 773},
-    {"Sl": 330, "BranchName": "Hatibandha Uposhakha Lalmonirhat", "Code": 774},
-    {
-      "Sl": 331,
-      "BranchName": "Kishoreganj Nilphamari  Nilphamari",
-      "Code": 775
-    },
-    {"Sl": 332, "BranchName": "Taraganj Uposhakha Rangpur", "Code": 776},
-    {"Sl": 333, "BranchName": "Kaunia Uposhakha  Rangpur", "Code": 777},
-    {"Sl": 334, "BranchName": "Honuman Tola Uposhakha  Rangpur", "Code": 778},
-    {"Sl": 335, "BranchName": "Panchbibi Uposhakha  Joypurhat", "Code": 850},
-    {"Sl": 336, "BranchName": "Akkelpur Uposhakha Joypurhat", "Code": 851},
-    {"Sl": 337, "BranchName": "Jamalganj Joypurhat Uposhakha", "Code": 852},
-    {"Sl": 338, "BranchName": "Dhamoirhat Uposhakha Naogaon", "Code": 853},
-    {"Sl": 339, "BranchName": "Hilli Bandar Uposhakha Dinajpur", "Code": 854},
-    {"Sl": 340, "BranchName": "Khetalal Uposhakha Joypurhat", "Code": 855},
-    {"Sl": 341, "BranchName": "Raikali Bazar Uposhakha Joypurhat", "Code": 856},
-    {"Sl": 342, "BranchName": "Ghoraghat Uposhakha  Dinajpur", "Code": 857},
-    {"Sl": 343, "BranchName": "Nawhata Bazar Uposhakha Rajshahi", "Code": 860},
-    {"Sl": 344, "BranchName": "Rajshahi Uposhahar Rajshahi", "Code": 861},
-    {"Sl": 345, "BranchName": "Rajshahi Laxmipur Uposhakha", "Code": 862},
-    {"Sl": 346, "BranchName": "Rajshahi Court Bazar Uposhakha", "Code": 863},
-    {"Sl": 347, "BranchName": "Sherpur Road Colony Uposhakha", "Code": 870},
-    {
-      "Sl": 348,
-      "BranchName": "Sherpur Upozilla Uposhakha  Bogura",
-      "Code": 871
-    },
-    {"Sl": 349, "BranchName": "Dhupchachia Uposhakha  Bogura", "Code": 872},
-    {"Sl": 350, "BranchName": "Gabtoli Upozila Uposhakha Bogura", "Code": 873},
-    {"Sl": 351, "BranchName": "Chelopara Uposhakha Bogura", "Code": 874},
-    {"Sl": 352, "BranchName": "Bogura Bou Bazar Uposhakha Bogura", "Code": 875},
-    {"Sl": 353, "BranchName": "Bogura Shibganj Uposhakha Bogura", "Code": 876},
-    {"Sl": 354, "BranchName": "Bogura Uposhahar Uposhakha Bogura", "Code": 877},
-    {"Sl": 355, "BranchName": "Godarpara Uposhakha", "Code": 878},
-    {"Sl": 356, "BranchName": "Biman More Uposhakha Bogura", "Code": 879},
-    {"Sl": 357, "BranchName": "Ishwardi Uposhakha Pabna", "Code": 880},
-    {"Sl": 358, "BranchName": "Tebunia Uposhakha Pabna", "Code": 881},
-    {"Sl": 359, "BranchName": "Dapunia Bazar Uposhakha Pabna", "Code": 882},
-    {"Sl": 360, "BranchName": "Ekdanta Bazar Uposhakha Pabna", "Code": 883},
-    {"Sl": 361, "BranchName": "Chatmohor Uposhakha Pabna", "Code": 884},
-    {"Sl": 362, "BranchName": "Sujanagar Uposhakha Pabna", "Code": 885},
-    {"Sl": 363, "BranchName": "Lalpur Natore Uposhakha Natore", "Code": 886},
-    {"Sl": 364, "BranchName": "Baraigram Natore", "Code": 887},
-    {"Sl": 365, "BranchName": "Ataikula Uposhakha Pabna", "Code": 888},
-    {"Sl": 366, "BranchName": "Bonpara Natore", "Code": 889},
-    {"Sl": 367, "BranchName": "Shantahar Uposhakha Bogura", "Code": 890},
-    {"Sl": 368, "BranchName": "Chowmashia Uposhakha Naogaon", "Code": 891},
-    {"Sl": 369, "BranchName": "Niamatpur Uposhakha Naogaon", "Code": 892},
-    {"Sl": 370, "BranchName": "Raninagar Uposhakha Naogaon", "Code": 893},
-    {"Sl": 371, "BranchName": "Abadpukur Uposhakha Naogaon", "Code": 894},
-    {"Sl": 372, "BranchName": "Sapahar Uposhakha Naogaon", "Code": 895},
-    {"Sl": 373, "BranchName": "Mohadevpur Uposhakha Naogaon", "Code": 896},
-    {"Sl": 374, "BranchName": "Badalgachi Uposhakha Naogaon", "Code": 897},
-    {"Sl": 375, "BranchName": "Nazipur Uposhakha Naogaon", "Code": 898},
-    {"Sl": 376, "BranchName": "Shibganj Upo. Chapai Nawabganj", "Code": 900},
-    {"Sl": 377, "BranchName": "Godagari Rajshahi", "Code": 901},
-    {
-      "Sl": 378,
-      "BranchName": "Rohanpur Uposhakha Chapainawabganj",
-      "Code": 902
-    },
-    {"Sl": 379, "BranchName": "Kansat Chapai Nawabganj", "Code": 903},
-    {"Sl": 380, "BranchName": "Kakonhat Uposhakha Rajshahi", "Code": 904},
-    {
-      "Sl": 381,
-      "BranchName": "Nachole Bazar Upo Chapai Nawabganj",
-      "Code": 905
-    },
-    {"Sl": 382, "BranchName": "Charghat Uposhakha", "Code": 910},
-    {"Sl": 383, "BranchName": "Durgapur Bazar Uposhakha Rajshahi", "Code": 911},
-    {"Sl": 384, "BranchName": "Bagha Uposhakha Rajshahi", "Code": 912},
-    {"Sl": 385, "BranchName": "Arani Uposhakha Rajshahi", "Code": 913},
-    {"Sl": 386, "BranchName": "Qadirabad Cantonment Natore", "Code": 914},
-    {"Sl": 387, "BranchName": "Tamai Uposhakha Sirajganj", "Code": 920},
-    {
-      "Sl": 388,
-      "BranchName": "Paikosha Bazar Uposhakha Sirajganj",
-      "Code": 921
-    },
-    {
-      "Sl": 389,
-      "BranchName": "Satbaria Bazar Uposhakha Sirajganj",
-      "Code": 922
-    },
-    {
-      "Sl": 390,
-      "BranchName": "Sirajganj Sadar Uposhakha Sirajganj",
-      "Code": 923
-    },
-    {"Sl": 391, "BranchName": "Jamtoil Bazar Uposhakha Sirajganj", "Code": 924},
-    {"Sl": 392, "BranchName": "Shahajadpur Sirajganj Uposhakha", "Code": 925},
-    {"Sl": 393, "BranchName": "Enayetpur Sirajganj Uposhakha", "Code": 926},
-    {"Sl": 394, "BranchName": "Ullapara Uposhakha Sirajganj", "Code": 927},
-    {"Sl": 395, "BranchName": "Harina Pipulbaria Sirajganj", "Code": 928},
-    {"Sl": 396, "BranchName": "Salanga Sirajganj", "Code": 929},
-    {"Sl": 397, "BranchName": "Santhia Uposhakha Pabna", "Code": 930},
-    {"Sl": 398, "BranchName": "Nagarbari Uposhakha Pabna", "Code": 931},
-    {"Sl": 399, "BranchName": "Nakalia Bazar Uposhakha Pabna", "Code": 932},
-    {"Sl": 400, "BranchName": "Bera Uposhakha Pabna", "Code": 933},
-    {"Sl": 401, "BranchName": "Bonogram Bazar Uposhakha  Pabna", "Code": 934},
-    {"Sl": 402, "BranchName": "Bhawaniganj Uposhakha", "Code": 940},
-    {"Sl": 403, "BranchName": "Natore Sadar Uposhakha Natore", "Code": 941},
-    {"Sl": 404, "BranchName": "Mohonganj Uposhakha Rajshahi", "Code": 942},
-    {"Sl": 405, "BranchName": "Naldanga Uposhakha Natore", "Code": 943},
-    {"Sl": 406, "BranchName": "Gurudashpur Uposhakha Natore", "Code": 944},
-    {"Sl": 407, "BranchName": "Keshorhat Uposhakha Rajshahi", "Code": 945},
-    {"Sl": 408, "BranchName": "Hatgangopara Uposhakha Rajshahi", "Code": 946},
-    {"Sl": 409, "BranchName": "Singra Uposhakha Natore", "Code": 947},
-    {"Sl": 410, "BranchName": "Mokamtola Uposhakha Bogura", "Code": 951},
-    {"Sl": 411, "BranchName": "Borogola Uposhakha Bogura", "Code": 952},
-    {"Sl": 412, "BranchName": "Namuja Hat Uposhakha Bogura", "Code": 953},
-    {"Sl": 413, "BranchName": "Majhira Uposhakha Bogura", "Code": 954},
-    {"Sl": 414, "BranchName": "Kichak Uposhakha Bogura", "Code": 955},
-    {"Sl": 415, "BranchName": "Dhunat Uposhakha Bogura", "Code": 956},
-    {"Sl": 416, "BranchName": "Chandaikona Uposhakha Sirajganj", "Code": 957},
-    {"Sl": 417, "BranchName": "Nandigram Bus Stand Bogura", "Code": 958},
-    {"Sl": 418, "BranchName": "Kahaloo Uposhakha Bogura", "Code": 959},
-    {"Sl": 419, "BranchName": "Noymile  Bogura Uposhakha Bogura", "Code": 960},
-    {"Sl": 420, "BranchName": "Nimgachi Uposhakha Sirajganj", "Code": 971},
-    {
-      "Sl": 421,
-      "BranchName": "Dhangora Bazar Uposhakha Sirajganj",
-      "Code": 972
-    },
-    {"Sl": 422, "BranchName": "Sonatola Uposhakha  Bogura", "Code": 996},
-    {"Sl": 423, "BranchName": "Sariakandi Uposhakha  Bogura", "Code": 997},
-    {"Sl": 424, "BranchName": "Mohasthan Garh Uposhakha  Bogura", "Code": 998},
-    {"Sl": 425, "BranchName": "Principal Branch", "Code": 1001},
-    {"Sl": 426, "BranchName": "Gulshan Branch", "Code": 1002},
-    {"Sl": 427, "BranchName": "Narayanganj Branch", "Code": 1003},
-    {"Sl": 428, "BranchName": "Moulvi Bazar Branch  Dhaka", "Code": 1004},
-    {"Sl": 429, "BranchName": "Islampur Branch", "Code": 1005},
-    {"Sl": 430, "BranchName": "Dhanmondi Branch", "Code": 1006},
-    {"Sl": 431, "BranchName": "Shantinagar Branch", "Code": 1007},
-    {"Sl": 432, "BranchName": "Federation Branch", "Code": 1008},
-    {"Sl": 433, "BranchName": "Bangshal Branch", "Code": 1011},
-    {"Sl": 434, "BranchName": "Mirpur Branch", "Code": 1013},
-    {"Sl": 435, "BranchName": "Elephant Road Branch", "Code": 1014},
-    {"Sl": 436, "BranchName": "Netaiganj Branch", "Code": 1016},
-    {"Sl": 437, "BranchName": "Kawran Bazar Branch", "Code": 1017},
-    {"Sl": 438, "BranchName": "Malibagh Branch", "Code": 1019},
-    {"Sl": 439, "BranchName": "Naya Paltan Branch", "Code": 1020},
-    {"Sl": 440, "BranchName": "Mymensingh Branch", "Code": 1022},
-    {"Sl": 441, "BranchName": "Faridpur Branch", "Code": 1023},
-    {"Sl": 442, "BranchName": "Uttara Branch", "Code": 1024},
-    {"Sl": 443, "BranchName": "Lalmatia Branch", "Code": 1025},
-    {"Sl": 444, "BranchName": "Pallabi Branch", "Code": 1027},
-    {"Sl": 445, "BranchName": "North Brooke Hall Road Branch", "Code": 1028},
-    {"Sl": 446, "BranchName": "Nawabpur Road Branch", "Code": 1029},
-    {"Sl": 447, "BranchName": "Bashundhara Branch", "Code": 1070},
-    {"Sl": 448, "BranchName": "Pragati Sarani Branch", "Code": 1072},
-    {"Sl": 449, "BranchName": "Tangail Branch", "Code": 1076},
-    {"Sl": 450, "BranchName": "Stock Exchange Branch", "Code": 1090},
-    {"Sl": 451, "BranchName": "Tanbazar Branch", "Code": 1091},
-    {"Sl": 452, "BranchName": "Shariatpur Branch", "Code": 1092},
-    {"Sl": 453, "BranchName": "Mohakhali Branch", "Code": 1094},
-    {"Sl": 454, "BranchName": "Banani Branch", "Code": 1096},
-    {"Sl": 455, "BranchName": "Ghorasal Branch", "Code": 1109},
-    {"Sl": 456, "BranchName": "Narsingdi Branch", "Code": 1110},
-    {"Sl": 457, "BranchName": "Bajitpur Branch", "Code": 1112},
-    {"Sl": 458, "BranchName": "Muktarpur Branch", "Code": 1115},
-    {"Sl": 459, "BranchName": "Madhabdi Branch", "Code": 1118},
-    {"Sl": 460, "BranchName": "Konabari Branch", "Code": 1121},
-    {"Sl": 461, "BranchName": "Takerhat Branch", "Code": 1126},
-    {"Sl": 462, "BranchName": "Savar Bazar Branch", "Code": 1171},
-    {"Sl": 463, "BranchName": "Panchaboti Branch", "Code": 1173},
-    {"Sl": 464, "BranchName": "Tongi SME Krishi Branch", "Code": 1174},
-    {"Sl": 465, "BranchName": "Nawabganj SME Krishi Branch", "Code": 1175},
-    {"Sl": 466, "BranchName": "Board Bazar Branch", "Code": 1177},
-    {"Sl": 467, "BranchName": "Dhamrai SME Krishi Branch", "Code": 1178},
-    {"Sl": 468, "BranchName": "Dania Branch", "Code": 1193},
-    {"Sl": 469, "BranchName": "Keraniganj Branch", "Code": 1195},
-    {"Sl": 470, "BranchName": "Ashulia Branch", "Code": 1197},
-    {"Sl": 471, "BranchName": "Rupgonj Branch", "Code": 1198},
-    {"Sl": 472, "BranchName": "Mohammadpur Branch", "Code": 1201},
-    {"Sl": 473, "BranchName": "Gulshan Tejgaon Link Road Branch", "Code": 1203},
-    {"Sl": 474, "BranchName": "Chandra SME Krishi Branch", "Code": 1205},
-    {"Sl": 475, "BranchName": "Manikgonj Branch", "Code": 1206},
-    {"Sl": 476, "BranchName": "Gabtoli Bagbari Branch", "Code": 1207},
-    {"Sl": 477, "BranchName": "Konapara Branch", "Code": 1208},
-    {"Sl": 478, "BranchName": "Shahjalal Avenue Branch  Dhaka", "Code": 1211},
-    {"Sl": 479, "BranchName": "Meghola Bazar Branch", "Code": 1213},
-    {"Sl": 480, "BranchName": "Garibe Newaz Avenue Branch", "Code": 1217},
-    {"Sl": 481, "BranchName": "Hasnabad Branch", "Code": 1218},
-    {"Sl": 482, "BranchName": "Aganagar Branch", "Code": 1219},
-    {"Sl": 483, "BranchName": "Seed Store Bazar Branch", "Code": 1221},
-    {"Sl": 484, "BranchName": "Shibu Market Branch", "Code": 1224},
-    {"Sl": 485, "BranchName": "Gazipur Chowrasta Branch", "Code": 1225},
-    {"Sl": 486, "BranchName": "Mawna Branch Gazipur", "Code": 1226},
-    {"Sl": 487, "BranchName": "Sherpur Branch  Sherpur", "Code": 1227},
-    {"Sl": 488, "BranchName": "Bandar Branch  Narayanganj", "Code": 1228},
-    {"Sl": 489, "BranchName": "Jamalpur Branch  Jamalpur", "Code": 1229},
-    {"Sl": 490, "BranchName": "Isapura Bazar Branch", "Code": 1230},
-    {"Sl": 491, "BranchName": "Karatia Branch", "Code": 1231},
-    {"Sl": 492, "BranchName": "Darus Salam Road Branch  Dhaka", "Code": 1232},
-    {"Sl": 493, "BranchName": "Panchdona Branch", "Code": 1233},
-    {"Sl": 494, "BranchName": "Arshinagar Branch  Dhaka.", "Code": 1234},
-    {"Sl": 495, "BranchName": "Bhuigar Branch  Narayanganj", "Code": 1235},
-    {"Sl": 496, "BranchName": "Cherag Ali Branch  Gazipur", "Code": 1237},
-    {"Sl": 497, "BranchName": "Federation Branch", "Code": 1238},
-    {"Sl": 498, "BranchName": "Bhawal Mirzapur Branch  Gazipur", "Code": 1239},
-    {"Sl": 499, "BranchName": "Kapasia Branch  Gazipur", "Code": 1240},
-    {"Sl": 500, "BranchName": "Shafipur Branch  Gazipur.", "Code": 1244},
-    {"Sl": 501, "BranchName": "Banasree Branch  Dhaka.", "Code": 1245},
-    {"Sl": 502, "BranchName": "Goalanda Branch", "Code": 1248},
-    {"Sl": 503, "BranchName": "Khilgaon Branch", "Code": 1249},
-    {"Sl": 504, "BranchName": "Zirani Bazar Branch  Dhaka", "Code": 1250},
-    {"Sl": 505, "BranchName": "Kishoreganj Branch  Kishoreganj", "Code": 1251},
-    {"Sl": 506, "BranchName": "Nikunja Branch  Dhaka", "Code": 1252},
-    {"Sl": 507, "BranchName": "Araihazar Branch  Narayanganj", "Code": 1253},
-    {"Sl": 508, "BranchName": "Sonargaon Branch  Narayanganj", "Code": 1254},
-    {"Sl": 509, "BranchName": "Dhanbari Branch  Tangail.", "Code": 1255},
-    {"Sl": 510, "BranchName": "Kashiani Branch", "Code": 1256},
-    {"Sl": 511, "BranchName": "Netrokona Branch", "Code": 1257},
-    {"Sl": 512, "BranchName": "Bakshiganj Branch   Jamalpur", "Code": 1258},
-    {"Sl": 513, "BranchName": "Panchar Branch  Madaripur", "Code": 1259},
-    {"Sl": 514, "BranchName": "Madaripur Branch", "Code": 1270},
-    {"Sl": 515, "BranchName": "Gopalganj Branch", "Code": 1273},
-    {"Sl": 516, "BranchName": "Agrabad Branch", "Code": 2030},
-    {"Sl": 517, "BranchName": "Khatunganj Branch", "Code": 2031},
-    {"Sl": 518, "BranchName": "Brahmanbaria Branch", "Code": 2034},
-    {"Sl": 519, "BranchName": "Comilla Branch", "Code": 2035},
-    {"Sl": 520, "BranchName": "Patiya Branch  Chattogram", "Code": 2036},
-    {"Sl": 521, "BranchName": "Chawk Bazar Branch", "Code": 2040},
-    {"Sl": 522, "BranchName": "Feni Branch", "Code": 2041},
-    {"Sl": 523, "BranchName": "Shah Amanat Market Branch", "Code": 2042},
-    {"Sl": 524, "BranchName": "Coxs Bazar Branch", "Code": 2044},
-    {"Sl": 525, "BranchName": "Sheikh Mujib Road Branch", "Code": 2045},
-    {"Sl": 526, "BranchName": "Choumuhani Branch", "Code": 2050},
-    {"Sl": 527, "BranchName": "CDA Avenue Branch", "Code": 2054},
-    {"Sl": 528, "BranchName": "Alankar More Branch", "Code": 2056},
-    {"Sl": 529, "BranchName": "Noju Miah Hat Branch", "Code": 2132},
-    {"Sl": 530, "BranchName": "Hathazari Branch", "Code": 2137},
-    {"Sl": 531, "BranchName": "Companyganj Branch", "Code": 2148},
-    {"Sl": 532, "BranchName": "Fatikchari Branch", "Code": 2152},
-    {"Sl": 533, "BranchName": "Madam Bibir Hat Branch", "Code": 2153},
-    {"Sl": 534, "BranchName": "Ashuganj Branch", "Code": 2155},
-    {"Sl": 535, "BranchName": "Chandina Branch", "Code": 2157},
-    {"Sl": 536, "BranchName": "Rangamati Branch", "Code": 2204},
-    {"Sl": 537, "BranchName": "Gouripur Bazar Branch", "Code": 2210},
-    {"Sl": 538, "BranchName": "Miah Bazar Branch", "Code": 2214},
-    {"Sl": 539, "BranchName": "Bandartila Branch", "Code": 2220},
-    {"Sl": 540, "BranchName": "Chandraganj Branch", "Code": 2222},
-    {"Sl": 541, "BranchName": "Anwara Branch  Chittagong.", "Code": 2236},
-    {"Sl": 542, "BranchName": "Khulshi Branch  Chittagong", "Code": 2241},
-    {"Sl": 543, "BranchName": "Kachua Branch  Chandpur", "Code": 2246},
-    {"Sl": 544, "BranchName": "Moynamoti Branch  Comilla", "Code": 2247},
-    {"Sl": 545, "BranchName": "Akhaura Branch", "Code": 2250},
-    {"Sl": 546, "BranchName": "Keranihat Branch  Satkania  CTG.", "Code": 2251},
-    {"Sl": 547, "BranchName": "Chakaria Branch  Coxs Bazar", "Code": 2252},
-    {"Sl": 548, "BranchName": "Laxmipur Branch", "Code": 2253},
-    {"Sl": 549, "BranchName": "Laksham Branch", "Code": 2254},
-    {"Sl": 550, "BranchName": "Sandwip Branch", "Code": 2255},
-    {"Sl": 551, "BranchName": "Boalkhali Branch", "Code": 2256},
-    {"Sl": 552, "BranchName": "Khagrachari Branch", "Code": 2267},
-    {"Sl": 553, "BranchName": "Bandarban Branch", "Code": 2268},
-    {"Sl": 554, "BranchName": "Sylhet Branch", "Code": 3033},
-    {"Sl": 555, "BranchName": "Subid Bazar Branch", "Code": 3043},
-    {"Sl": 556, "BranchName": "Moulvibazar District Branch", "Code": 3046},
-    {"Sl": 557, "BranchName": "Shreemongal Branch", "Code": 3047},
-    {"Sl": 558, "BranchName": "Uposhohar Branch", "Code": 3049},
-    {"Sl": 559, "BranchName": "Beani Bazar Branch", "Code": 3138},
-    {"Sl": 560, "BranchName": "Ambarkhana Branch", "Code": 3139},
-    {"Sl": 561, "BranchName": "Goala Bazar Branch", "Code": 3151},
-    {"Sl": 562, "BranchName": "Habiganj Branch", "Code": 3216},
-    {"Sl": 563, "BranchName": "Madhabpur Branch  Habiganj.", "Code": 3242},
-    {"Sl": 564, "BranchName": "Juri Branch", "Code": 3251},
-    {"Sl": 565, "BranchName": "Sunamganj Branch", "Code": 3252},
-    {"Sl": 566, "BranchName": "Khulna Branch", "Code": 4060},
-    {"Sl": 567, "BranchName": "Jessore Branch", "Code": 4061},
-    {"Sl": 568, "BranchName": "Kushtia Branch", "Code": 4062},
-    {"Sl": 569, "BranchName": "Satkhira Branch", "Code": 4065},
-    {"Sl": 570, "BranchName": "Boro Bazar Branch", "Code": 4067},
-    {"Sl": 571, "BranchName": "Noapara Branch", "Code": 4163},
-    {"Sl": 572, "BranchName": "Benapole Branch", "Code": 4166},
-    {"Sl": 573, "BranchName": "Kaliganj SME Krishi Branch", "Code": 4168},
-    {"Sl": 574, "BranchName": "Poradah Branch", "Code": 4169},
-    {"Sl": 575, "BranchName": "Bagerhat Branch", "Code": 4212},
-    {"Sl": 576, "BranchName": "Sonadanga Branch", "Code": 4223},
-    {"Sl": 577, "BranchName": "Darshana Branch", "Code": 4224},
-    {"Sl": 578, "BranchName": "Narail Branch", "Code": 4260},
-    {"Sl": 579, "BranchName": "Magura Branch", "Code": 4261},
-    {"Sl": 580, "BranchName": "Barisal Branch", "Code": 5064},
-    {"Sl": 581, "BranchName": "Bhola Branch", "Code": 5202},
-    {"Sl": 582, "BranchName": "Jhalokathi Branch  Jhalokathi", "Code": 5243},
-    {"Sl": 583, "BranchName": "Patuakhali Branch  Patuakhali", "Code": 5244},
-    {"Sl": 584, "BranchName": "Bhandaria BRANCH", "Code": 5245},
-    {"Sl": 585, "BranchName": "Pirojpur Branch", "Code": 5262},
-    {"Sl": 586, "BranchName": "Barguna Branch", "Code": 5266},
-    {"Sl": 587, "BranchName": "Joypurhat Branch", "Code": 6058},
-    {"Sl": 588, "BranchName": "Rajshahi Branch", "Code": 6080},
-    {"Sl": 589, "BranchName": "Rangpur Branch", "Code": 6081},
-    {"Sl": 590, "BranchName": "Bogra Branch", "Code": 6082},
-    {"Sl": 591, "BranchName": "Dinajpur Branch", "Code": 6083},
-    {"Sl": 592, "BranchName": "Pabna Branch", "Code": 6084},
-    {"Sl": 593, "BranchName": "Naogaon Branch", "Code": 6085},
-    {"Sl": 594, "BranchName": "Chapai Nawabganj Branch", "Code": 6086},
-    {"Sl": 595, "BranchName": "Setabgonj SME Krishi Branch", "Code": 6179},
-    {"Sl": 596, "BranchName": "Baneshwar Branch", "Code": 6187},
-    {"Sl": 597, "BranchName": "Belkuchi Branch", "Code": 6188},
-    {"Sl": 598, "BranchName": "Kashinathpur SME Krishi Branch", "Code": 6189},
-    {"Sl": 599, "BranchName": "Birol Bazar Branch", "Code": 6209},
-    {"Sl": 600, "BranchName": "Taherpur Branch", "Code": 6215},
-    {"Sl": 601, "BranchName": "Sirajganj Branch", "Code": 6216},
-    {"Sl": 602, "BranchName": "Palashbari Branch  Gaibandha", "Code": 6217},
-    {"Sl": 603, "BranchName": "Panchagarh Branch", "Code": 6263},
-    {"Sl": 604, "BranchName": "Natore Branch", "Code": 6264},
-    {"Sl": 605, "BranchName": "Gaibandha Branch", "Code": 6271},
-    {"Sl": 606, "BranchName": "Nilphamari Branch", "Code": 6275},
-    {"Sl": 607, "BranchName": "Nazimuddin Road Uposhakha  Dhaka", "Code": 7020},
-    {"Sl": 608, "BranchName": "Becharam Dewri Uposhakha  Dhaka", "Code": 7021},
-    {"Sl": 609, "BranchName": "Lalbagh Uposhakha Dhaka", "Code": 7022},
-    {"Sl": 610, "BranchName": "Showari Ghat Uposhakha Dhaka", "Code": 7023},
-    {"Sl": 611, "BranchName": "Choto Katra Uposhakha Dhaka", "Code": 7024},
-    {"Sl": 612, "BranchName": "Islambagh Uposhakha Dhaka", "Code": 7025},
-    {"Sl": 613, "BranchName": "Kamrangir Char Uposhakha", "Code": 7030},
-    {"Sl": 614, "BranchName": "Badamtoli Uposhakha", "Code": 7031},
-    {"Sl": 615, "BranchName": "Rony Market Uposhakha  Dhaka", "Code": 7032},
-    {"Sl": 616, "BranchName": "Midford Road Uposhakha  Dhaka", "Code": 7033},
-    {"Sl": 617, "BranchName": "Armanitola Uposhakha Dhaka", "Code": 7034},
-    {"Sl": 618, "BranchName": "Zindabahar First Lane Dhaka", "Code": 7035},
-    {"Sl": 619, "BranchName": "Wais Ghat Uposhakha Dhaka", "Code": 7036},
-    {"Sl": 620, "BranchName": "Zigatola Uposhakha", "Code": 7045},
-    {"Sl": 621, "BranchName": "Green Road Uposhakha Dhaka", "Code": 7046},
-    {"Sl": 622, "BranchName": "Tannery More Uposhakha Dhaka", "Code": 7047},
-    {"Sl": 623, "BranchName": "Rayer Bazar Uposhakha Dhaka", "Code": 7048},
-    {"Sl": 624, "BranchName": "Mouchak Uposhakha", "Code": 7065},
-    {"Sl": 625, "BranchName": "Moghbazar Uposhakha", "Code": 7066},
-    {"Sl": 626, "BranchName": "Malibagh Moor Uposhakha Dhaka", "Code": 7067},
-    {"Sl": 627, "BranchName": "Malibagh Kancha Bazar Uposhakha", "Code": 7068},
-    {
-      "Sl": 628,
-      "BranchName": "Abul Hasnat Road Uposhakha  Dhaka",
-      "Code": 7095
-    },
-    {
-      "Sl": 629,
-      "BranchName": "Kazi Alauddin Road Uposhakha Dhaka",
-      "Code": 7096
-    },
-    {"Sl": 630, "BranchName": "Naya Bazar Moor Uposhakha Dhaka", "Code": 7097},
-    {
-      "Sl": 631,
-      "BranchName": "MirpurSherEBangla Stadium Uposhakha",
-      "Code": 7110
-    },
-    {"Sl": 632, "BranchName": "Kachukhet Uposhakha", "Code": 7111},
-    {"Sl": 633, "BranchName": "Borobagh Uposhakha  Dhaka", "Code": 7112},
-    {"Sl": 634, "BranchName": "Senpara Parbata Uposhakha  Dhaka", "Code": 7113},
-    {
-      "Sl": 635,
-      "BranchName": "Taltola Bazar Road Uposhakha  Dhaka",
-      "Code": 7114
-    },
-    {"Sl": 636, "BranchName": "East Kafrul Uposhakha Dhaka", "Code": 7115},
-    {"Sl": 637, "BranchName": "Shewrapara Uposhakha Dhaka", "Code": 7116},
-    {"Sl": 638, "BranchName": "Hatirpool Uposhakha", "Code": 7135},
-    {"Sl": 639, "BranchName": "Azimpur Uposhakha  Dhaka", "Code": 7136},
-    {"Sl": 640, "BranchName": "Science Lab Uposhakha Dhaka", "Code": 7137},
-    {"Sl": 641, "BranchName": "Chapra Mosjid Azimpur Dhaka", "Code": 7138},
-    {"Sl": 642, "BranchName": "Dilu Road Uposhakha", "Code": 7155},
-    {"Sl": 643, "BranchName": "Panthapath Uposhakha", "Code": 7156},
-    {"Sl": 644, "BranchName": "Banglamotor Uposhakha  Dhaka", "Code": 7157},
-    {
-      "Sl": 645,
-      "BranchName": "Tejturi Bazar RoadUposhakha Dhaka",
-      "Code": 7158
-    },
-    {"Sl": 646, "BranchName": "Indira Road Uposhakha Dhaka", "Code": 7159},
-    {"Sl": 647, "BranchName": "Tejkunipara Uposhakha Dhaka", "Code": 7160},
-    {"Sl": 648, "BranchName": "Holiday Inn Dhaka City Center", "Code": 7161},
-    {"Sl": 649, "BranchName": "WAPDA Road Uposhakha", "Code": 7180},
-    {"Sl": 650, "BranchName": "Noyatola Road Uposhakha  Dhaka", "Code": 7181},
-    {"Sl": 651, "BranchName": "TV Center Uposhakha  Dhaka", "Code": 7182},
-    {
-      "Sl": 652,
-      "BranchName": "Rampura Bou Bazar Uposhakha Dhaka",
-      "Code": 7183
-    },
-    {"Sl": 653, "BranchName": "Bijoynagar Uposhakha", "Code": 7200},
-    {"Sl": 654, "BranchName": "Paltan Uposhakha", "Code": 7201},
-    {"Sl": 655, "BranchName": "VIP Road Uposhakha  Dhaka", "Code": 7202},
-    {"Sl": 656, "BranchName": "Segunbagicha Uposhakha Dhaka", "Code": 7203},
-    {
-      "Sl": 657,
-      "BranchName": "Bangabandhu Avenue Uposhakha Dhaka",
-      "Code": 7204
-    },
-    {"Sl": 658, "BranchName": "Kamlapur Bazar Uposhakha Dhaka", "Code": 7205},
-    {"Sl": 659, "BranchName": "Arambagh Uposhakha  Dhaka", "Code": 7206},
-    {"Sl": 660, "BranchName": "Gausul Azam Avenue Uposhakha", "Code": 7220},
-    {"Sl": 661, "BranchName": "Uttara Sector 6 Uposhakha  Dhaka", "Code": 7221},
-    {"Sl": 662, "BranchName": "Uttarkhan Mazar Road  Uposhakha", "Code": 7222},
-    {"Sl": 663, "BranchName": "Moinertek Uposhakha  Dhaka", "Code": 7223},
-    {"Sl": 664, "BranchName": "Ashkona Bazar Uposhakha Dhaka", "Code": 7224},
-    {"Sl": 665, "BranchName": "Kanchkura Uposhakha Dhaka", "Code": 7225},
-    {"Sl": 666, "BranchName": "Nikunja 2 Uposhakha Dhaka", "Code": 7226},
-    {"Sl": 667, "BranchName": "Pakuria Bazar Uposhakha Dhaka", "Code": 7227},
-    {
-      "Sl": 668,
-      "BranchName": "Dakshinkhan Bazar Uposhakha Dhaka",
-      "Code": 7228
-    },
-    {
-      "Sl": 669,
-      "BranchName": "Joynal Market  Dakshinkhan  Dhaka",
-      "Code": 7229
-    },
-    {
-      "Sl": 670,
-      "BranchName": "Jahura Market Road Uposhakha Dhaka",
-      "Code": 7230
-    },
-    {"Sl": 671, "BranchName": "Azampur Kancha Bazar Upo. Dhaka", "Code": 7231},
-    {"Sl": 672, "BranchName": "Baunia Bazar Uposhakha Dhaka", "Code": 7232},
-    {"Sl": 673, "BranchName": "Asad Gate Uposhakha", "Code": 7245},
-    {"Sl": 674, "BranchName": "Monipuripara Uposhakha  Dhaka", "Code": 7246},
-    {"Sl": 675, "BranchName": "Shankar Uposhakha  Dhaka", "Code": 7247},
-    {"Sl": 676, "BranchName": "Town Hall Uposhakha Dhaka", "Code": 7248},
-    {"Sl": 677, "BranchName": "Sat Masjid Road Uposhakha Dhaka", "Code": 7249},
-    {"Sl": 678, "BranchName": "Mirpur DOHS Uposhakha", "Code": 7265},
-    {
-      "Sl": 679,
-      "BranchName": "Pallabi Phase   II Uposhakha  Dhaka",
-      "Code": 7266
-    },
-    {
-      "Sl": 680,
-      "BranchName": "Pallabi Extension Uposhakha  Dhaka",
-      "Code": 7267
-    },
-    {"Sl": 681, "BranchName": "Banarasi Palli Uposhakha  Dhaka", "Code": 7268},
-    {"Sl": 682, "BranchName": "Rupnagar Uposhakha  Dhaka", "Code": 7269},
-    {"Sl": 683, "BranchName": "Lalmati Uposhakha Dhaka", "Code": 7270},
-    {"Sl": 684, "BranchName": "Mirpur 6 Uposhakha Dhaka", "Code": 7271},
-    {"Sl": 685, "BranchName": "Mirpur 12 Uposhakha Dhaka", "Code": 7272},
-    {"Sl": 686, "BranchName": "Dewanpara Uposhakha Dhaka", "Code": 7273},
-    {"Sl": 687, "BranchName": "ECB Chattar Uposhakha Dhaka", "Code": 7274},
-    {"Sl": 688, "BranchName": "Shyampur Uposhakha Dhaka", "Code": 7285},
-    {"Sl": 689, "BranchName": "Roy Saheb Bazar Moor Uposhakha", "Code": 7286},
-    {"Sl": 690, "BranchName": "Lalkuthi Uposhakha Dhaka", "Code": 7287},
-    {"Sl": 691, "BranchName": "Sutrapur Uposhakha Dhaka", "Code": 7288},
-    {"Sl": 692, "BranchName": "Laxmibazar Uposhakha Dhaka", "Code": 7289},
-    {"Sl": 693, "BranchName": "Gendaria Uposhakha  Dhaka", "Code": 7300},
-    {"Sl": 694, "BranchName": "Distillery Road Uposhakha  Dhaka", "Code": 7301},
-    {"Sl": 695, "BranchName": "Dholaikhal Uposhakha Dhaka", "Code": 7302},
-    {"Sl": 696, "BranchName": "BCC Road Uposhakha Dhaka", "Code": 7303},
-    {"Sl": 697, "BranchName": "Kuril Chowrasta Uposhakha", "Code": 7315},
-    {"Sl": 698, "BranchName": "Bhatara Uposhakha", "Code": 7316},
-    {
-      "Sl": 699,
-      "BranchName": "Joar Shahara Bazar Uposhakha  Dhaka",
-      "Code": 7317
-    },
-    {"Sl": 700, "BranchName": "Madani Avenue Uposhakha Dhaka", "Code": 7318},
-    {"Sl": 701, "BranchName": "Nadda Uposhakha Dhaka", "Code": 7319},
-    {"Sl": 702, "BranchName": "Beraid Uposhakha Dhaka", "Code": 7320},
-    {"Sl": 703, "BranchName": "Kuratoli Bazar Uposhakha Dhaka", "Code": 7321},
-    {
-      "Sl": 704,
-      "BranchName": "Khandaker Bari Moor Uposhakha Dhaka",
-      "Code": 7323
-    },
-    {"Sl": 705, "BranchName": "Satarkul Uposhakha", "Code": 7335},
-    {
-      "Sl": 706,
-      "BranchName": "Middle Badda Post Office Road Dhaka",
-      "Code": 7336
-    },
-    {"Sl": 707, "BranchName": "Merul Badda Uposhakha Dhaka", "Code": 7337},
-    {"Sl": 708, "BranchName": "Gulshan Badda Link Road Dhaka", "Code": 7338},
-    {"Sl": 709, "BranchName": "Shahjadpur Uposhakha Dhaka", "Code": 7339},
-    {
-      "Sl": 710,
-      "BranchName": "Gulshan Lake Drive Road Upo. Dhaka",
-      "Code": 7340
-    },
-    {"Sl": 711, "BranchName": "Ittefaq More Uposhakha", "Code": 7355},
-    {"Sl": 712, "BranchName": "Sayadabad Uposhakha  Dhaka", "Code": 7356},
-    {"Sl": 713, "BranchName": "Golapbagh Uposhakha  Dhaka", "Code": 7357},
-    {
-      "Sl": 714,
-      "BranchName": "R.K. Mission Road Uposhakha Dhaka",
-      "Code": 7358
-    },
-    {"Sl": 715, "BranchName": "Hatkhola Fokir Banu Market Dhaka", "Code": 7359},
-    {"Sl": 716, "BranchName": "Rasulbagh Uposhakha Dhaka", "Code": 7375},
-    {"Sl": 717, "BranchName": "Niketon Bazar Uposhakha Dhaka", "Code": 7376},
-    {"Sl": 718, "BranchName": "Banani Bazar Uposhakha  Dhaka", "Code": 7395},
-    {"Sl": 719, "BranchName": "Banani Chairmanbari Upo. Dhaka", "Code": 7396},
-    {"Sl": 720, "BranchName": "Banani Graveyard Road Dhaka", "Code": 7397},
-    {"Sl": 721, "BranchName": "Tushardhara Uposhakha", "Code": 7415},
-    {"Sl": 722, "BranchName": "Rayerbagh Uposhakha", "Code": 7416},
-    {"Sl": 723, "BranchName": "Matuail Uposhakha", "Code": 7417},
-    {"Sl": 724, "BranchName": "Nurpur Uposhakha Dhaka", "Code": 7418},
-    {"Sl": 725, "BranchName": "Swamibagh Uposhakha Dhaka", "Code": 7419},
-    {"Sl": 726, "BranchName": "Dholaipar Uposhakha Dhaka", "Code": 7420},
-    {"Sl": 727, "BranchName": "Polashpur Uposhakha Dhaka", "Code": 7421},
-    {"Sl": 728, "BranchName": "East Jurain Uposhakha Dhaka", "Code": 7422},
-    {"Sl": 729, "BranchName": "Shuti Khalpar Uposhakha Dhaka", "Code": 7423},
-    {"Sl": 730, "BranchName": "Mohammadbag Uposhakha Dhaka", "Code": 7424},
-    {"Sl": 731, "BranchName": "Dhaka Uddan Uposhakha", "Code": 7435},
-    {"Sl": 732, "BranchName": "Mohammadpur Bus Stand Uposhakha", "Code": 7436},
-    {"Sl": 733, "BranchName": "Babor Road Uposhakha  Dhaka", "Code": 7437},
-    {
-      "Sl": 734,
-      "BranchName": "Mohammadia Housing Main Road Dhaka",
-      "Code": 7438
-    },
-    {"Sl": 735, "BranchName": "Sir Salimullah Road Dhaka", "Code": 7439},
-    {"Sl": 736, "BranchName": "Adabor 16 Uposhakha Dhaka", "Code": 7440},
-    {"Sl": 737, "BranchName": "Katasur Uposhakha Dhaka", "Code": 7441},
-    {"Sl": 738, "BranchName": "Tajmahal Road Uposhakha Dhaka", "Code": 7442},
-    {"Sl": 739, "BranchName": "Noorjahan Road Uposhakha Dhaka", "Code": 7443},
-    {"Sl": 740, "BranchName": "Adabor 11 Uposhakha Dhaka", "Code": 7444},
-    {"Sl": 741, "BranchName": "West Nakhalpara Uposhakha  Dhaka", "Code": 7455},
-    {"Sl": 742, "BranchName": "East Nakhalpara Uposhakha Dhaka", "Code": 7456},
-    {"Sl": 743, "BranchName": "Kunipara Happy Homes Dhaka", "Code": 7457},
-    {"Sl": 744, "BranchName": "Hemayetpur Uposhakha", "Code": 7475},
-    {"Sl": 745, "BranchName": "Maddho Paikpara Uposhakha", "Code": 7476},
-    {
-      "Sl": 746,
-      "BranchName": "Shyamoli Bus Stand Uposhakha  Dhaka",
-      "Code": 7477
-    },
-    {"Sl": 747, "BranchName": "Kallayanpur Uposhakha Dhaka", "Code": 7478},
-    {"Sl": 748, "BranchName": "Golartek Uposhakha Dhaka", "Code": 7479},
-    {"Sl": 749, "BranchName": "Shahjahan Market Uposhakha Dhaka", "Code": 7480},
-    {"Sl": 750, "BranchName": "Kaundia Uposhakha  Dhaka", "Code": 7481},
-    {
-      "Sl": 751,
-      "BranchName": "Boro Bazar Gabtoli Uposhakha  Dhaka",
-      "Code": 7482
-    },
-    {"Sl": 752, "BranchName": "Sarulia Uposhakha", "Code": 7490},
-    {"Sl": 753, "BranchName": "Bamuil Uposhakha", "Code": 7491},
-    {"Sl": 754, "BranchName": "Sanarpar Uposhakha", "Code": 7492},
-    {"Sl": 755, "BranchName": "Kazla Uposhakha  Dhaka", "Code": 7493},
-    {"Sl": 756, "BranchName": "Dogair Bazar Uposhakha Dhaka", "Code": 7494},
-    {"Sl": 757, "BranchName": "Matuail School Road Upo. Dhaka", "Code": 7495},
-    {"Sl": 758, "BranchName": "South Jatrabari Uposhakha Dhaka", "Code": 7496},
-    {"Sl": 759, "BranchName": "Wari Uposhakha", "Code": 7505},
-    {"Sl": 760, "BranchName": "Karimullahbagh Uposhakha Dhaka", "Code": 7506},
-    {"Sl": 761, "BranchName": "Mirhazirbagh Uposhakha Dhaka", "Code": 7507},
-    {"Sl": 762, "BranchName": "Mollartek Kosaibari Upo  Dhaka", "Code": 7508},
-    {"Sl": 763, "BranchName": "Abdullahpur Bus Stand Uposhakha", "Code": 7515},
-    {"Sl": 764, "BranchName": "Fulbaria Bazar Uposhakha  Dhaka", "Code": 7516},
-    {"Sl": 765, "BranchName": "Kamarpara Uposhakha  Dhaka", "Code": 7517},
-    {"Sl": 766, "BranchName": "Uttarkhan Masterpara Uposhakha", "Code": 7518},
-    {
-      "Sl": 767,
-      "BranchName": "Sector 12 Khalpar Uposhakha Dhaka",
-      "Code": 7519
-    },
-    {"Sl": 768, "BranchName": "Rajabari Chowrasta Upo. Dhaka", "Code": 7520},
-    {"Sl": 769, "BranchName": "Madhya Pirerbag Uposhakha", "Code": 7530},
-    {"Sl": 770, "BranchName": "Mazar Road Uposhakha", "Code": 7531},
-    {"Sl": 771, "BranchName": "Rainkhola Bazar Uposhakha Dhaka", "Code": 7532},
-    {"Sl": 772, "BranchName": "Dhan Kheter More Uposhakha Dhaka", "Code": 7533},
-    {"Sl": 773, "BranchName": "Tolarbag Uposhakha Dhaka", "Code": 7534},
-    {"Sl": 774, "BranchName": "Mirpur 1 Bazar Uposhakha Dhaka", "Code": 7535},
-    {"Sl": 775, "BranchName": "Kallayanpur Natun Bazar Dhaka", "Code": 7536},
-    {"Sl": 776, "BranchName": "South Banasree Uposhakha", "Code": 7560},
-    {"Sl": 777, "BranchName": "Banasree A Block Uposhakha Dhaka", "Code": 7561},
-    {"Sl": 778, "BranchName": "Saherunbagh Uposhakha Dhaka", "Code": 7562},
-    {"Sl": 779, "BranchName": "Banasree F Block Uposhakha Dhaka", "Code": 7563},
-    {"Sl": 780, "BranchName": "Aftabnagar Uposhakha Dhaka", "Code": 7564},
-    {"Sl": 781, "BranchName": "Taltola Uposhakha", "Code": 7580},
-    {"Sl": 782, "BranchName": "Madartek Uposhakha  Dhaka", "Code": 7581},
-    {"Sl": 783, "BranchName": "Nandipara Uposhakha  Dhaka", "Code": 7582},
-    {"Sl": 784, "BranchName": "Bashabo Uposhakha  Dhaka", "Code": 7583},
-    {"Sl": 785, "BranchName": "North Mugda Uposhakha  Dhaka", "Code": 7584},
-    {"Sl": 786, "BranchName": "South Goran Uposhakha  Dhaka", "Code": 7585},
-    {"Sl": 787, "BranchName": "Manda Uposhakha Dhaka", "Code": 7586},
-    {
-      "Sl": 788,
-      "BranchName": "Bouddho Mondir Sabujbag Uposhakha",
-      "Code": 7587
-    },
-    {"Sl": 789, "BranchName": "Dakhingaon Bazar Uposhakha Dhaka", "Code": 7588},
-    {"Sl": 790, "BranchName": "Holan Bazar  Dakshinkhan  Dhaka", "Code": 7610},
-    {"Sl": 791, "BranchName": "Bhaber Char Bazar Munsiganj", "Code": 7620},
-    {"Sl": 792, "BranchName": "Baradi Bus Stop Narayanganj", "Code": 7621},
-    {"Sl": 793, "BranchName": "Jamaldi Uposhakha Munshiganj", "Code": 7622},
-    {
-      "Sl": 794,
-      "BranchName": "Meghna Ghat Uposhakha Narayanganj",
-      "Code": 7623
-    },
-    {"Sl": 795, "BranchName": "Kashipur Uposhakha  Narayanganj", "Code": 7810},
-    {
-      "Sl": 796,
-      "BranchName": "Tamak Potti Uposhakha Narayanganj",
-      "Code": 7811
-    },
-    {"Sl": 797, "BranchName": "Masdair Uposhakha Narayanganj", "Code": 7812},
-    {"Sl": 798, "BranchName": "Trishal Uposhakha  Mymensingh", "Code": 7820},
-    {
-      "Sl": 799,
-      "BranchName": "Shombhuganj Uposhakha  Mymensingh",
-      "Code": 7821
-    },
-    {"Sl": 800, "BranchName": "Natun Bazar Uposhakha Mymensingh", "Code": 7822},
-    {"Sl": 801, "BranchName": "Muktagacha Uposhakha Mymensingh", "Code": 7823},
-    {"Sl": 802, "BranchName": "Fulpur Uposhakha Mymensingh", "Code": 7824},
-    {"Sl": 803, "BranchName": "Tarakanda Uposhakha Mymensingh", "Code": 7825},
-    {"Sl": 804, "BranchName": "Purbadhola Uposhakha Netrokona", "Code": 7826},
-    {"Sl": 805, "BranchName": "Ishwarganj Uposhakha Mymensingh", "Code": 7827},
-    {"Sl": 806, "BranchName": "Shyamgonj Uposhakha Netrokona", "Code": 7828},
-    {"Sl": 807, "BranchName": "Telegati Bazar Atpara Netrokona", "Code": 7829},
-    {"Sl": 808, "BranchName": "Gafargaon Uposhakha Mymensingh", "Code": 7830},
-    {"Sl": 809, "BranchName": "Charpara Uposhakha Mymensingh", "Code": 7831},
-    {
-      "Sl": 810,
-      "BranchName": "Barhatta Bazar Uposhakha Netrokona",
-      "Code": 7832
-    },
-    {"Sl": 811, "BranchName": "Kalmakanda Uposhakha Netrokona", "Code": 7833},
-    {"Sl": 812, "BranchName": "Madan Uposhakha Netrokona", "Code": 7834},
-    {"Sl": 813, "BranchName": "Gouripur  Mymensingh Mymensingh", "Code": 7835},
-    {"Sl": 814, "BranchName": "Haluaghat Uposhakha Mymensingh", "Code": 7836},
-    {"Sl": 815, "BranchName": "Kewatkhali Uposhakha Mymensingh", "Code": 7837},
-    {"Sl": 816, "BranchName": "Kendua Bazar Uposhakha Netrokona", "Code": 7838},
-    {"Sl": 817, "BranchName": "Purbadhala Bazar Upo Netrokona", "Code": 7839},
-    {"Sl": 818, "BranchName": "Goalchamot Uposhakha", "Code": 7840},
-    {
-      "Sl": 819,
-      "BranchName": "Tepakhola Bazar Uposhakha Faridpur",
-      "Code": 7841
-    },
-    {
-      "Sl": 820,
-      "BranchName": "Charbhadrasan Bazar Upo. Faridpur",
-      "Code": 7842
-    },
-    {
-      "Sl": 821,
-      "BranchName": "Kanaipur Bazar Uposhakha Faridpur",
-      "Code": 7843
-    },
-    {"Sl": 822, "BranchName": "Gozaria Bazar Uposhakha Faridpur", "Code": 7844},
-    {
-      "Sl": 823,
-      "BranchName": "Kholilpur Bazar Uposhakha Faridpur",
-      "Code": 7845
-    },
-    {"Sl": 824, "BranchName": "Hatkrisnapur Uposhakha Faridpur", "Code": 7846},
-    {
-      "Sl": 825,
-      "BranchName": "Sadarpur Bazar Uposhakha Faridpur",
-      "Code": 7847
-    },
-    {"Sl": 826, "BranchName": "Nolia Jamalpur Bazar  Faridpur", "Code": 7848},
-    {"Sl": 827, "BranchName": "Boalmari Uposhakha Faridpur", "Code": 7849},
-    {"Sl": 828, "BranchName": "Alfadanga Uposhakha Faridpur", "Code": 7850},
-    {"Sl": 829, "BranchName": "Satoir Bazar Uposhakha Faridpur", "Code": 7851},
-    {
-      "Sl": 830,
-      "BranchName": "Moyendia Bazar Uposhakha Faridpur",
-      "Code": 7852
-    },
-    {"Sl": 831, "BranchName": "Saltha Bazar Uposhakha Faridpur", "Code": 7853},
-    {
-      "Sl": 832,
-      "BranchName": "Momin Khar Hat Uposhakha Faridpur",
-      "Code": 7854
-    },
-    {"Sl": 833, "BranchName": "Pathrail Uposhakha", "Code": 7855},
-    {"Sl": 834, "BranchName": "Bottola Uposhakha Tangail", "Code": 7856},
-    {"Sl": 835, "BranchName": "Elenga Uposhakha Tangail", "Code": 7857},
-    {"Sl": 836, "BranchName": "Ghatail Uposhakha Tangail", "Code": 7858},
-    {"Sl": 837, "BranchName": "Takterchala Uposhakha Tangail", "Code": 7859},
-    {"Sl": 838, "BranchName": "Tangail Baby Stand Uposhakha", "Code": 7860},
-    {"Sl": 839, "BranchName": "Bhuapur Uposhakha Tangail", "Code": 7861},
-    {"Sl": 840, "BranchName": "College Para Uposhakha Tangail", "Code": 7862},
-    {"Sl": 841, "BranchName": "Shakhipur Uposhakha Tangail", "Code": 7863},
-    {"Sl": 842, "BranchName": "Registry Para Uposhakha Tangail", "Code": 7864},
-    {"Sl": 843, "BranchName": "Khanpur Bazar Narayanganj", "Code": 7865},
-    {"Sl": 844, "BranchName": "Ajmeribag Tallah Narayanganj", "Code": 7866},
-    {"Sl": 845, "BranchName": "Tagarpar Isdair Upo. Narayanganj", "Code": 7867},
-    {"Sl": 846, "BranchName": "Narayanganj BB Road Uposhakha", "Code": 7868},
-    {
-      "Sl": 847,
-      "BranchName": "Kalir Bazar Uposhakha Narayanganj",
-      "Code": 7869
-    },
-    {"Sl": 848, "BranchName": "Deobhog Uposhakha Narayanganj", "Code": 7870},
-    {"Sl": 849, "BranchName": "Chashara Balur Math Narayanganj", "Code": 7871},
-    {"Sl": 850, "BranchName": "Baburail Bazar Upo Narayanganj", "Code": 7872},
-    {"Sl": 851, "BranchName": "Damudya Uposhakha Shariatpur", "Code": 7875},
-    {"Sl": 852, "BranchName": "Khoajpur Uposhakha Madaripur", "Code": 7876},
-    {"Sl": 853, "BranchName": "Ghorishar Uposhakha Shariatpur", "Code": 7877},
-    {"Sl": 854, "BranchName": "Vedorganj Uposhakha Shariatpur", "Code": 7878},
-    {"Sl": 855, "BranchName": "Zazira Uposhakha Shariatpur", "Code": 7879},
-    {
-      "Sl": 856,
-      "BranchName": "Monohor Bazar Uposhakha Shariatpur",
-      "Code": 7880
-    },
-    {"Sl": 857, "BranchName": "Gosairhat Uposhakha Shariatpur", "Code": 7881},
-    {
-      "Sl": 858,
-      "BranchName": "Sakhipur Shariatpur Upo Shariatpur",
-      "Code": 7882
-    },
-    {
-      "Sl": 859,
-      "BranchName": "Kaliganj Bazar Uposhakha  Gazipur",
-      "Code": 7885
-    },
-    {"Sl": 860, "BranchName": "Palash Uposhakha  Narsingdi", "Code": 7886},
-    {"Sl": 861, "BranchName": "Bashair Bazar Uposhakha Gazipur", "Code": 7887},
-    {"Sl": 862, "BranchName": "Charsindur Bazar Upo. Narshingdi", "Code": 7888},
-    {"Sl": 863, "BranchName": "Dolan Bazar Uposhakha Gazipur", "Code": 7889},
-    {"Sl": 864, "BranchName": "Monohordi Uposhakha", "Code": 7895},
-    {"Sl": 865, "BranchName": "Karimpur Uposhakha  Narsingdi", "Code": 7896},
-    {
-      "Sl": 866,
-      "BranchName": "Shibpur Bazar Uposhakha  Narsingdi",
-      "Code": 7897
-    },
-    {"Sl": 867, "BranchName": "Baroicha Uposhakha  Narsingdi", "Code": 7898},
-    {"Sl": 868, "BranchName": "Itakhola Uposhakha Narsingdi", "Code": 7899},
-    {
-      "Sl": 869,
-      "BranchName": "Hatirdia Bazar Uposhakha Narsingdi",
-      "Code": 7900
-    },
-    {
-      "Sl": 870,
-      "BranchName": "Narsingdi Bazar Uposhakha Narsingdi",
-      "Code": 7901
-    },
-    {
-      "Sl": 871,
-      "BranchName": "Poradia Bazar Uposhakha Narsingdi",
-      "Code": 7902
-    },
-    {"Sl": 872, "BranchName": "Sararchar Uposhakha  Kishoreganj", "Code": 7905},
-    {"Sl": 873, "BranchName": "Katiadi Uposhakha Kishoreganj", "Code": 7906},
-    {"Sl": 874, "BranchName": "Kuliarchar Uposhakha Kishoreganj", "Code": 7907},
-    {"Sl": 875, "BranchName": "Tarail Uposhakha Kishoreganj", "Code": 7908},
-    {"Sl": 876, "BranchName": "Nikli Kishoreganj", "Code": 7909},
-    {"Sl": 877, "BranchName": "Tongibari Uposhakha  Munshiganj", "Code": 7915},
-    {"Sl": 878, "BranchName": "Hatimara Uposhakha  Munshiganj", "Code": 7916},
-    {"Sl": 879, "BranchName": "Munshiganj Sadar Munshiganj", "Code": 7917},
-    {"Sl": 880, "BranchName": "Baligaon Uposhakha Munshiganj", "Code": 7918},
-    {"Sl": 881, "BranchName": "Rikabi Bazar Munshiganj", "Code": 7919},
-    {"Sl": 882, "BranchName": "Paschim Mukterpur Upo Munshiganj", "Code": 7920},
-    {"Sl": 883, "BranchName": "Banti Bazar Uposhakha", "Code": 7925},
-    {
-      "Sl": 884,
-      "BranchName": "Khoria Bazar Uposhakha Narayanganj",
-      "Code": 7926
-    },
-    {"Sl": 885, "BranchName": "Shekharchar Baburhat Narsingdi", "Code": 7927},
-    {"Sl": 886, "BranchName": "Chanpara Bazar Upo. Narayanganj", "Code": 7928},
-    {"Sl": 887, "BranchName": "Kashimpur Uposhakha  Gazipur", "Code": 7935},
-    {"Sl": 888, "BranchName": "Baimail Uposhakha Gazipur", "Code": 7936},
-    {"Sl": 889, "BranchName": "Noser Market Uposhakha Gazipur", "Code": 7937},
-    {
-      "Sl": 890,
-      "BranchName": "Jalirpar Bazar Uposhakha Gopalganj",
-      "Code": 7945
-    },
-    {"Sl": 891, "BranchName": "Kabirajpur Bazar Upo. Madaripur", "Code": 7946},
-    {"Sl": 892, "BranchName": "Mostafapur Uposhakha Madaripur", "Code": 7947},
-    {"Sl": 893, "BranchName": "Charmuguria Uposhakha Madaripur", "Code": 7948},
-    {"Sl": 894, "BranchName": "Bhanga Bazar Uposhakha Faridpur", "Code": 7949},
-    {"Sl": 895, "BranchName": "Kalkini Uposhakha Madaripur", "Code": 7950},
-    {"Sl": 896, "BranchName": "Shibchar Uposhakha Madaripur", "Code": 7951},
-    {"Sl": 897, "BranchName": "Genda Uposhakha", "Code": 7955},
-    {"Sl": 898, "BranchName": "Kalma Uposhakha", "Code": 7956},
-    {"Sl": 899, "BranchName": "Singair Road Uposhakha Dhaka", "Code": 7957},
-    {"Sl": 900, "BranchName": "Kuturia Uposhakha Dhaka", "Code": 7958},
-    {
-      "Sl": 901,
-      "BranchName": "Shahibag Chowrasta Uposhakha Dhaka",
-      "Code": 7959
-    },
-    {
-      "Sl": 902,
-      "BranchName": "Rajfulbaria Bazar Uposhakha Dhaka",
-      "Code": 7960
-    },
-    {"Sl": 903, "BranchName": "Bank Town Uposhakha Dhaka", "Code": 7961},
-    {
-      "Sl": 904,
-      "BranchName": "Savar Thana Stand Uposhakha Dhaka",
-      "Code": 7962
-    },
-    {"Sl": 905, "BranchName": "Chayabithi Uposhakha Dhaka", "Code": 7963},
-    {"Sl": 906, "BranchName": "Pagla Uposhakha Narayanganj", "Code": 7970},
-    {"Sl": 907, "BranchName": "Dharmaganj Uposhakha Narayanganj", "Code": 7971},
-    {
-      "Sl": 908,
-      "BranchName": "Muslimnagar Uposhakha Narayanganj",
-      "Code": 7972
-    },
-    {"Sl": 909, "BranchName": "Fatullah Bazar  NARAYANGANJ", "Code": 7973},
-    {"Sl": 910, "BranchName": "Aliganj Uposhakha Narayanganj", "Code": 7974},
-    {"Sl": 911, "BranchName": "Boktaboli Bazar Upo Narayanganj", "Code": 7975},
-    {
-      "Sl": 912,
-      "BranchName": "BSCIC Fakir Market Uposhaka Gazipur",
-      "Code": 7980
-    },
-    {"Sl": 913, "BranchName": "Mirer Bazar Uposhakha  Gazipur", "Code": 7981},
-    {
-      "Sl": 914,
-      "BranchName": "Station Road Natun Bazar Tongi Gazi",
-      "Code": 7982
-    },
-    {"Sl": 915, "BranchName": "Pubail Bazar Uposhakha Gazipur", "Code": 7983},
-    {"Sl": 916, "BranchName": "Pubail Thana Road Upo  Gazipur", "Code": 7984},
-    {"Sl": 917, "BranchName": "Galimpur Uposhakha  Dhaka", "Code": 7990},
-    {"Sl": 918, "BranchName": "Komorganj Uposhakha Dhaka", "Code": 7991},
-    {"Sl": 919, "BranchName": "Paragram Hat Dhaka", "Code": 7992},
-    {"Sl": 920, "BranchName": "Bandura Dhaka", "Code": 7993},
-    {"Sl": 921, "BranchName": "Baraikhali Bazar Upo Munshiganj", "Code": 7994},
-    {"Sl": 922, "BranchName": "Sataish Uposhakha", "Code": 8000},
-    {"Sl": 923, "BranchName": "Boro Bari Uposhakha  Gazipur", "Code": 8001},
-    {"Sl": 924, "BranchName": "Maleker Bari Uposhakha Gazipur", "Code": 8002},
-    {"Sl": 925, "BranchName": "Sign Board Gazipur Uposhakha", "Code": 8003},
-    {"Sl": 926, "BranchName": "Nayarhat Bazar Uposhakha", "Code": 8015},
-    {"Sl": 927, "BranchName": "Kalampur Uposhakha  Dhaka", "Code": 8016},
-    {"Sl": 928, "BranchName": "Saturia Uposhakha Dhaka", "Code": 8017},
-    {"Sl": 929, "BranchName": "Khejurbag Uposhakha", "Code": 8025},
-    {"Sl": 930, "BranchName": "Chunkutia Uposhakha Dhaka", "Code": 8026},
-    {"Sl": 931, "BranchName": "East Chorail Uposhakha Dhaka", "Code": 8027},
-    {"Sl": 932, "BranchName": "Doleshwar Uposhakha Dhaka", "Code": 8028},
-    {"Sl": 933, "BranchName": "Alukanda Stand Bazar Dhaka", "Code": 8029},
-    {"Sl": 934, "BranchName": "Zinzira Uposhakha Dhaka", "Code": 8030},
-    {"Sl": 935, "BranchName": "Baipail Uposhakha", "Code": 8035},
-    {"Sl": 936, "BranchName": "Zirabo Uposhakha", "Code": 8036},
-    {"Sl": 937, "BranchName": "Kathgora Bazar Uposhakha Dhaka", "Code": 8037},
-    {"Sl": 938, "BranchName": "Yusuf Market Uposhakha Dhaka", "Code": 8038},
-    {"Sl": 939, "BranchName": "Kurgaon Uposhakha Dhaka", "Code": 8039},
-    {"Sl": 940, "BranchName": "South Gazirchat Uposhakha Dhaka", "Code": 8040},
-    {"Sl": 941, "BranchName": "Ambagan Uposhakha Dhaka", "Code": 8041},
-    {"Sl": 942, "BranchName": "Ghoshbag Uposhakha Dhaka", "Code": 8042},
-    {"Sl": 943, "BranchName": "Vadail Bazar Uposhakha Dhaka", "Code": 8043},
-    {"Sl": 944, "BranchName": "Ashulia Bazar Uposhakha Dhaka", "Code": 8044},
-    {"Sl": 945, "BranchName": "Amulia Staff Quarter Uposhakha", "Code": 8045},
-    {"Sl": 946, "BranchName": "Modonpur Uposhakha  Narayanganj", "Code": 8046},
-    {"Sl": 947, "BranchName": "Bhulta Uposhakha  Narayanganj", "Code": 8047},
-    {
-      "Sl": 948,
-      "BranchName": "Shiddhirganj Uposhakha  Narayanganj",
-      "Code": 8048
-    },
-    {"Sl": 949, "BranchName": "Kanchpur Uposhakha Narayanganj", "Code": 8049},
-    {
-      "Sl": 950,
-      "BranchName": "Godnail Chowdhurybari Narayanganj",
-      "Code": 8050
-    },
-    {"Sl": 951, "BranchName": "Borpa Uposhakha Narayanganj", "Code": 8051},
-    {"Sl": 952, "BranchName": "Borabo Bus Stand Narayanganj", "Code": 8052},
-    {"Sl": 953, "BranchName": "Chandra Uposhakha", "Code": 8060},
-    {"Sl": 954, "BranchName": "Baroipara Uposhakha", "Code": 8061},
-    {"Sl": 955, "BranchName": "Chakrabarti Bazar Uposhakha", "Code": 8062},
-    {"Sl": 956, "BranchName": "Beximco Industrial Park Gazipur", "Code": 8063},
-    {"Sl": 957, "BranchName": "Kaliakoir Uposhakha Gazipur", "Code": 8064},
-    {"Sl": 958, "BranchName": "Gorai Uposhakha Tangail", "Code": 8065},
-    {"Sl": 959, "BranchName": "Ghior Bazar Uposhakha", "Code": 8070},
-    {"Sl": 960, "BranchName": "Baniajuri Bazar Upo. Manikganj", "Code": 8071},
-    {"Sl": 961, "BranchName": "Aricha Ghat Uposhakha Manikganj", "Code": 8072},
-    {"Sl": 962, "BranchName": "Nali Bazar Uposhakha Manikganj", "Code": 8073},
-    {
-      "Sl": 963,
-      "BranchName": "Charigram Bazar Uposhakha Manikganj",
-      "Code": 8074
-    },
-    {"Sl": 964, "BranchName": "Jamsha Bazar Manikganj", "Code": 8075},
-    {"Sl": 965, "BranchName": "Jhitka Bazar Uposhakha Manikganj", "Code": 8076},
-    {"Sl": 966, "BranchName": "Golora I/A Uposhakha Manikganj", "Code": 8077},
-    {"Sl": 967, "BranchName": "Shreenagar Uposhakha", "Code": 8080},
-    {"Sl": 968, "BranchName": "Joypara Uposhakha  Dhaka", "Code": 8081},
-    {"Sl": 969, "BranchName": "Vaggyakul Uposhakha Munshigonj", "Code": 8082},
-    {
-      "Sl": 970,
-      "BranchName": "Al Amin Bazar Uposhakha Munshigonj",
-      "Code": 8083
-    },
-    {"Sl": 971, "BranchName": "Fultola Bazar Uposhakha Dhaka", "Code": 8084},
-    {"Sl": 972, "BranchName": "Radhaganj Uposhakha", "Code": 8085},
-    {
-      "Sl": 973,
-      "BranchName": "Atosh Ali Bazar Uposhakha Narsingdi",
-      "Code": 8086
-    },
-    {
-      "Sl": 974,
-      "BranchName": "Raipura Bazar Uposhakha Narsingdi",
-      "Code": 8087
-    },
-    {
-      "Sl": 975,
-      "BranchName": "Charsubuddi Bazar Upo. Narsingdhi",
-      "Code": 8088
-    },
-    {"Sl": 976, "BranchName": "Abdullahpur Uposhakha", "Code": 8090},
-    {"Sl": 977, "BranchName": "Nimtola Uposhakha Munshiganj", "Code": 8091},
-    {
-      "Sl": 978,
-      "BranchName": "Saban Factory More Uposhakha Dhaka",
-      "Code": 8092
-    },
-    {"Sl": 979, "BranchName": "Hasnabad Ekuria", "Code": 8093},
-    {"Sl": 980, "BranchName": "Ichapura Bazar  Munshiganj Upo", "Code": 8094},
-    {"Sl": 981, "BranchName": "Baluchar Bazar Upo Munshiganj", "Code": 8095},
-    {"Sl": 982, "BranchName": "Bhaluka Uposhakha Mymensingh", "Code": 8100},
-    {"Sl": 983, "BranchName": "Batajore Bazar Mymenshingh", "Code": 8101},
-    {"Sl": 984, "BranchName": "Bogar Bazar Uposhakha Mymenshing", "Code": 8102},
-    {"Sl": 985, "BranchName": "Square Masterbari Upo Mymensingh", "Code": 8103},
-    {"Sl": 986, "BranchName": "Sona Miah Bazar Narayanganj", "Code": 8110},
-    {"Sl": 987, "BranchName": "Hajiganj Wapdar Pool Narayanganj", "Code": 8111},
-    {"Sl": 988, "BranchName": "Station Road Fatullah Uposhakha", "Code": 8112},
-    {"Sl": 989, "BranchName": "Shimultoli Uposhakha", "Code": 8115},
-    {"Sl": 990, "BranchName": "Salna Bazar Uposhakha Gazipur", "Code": 8116},
-    {"Sl": 991, "BranchName": "Gorgoria Master Bari  Gazipur", "Code": 8135},
-    {"Sl": 992, "BranchName": "Joina Bazar Uposhakha Gazipur", "Code": 8136},
-    {"Sl": 993, "BranchName": "Memberbari Uposhakha Gazipur", "Code": 8137},
-    {"Sl": 994, "BranchName": "Kaoraid Bazar Uposhakha Gazipur", "Code": 8138},
-    {"Sl": 995, "BranchName": "Nakla Uttar Bazar Upo. Sherpur", "Code": 8145},
-    {"Sl": 996, "BranchName": "Sreebordi Uposhakha Sherpur", "Code": 8146},
-    {"Sl": 997, "BranchName": "Kusumhati Uposhakha Sherpur", "Code": 8147},
-    {"Sl": 998, "BranchName": "Jhenaigati Uposhakha Sherpur", "Code": 8148},
-    {"Sl": 999, "BranchName": "Nalitabari Uposhakha Sherpur", "Code": 8149},
-    {"Sl": 1000, "BranchName": "Nabiganj Uposhakha", "Code": 8155},
-    {
-      "Sl": 1001,
-      "BranchName": "Forazikanda Uposhakha Narayanganj",
-      "Code": 8156
-    },
-    {
-      "Sl": 1002,
-      "BranchName": "Mongoler Gaon Bottola Bazar Nganj",
-      "Code": 8157
-    },
-    {"Sl": 1003, "BranchName": "Sokal Bazar Uposhakha Jamalpur", "Code": 8165},
-    {
-      "Sl": 1004,
-      "BranchName": "Melandah Bazar Uposhakha Jamalpur",
-      "Code": 8166
-    },
-    {"Sl": 1005, "BranchName": "Balijuri Uposhakha Jamalpur", "Code": 8167},
-    {
-      "Sl": 1006,
-      "BranchName": "Islampur Bazar Jamalpur Uposhakha",
-      "Code": 8168
-    },
-    {
-      "Sl": 1007,
-      "BranchName": "Char Rajibpur Uposhakha Kurigram",
-      "Code": 8169
-    },
-    {
-      "Sl": 1008,
-      "BranchName": "Nandina Bazar Uposhakha Jamalpur",
-      "Code": 8170
-    },
-    {
-      "Sl": 1009,
-      "BranchName": "Hazipur Bazar  Jamalpur Uposhakha",
-      "Code": 8171
-    },
-    {
-      "Sl": 1010,
-      "BranchName": "Mahmudpur Bazar Jamalpur Uposhakha",
-      "Code": 8172
-    },
-    {"Sl": 1011, "BranchName": "Rowmari Uposhakha Kurigram", "Code": 8173},
-    {
-      "Sl": 1012,
-      "BranchName": "Narundi Bazar Uposhakha Jamalpur",
-      "Code": 8174
-    },
-    {"Sl": 1013, "BranchName": "Khilkhet Uposhakha  Dhaka", "Code": 8175},
-    {"Sl": 1014, "BranchName": "Kanchan Uposhakha Narayanganj", "Code": 8176},
-    {"Sl": 1015, "BranchName": "Dumni Uposhakha Dhaka", "Code": 8177},
-    {
-      "Sl": 1016,
-      "BranchName": "Rupganj Sub Registry Office  N.Ganj",
-      "Code": 8178
-    },
-    {
-      "Sl": 1017,
-      "BranchName": "Ulukhola Bazar Uposhakha Gazipur",
-      "Code": 8179
-    },
-    {"Sl": 1018, "BranchName": "Natiapara Bazar Uposhakha", "Code": 8185},
-    {"Sl": 1019, "BranchName": "Mirzapur Uposhakha Tangail", "Code": 8186},
-    {"Sl": 1020, "BranchName": "Basail Uposhakha Tangail", "Code": 8187},
-    {"Sl": 1021, "BranchName": "Sagardighi Uposhakha Tangail", "Code": 8188},
-    {"Sl": 1022, "BranchName": "Saheprotap Bazar Uposhakha", "Code": 8195},
-    {"Sl": 1023, "BranchName": "Velanagar", "Code": 8196},
-    {"Sl": 1024, "BranchName": "Bochila Uposhakha  Dhaka", "Code": 8205},
-    {"Sl": 1025, "BranchName": "Ruhitpur Uposhakha Dhaka", "Code": 8206},
-    {"Sl": 1026, "BranchName": "Kalatiya Uposhakha Dhaka", "Code": 8207},
-    {"Sl": 1027, "BranchName": "Kholamora Uposhakha Dhaka", "Code": 8208},
-    {"Sl": 1028, "BranchName": "Jawlahati Chawrasta Upo. Dhaka", "Code": 8209},
-    {"Sl": 1029, "BranchName": "Jhawchar Uposhakha Dhaka", "Code": 8210},
-    {"Sl": 1030, "BranchName": "Ati Bazar Dhaka", "Code": 8211},
-    {"Sl": 1031, "BranchName": "Jhalkuri Uposhakha", "Code": 8215},
-    {"Sl": 1032, "BranchName": "Delpara Bazar Uposhakha", "Code": 8216},
-    {
-      "Sl": 1033,
-      "BranchName": "Hirajheel Uposhakha  Narayanganj",
-      "Code": 8217
-    },
-    {
-      "Sl": 1034,
-      "BranchName": "Sanarpar Rahim Market Road N.ganj",
-      "Code": 8218
-    },
-    {"Sl": 1035, "BranchName": "Signboard Uposhakha Narayanganj", "Code": 8219},
-    {"Sl": 1036, "BranchName": "Dattapara Uposhakha Dhaka", "Code": 8225},
-    {"Sl": 1037, "BranchName": "Bhadam Bazar Uposhakha Gazipur", "Code": 8226},
-    {"Sl": 1038, "BranchName": "Kha Para Road Tongi Gazipur", "Code": 8227},
-    {"Sl": 1039, "BranchName": "Bangla Bazar Uposhakha", "Code": 8235},
-    {
-      "Sl": 1040,
-      "BranchName": "Monipur Bazar Uposhakha Joydebpur",
-      "Code": 8236
-    },
-    {"Sl": 1041, "BranchName": "Rajendrapur Gazipur", "Code": 8237},
-    {
-      "Sl": 1042,
-      "BranchName": "Jamalpur Chowrasta Bazar  Gazipur",
-      "Code": 8238
-    },
-    {"Sl": 1043, "BranchName": "Lohagachhia Bazar Gazipur", "Code": 8239},
-    {
-      "Sl": 1044,
-      "BranchName": "Fulbaria Bazar Kaliakoir  Gazipur",
-      "Code": 8240
-    },
-    {"Sl": 1045, "BranchName": "Amraid Bazar Uposhakha  Gazipur", "Code": 8245},
-    {
-      "Sl": 1046,
-      "BranchName": "Raniganj Bazar Uposhakha  Gazipur",
-      "Code": 8246
-    },
-    {"Sl": 1047, "BranchName": "Targaon Uposhakha Gazipur", "Code": 8247},
-    {
-      "Sl": 1048,
-      "BranchName": "Toke Nayon Bazar Uposhakha Gazipur",
-      "Code": 8248
-    },
-    {
-      "Sl": 1049,
-      "BranchName": "Vannara Bazar Uposhakha  Gazipur",
-      "Code": 8255
-    },
-    {"Sl": 1050, "BranchName": "Ansar Academy Uposhakha Gazipur", "Code": 8256},
-    {
-      "Sl": 1051,
-      "BranchName": "Jamtola Mouchak Uposhakha Gazipur",
-      "Code": 8257
-    },
-    {
-      "Sl": 1052,
-      "BranchName": "Goalanda Moor Uposhakha  Rajbari",
-      "Code": 8265
-    },
-    {"Sl": 1053, "BranchName": "Rajbari Uposhakha Rajbari", "Code": 8266},
-    {
-      "Sl": 1054,
-      "BranchName": "Maishala Bazar Pangsha Upo Rajbari",
-      "Code": 8267
-    },
-    {"Sl": 1055, "BranchName": "Machpara Uposhakha Rajbari", "Code": 8268},
-    {"Sl": 1056, "BranchName": "Kolar Hat Uposhakha Rajbari", "Code": 8269},
-    {
-      "Sl": 1057,
-      "BranchName": "Rotondia Bazar Kalukhali Rajbari",
-      "Code": 8270
-    },
-    {"Sl": 1058, "BranchName": "Sonapur Bazar Uposhakha Rajbari", "Code": 8271},
-    {"Sl": 1059, "BranchName": "Narua Bazar Uposhakha  Rajbari", "Code": 8272},
-    {"Sl": 1060, "BranchName": "Nandail Uposhakha Mymensingh", "Code": 8275},
-    {"Sl": 1061, "BranchName": "Karimganj Uposhakha Kishoreganj", "Code": 8276},
-    {"Sl": 1062, "BranchName": "Pakundia Upo. Kishoreganj", "Code": 8277},
-    {
-      "Sl": 1063,
-      "BranchName": "Boro Bazar Kishoreganj Uposhakha",
-      "Code": 8278
-    },
-    {
-      "Sl": 1064,
-      "BranchName": "Hossainpur Uposhakha Kishoreganj",
-      "Code": 8279
-    },
-    {"Sl": 1065, "BranchName": "Puler Ghat Bazar Uposhakha", "Code": 8280},
-    {"Sl": 1066, "BranchName": "Atharabari Raybazar Mymensingh", "Code": 8281},
-    {"Sl": 1067, "BranchName": "Dhuptara Kalibari Narayanganj", "Code": 8285},
-    {
-      "Sl": 1068,
-      "BranchName": "Sonargaon Taltola Bazar Narayanganj",
-      "Code": 8286
-    },
-    {
-      "Sl": 1069,
-      "BranchName": "Madhukhali Bazar Uposhakha Faridpur",
-      "Code": 8290
-    },
-    {"Sl": 1070, "BranchName": "Char Hajiganj Faridpur Faridpur", "Code": 8291},
-    {"Sl": 1071, "BranchName": "Baliakandi Rajbari Uposhakha", "Code": 8292},
-    {"Sl": 1072, "BranchName": "Kotalipara Uposhakha Gopalganj", "Code": 8293},
-    {"Sl": 1073, "BranchName": "Nagarkanda Uposhakha  Faridpur", "Code": 8294},
-    {"Sl": 1074, "BranchName": "Madhupur Uposhakha Tangail", "Code": 8295},
-    {
-      "Sl": 1075,
-      "BranchName": "Jamtoli Bazar Jamalpur Uposhakha",
-      "Code": 8296
-    },
-    {"Sl": 1076, "BranchName": "Tarakandi Uposhakha Jamalpur", "Code": 8297},
-    {
-      "Sl": 1077,
-      "BranchName": "Kalibari BusStand Gabtoli Mymensing",
-      "Code": 8298
-    },
-    {
-      "Sl": 1078,
-      "BranchName": "Aramnagar Bazar Sarisabari Jamalpur",
-      "Code": 8299
-    },
-    {"Sl": 1079, "BranchName": "Koyra Bazar Uposhakha Jamalpur", "Code": 8300},
-    {
-      "Sl": 1080,
-      "BranchName": "Barachaona Bazar Uposhakha Tangail",
-      "Code": 8305
-    },
-    {"Sl": 1081, "BranchName": "Gopalpur Uposhakha Tangail", "Code": 8306},
-    {
-      "Sl": 1082,
-      "BranchName": "Kasturipara Bazar Uposhakha Tangail",
-      "Code": 8307
-    },
-    {"Sl": 1083, "BranchName": "Kalihati Uposhakha Tangail", "Code": 8308},
-    {"Sl": 1084, "BranchName": "Balla Uposhakha Tangail", "Code": 8309},
-    {
-      "Sl": 1085,
-      "BranchName": "Nagarpur Tangail Uposhakha Tangail",
-      "Code": 8310
-    },
-    {"Sl": 1086, "BranchName": "Garo Bazar Uposhakha Tangail", "Code": 8311},
-    {"Sl": 1087, "BranchName": "Parkhi Bazar Uposhakha Tangail", "Code": 8312},
-    {"Sl": 1088, "BranchName": "Nalua Tangail", "Code": 8313},
-    {"Sl": 1089, "BranchName": "Palli Bidyut Ashulia Dhaka", "Code": 8315},
-    {"Sl": 1090, "BranchName": "Dobli Bazar Uposhakha Dhaka", "Code": 8335},
-    {"Sl": 1091, "BranchName": "Dohar Bazar Uposhakha Dhaka", "Code": 8336},
-    {
-      "Sl": 1092,
-      "BranchName": "Muksudpur Gopalganj Upo Gopalganj",
-      "Code": 8340
-    },
-    {"Sl": 1093, "BranchName": "Tungipara Uposhakha Gopalganj", "Code": 8341},
-    {"Sl": 1094, "BranchName": "Kurpar Uposhakha  Netrokona", "Code": 8350},
-    {"Sl": 1095, "BranchName": "Durgapur Netrokona Uposhakha", "Code": 8351},
-    {"Sl": 1096, "BranchName": "Kamarkhali Uposhakha  Faridpur", "Code": 8380},
-    {"Sl": 1097, "BranchName": "Racecourse Uposhakha", "Code": 8500},
-    {"Sl": 1098, "BranchName": "Paaduar Bazar Uposhakha", "Code": 8501},
-    {"Sl": 1099, "BranchName": "Burichang Uposhakha  Cumilla", "Code": 8502},
-    {
-      "Sl": 1100,
-      "BranchName": "Baghmara Bazar Uposhakha  Cumilla",
-      "Code": 8503
-    },
-    {"Sl": 1101, "BranchName": "Kotbari Uposhakha Cumilla", "Code": 8504},
-    {"Sl": 1102, "BranchName": "Cumilla EPZ Uposhakha Cumilla", "Code": 8505},
-    {"Sl": 1103, "BranchName": "Ranir Bazar Uposhakha Cumilla", "Code": 8506},
-    {"Sl": 1104, "BranchName": "Kandirpar Uposhakha Cumilla", "Code": 8507},
-    {
-      "Sl": 1105,
-      "BranchName": "Bipulashar Bazar Uposhakha Cumilla",
-      "Code": 8508
-    },
-    {
-      "Sl": 1106,
-      "BranchName": "Lakshmanpur Bazar Uposhakha Cumilla",
-      "Code": 8509
-    },
-    {"Sl": 1107, "BranchName": "Bizra Bazar Uposhakha Cumilla", "Code": 8510},
-    {
-      "Sl": 1108,
-      "BranchName": "Sankuchail Bazar Uposhakha Cumilla",
-      "Code": 8511
-    },
-    {"Sl": 1109, "BranchName": "Nangalkot Uposhakha Cumilla", "Code": 8512},
-    {"Sl": 1110, "BranchName": "Manoharganj Uposhakha Cumilla", "Code": 8513},
-    {
-      "Sl": 1111,
-      "BranchName": "Brahmanpara Bazar Uposhakha Cumilla",
-      "Code": 8514
-    },
-    {"Sl": 1112, "BranchName": "Natherpetua Uposhakha Cumilla", "Code": 8515},
-    {"Sl": 1113, "BranchName": "Muddafarganj Uposhakha Cumilla", "Code": 8516},
-    {"Sl": 1114, "BranchName": "Jafarganj Uposhakha Cumilla", "Code": 8517},
-    {"Sl": 1115, "BranchName": "Bholain Bazar Uposhakha Cumilla", "Code": 8518},
-    {"Sl": 1116, "BranchName": "Balutupa Bazar Cumilla", "Code": 8519},
-    {"Sl": 1117, "BranchName": "Academy Road Uposhakha", "Code": 8520},
-    {"Sl": 1118, "BranchName": "Chagalnaiya Uposhakha Feni", "Code": 8521},
-    {"Sl": 1119, "BranchName": "Fulgazi Uposhakha Feni", "Code": 8522},
-    {"Sl": 1120, "BranchName": "Hajir Bazar Uposhakha Feni", "Code": 8523},
-    {
-      "Sl": 1121,
-      "BranchName": "Baraiyarhat Uposhakha Chattogram",
-      "Code": 8524
-    },
-    {"Sl": 1122, "BranchName": "Dorbesher Hat Uposhakha Feni", "Code": 8525},
-    {"Sl": 1123, "BranchName": "Parshuram Uposhakha Feni", "Code": 8526},
-    {"Sl": 1124, "BranchName": "Boktar Munshir Bazar  Feni", "Code": 8527},
-    {"Sl": 1125, "BranchName": "Laskarhat Uposhakha Feni", "Code": 8528},
-    {"Sl": 1126, "BranchName": "Maijdee Uposhakha", "Code": 8535},
-    {"Sl": 1127, "BranchName": "Basurhat Uposhakha  Noakhali", "Code": 8536},
-    {"Sl": 1128, "BranchName": "Amishapara Uposhakha  Noakhali", "Code": 8537},
-    {
-      "Sl": 1129,
-      "BranchName": "Sonaimuri BazarUposhakha Noakhali",
-      "Code": 8538
-    },
-    {"Sl": 1130, "BranchName": "Chatkhil Uposhakha Noakhali", "Code": 8539},
-    {"Sl": 1131, "BranchName": "Kabirhat Uposhakha Noakhali", "Code": 8540},
-    {
-      "Sl": 1132,
-      "BranchName": "Maijdee Bazar Uposhakha Noakhali",
-      "Code": 8541
-    },
-    {"Sl": 1133, "BranchName": "Chaterpaiya Uposhakha Noakhali", "Code": 8542},
-    {"Sl": 1134, "BranchName": "Sonapur Uposhakha Noakhali", "Code": 8543},
-    {"Sl": 1135, "BranchName": "Subarnachar Uposhakha Noakhali", "Code": 8544},
-    {"Sl": 1136, "BranchName": "Bozra Bazar Uposhakha Noakhali", "Code": 8545},
-    {"Sl": 1137, "BranchName": "Senbag Bazar Uposhakha Noakhali", "Code": 8546},
-    {"Sl": 1138, "BranchName": "Chaprashir Hat Noakhali", "Code": 8547},
-    {"Sl": 1139, "BranchName": "Somir Munshir Hat Noakhali", "Code": 8548},
-    {"Sl": 1140, "BranchName": "Chowdhury Hat Noakhali", "Code": 8549},
-    {"Sl": 1141, "BranchName": "Debidwar Uposhakha", "Code": 8550},
-    {"Sl": 1142, "BranchName": "Bakhrabad Uposhakha  Cumilla", "Code": 8551},
-    {"Sl": 1143, "BranchName": "Ramchandrapur Bazar Cumilla", "Code": 8552},
-    {
-      "Sl": 1144,
-      "BranchName": "Bangora BazarUposhakha Brahmanbaria",
-      "Code": 8553
-    },
-    {"Sl": 1145, "BranchName": "Muradnagar Uposhakha Cumilla", "Code": 8554},
-    {
-      "Sl": 1146,
-      "BranchName": "Dakshin Bangora Rupbabu Bazar Upo",
-      "Code": 8555
-    },
-    {
-      "Sl": 1147,
-      "BranchName": "Mohonpur Bazar Uposhakha Cumilla",
-      "Code": 8560
-    },
-    {"Sl": 1148, "BranchName": "Ram Mohan Uposhakha Cumilla", "Code": 8561},
-    {"Sl": 1149, "BranchName": "Badarpur Uposhakha Cumilla", "Code": 8562},
-    {"Sl": 1150, "BranchName": "Adda Bazar Uposhakha Cumilla", "Code": 8563},
-    {"Sl": 1151, "BranchName": "Barura Uposhakha Cumilla", "Code": 8564},
-    {
-      "Sl": 1152,
-      "BranchName": "Madhaiya Bazar Uposhakha Cumilla",
-      "Code": 8565
-    },
-    {"Sl": 1153, "BranchName": "Mohichail Cumilla", "Code": 8566},
-    {"Sl": 1154, "BranchName": "Homna Bazar Uposhakha", "Code": 8570},
-    {"Sl": 1155, "BranchName": "Daudkandi Uposhakha Cumilla", "Code": 8571},
-    {
-      "Sl": 1156,
-      "BranchName": "Batakandi Bazar Uposhakha Cumilla",
-      "Code": 8572
-    },
-    {"Sl": 1157, "BranchName": "Ramkrishnopur Uposhakha Cumilla", "Code": 8573},
-    {"Sl": 1158, "BranchName": "Eliotganj Uposhakha Cumilla", "Code": 8574},
-    {"Sl": 1159, "BranchName": "Nayergaon Uposhakha Chandpur", "Code": 8575},
-    {
-      "Sl": 1160,
-      "BranchName": "Bancharampur Uposhakha Brahmanbaria",
-      "Code": 8576
-    },
-    {
-      "Sl": 1161,
-      "BranchName": "Narayanpur Bazar Uposhakha Chandpur",
-      "Code": 8577
-    },
-    {"Sl": 1162, "BranchName": "Gouripur Bus Stand Cumilla", "Code": 8578},
-    {
-      "Sl": 1163,
-      "BranchName": "Manikerchar Bazar Uposhakha Cumilla",
-      "Code": 8579
-    },
-    {"Sl": 1164, "BranchName": "Chengarchar Chandpur", "Code": 8580},
-    {"Sl": 1165, "BranchName": "Suagonj Bazar Uposhakha", "Code": 8585},
-    {"Sl": 1166, "BranchName": "Kashinagar Uposhakha", "Code": 8586},
-    {"Sl": 1167, "BranchName": "Nalghar Uposhakha", "Code": 8587},
-    {"Sl": 1168, "BranchName": "Buschi Bazar Uposhakha Cumilla", "Code": 8588},
-    {"Sl": 1169, "BranchName": "Dhorkora Uposhakha Cumilla", "Code": 8589},
-    {"Sl": 1170, "BranchName": "Munshir Hat Uposhakha Cumilla", "Code": 8590},
-    {
-      "Sl": 1171,
-      "BranchName": "Bangodda Bazar Uposhakha Cumilla",
-      "Code": 8591
-    },
-    {"Sl": 1172, "BranchName": "Gunabati Uposhakha  Cumilla", "Code": 8592},
-    {"Sl": 1173, "BranchName": "Chauddagram Uposhakha  Cumilla", "Code": 8593},
-    {
-      "Sl": 1174,
-      "BranchName": "Chhayani Bazar Uposhakha Noakhali",
-      "Code": 8600
-    },
-    {"Sl": 1175, "BranchName": "Raipur Uposhakha Lakshmipur", "Code": 8601},
-    {
-      "Sl": 1176,
-      "BranchName": "Dattapara Bazar Laxmipur Uposhakha",
-      "Code": 8602
-    },
-    {
-      "Sl": 1177,
-      "BranchName": "Khilpara Bazar Uposhakha Noakhali",
-      "Code": 8603
-    },
-    {"Sl": 1178, "BranchName": "Kachua Bazar Uposhakha", "Code": 8610},
-    {"Sl": 1179, "BranchName": "Hajiganj Bazar Uposhakha", "Code": 8611},
-    {
-      "Sl": 1180,
-      "BranchName": "Sachar Bazar Uposhakha  Chandpur",
-      "Code": 8612
-    },
-    {"Sl": 1181, "BranchName": "Shahrasti Uposhakha  Chandpur", "Code": 8613},
-    {
-      "Sl": 1182,
-      "BranchName": "Haimchar Bazar Uposhakha Chandpur",
-      "Code": 8614
-    },
-    {"Sl": 1183, "BranchName": "Rahima Nagar Uposhakha Chandpur", "Code": 8615},
-    {
-      "Sl": 1184,
-      "BranchName": "Chandpur Puran Bazar Upo. Chandpur",
-      "Code": 8616
-    },
-    {"Sl": 1185, "BranchName": "Nawabpur Cumilla", "Code": 8617},
-    {
-      "Sl": 1186,
-      "BranchName": "Matlab Dakshin Uposhakha Chandpur",
-      "Code": 8618
-    },
-    {"Sl": 1187, "BranchName": "Chandpur Baburhat Uposhakha ", "Code": 8619},
-    {"Sl": 1188, "BranchName": "Nimsar Bazar Uposhakha Cumilla", "Code": 8620},
-    {"Sl": 1189, "BranchName": "Kalir Bazar Cumilla Cumilla", "Code": 8621},
-    {"Sl": 1190, "BranchName": "Kangshanagar Uposhakha Cumilla", "Code": 8622},
-    {"Sl": 1191, "BranchName": "Alekhar Char Uposhakha Cumilla", "Code": 8623},
-    {"Sl": 1192, "BranchName": "Bangla Bazar Uposhakha Cumilla", "Code": 8624},
-    {"Sl": 1193, "BranchName": "Dalal Bazar Laxmipur Laxmipur", "Code": 8635},
-    {"Sl": 1194, "BranchName": "Haiderganj Uposhakha Laxmipur", "Code": 8636},
-    {
-      "Sl": 1195,
-      "BranchName": "Mandari Bazar Uposhakha Laxmipur",
-      "Code": 8637
-    },
-    {
-      "Sl": 1196,
-      "BranchName": "Rakhalia Bazar Uposhakha Laxmipur",
-      "Code": 8638
-    },
-    {"Sl": 1197, "BranchName": "Ramganj Laxmipur Upo Laxmipur", "Code": 8639},
-    {
-      "Sl": 1198,
-      "BranchName": "Chitoshi Bazar Uposhakha Chandpur",
-      "Code": 8645
-    },
-    {
-      "Sl": 1199,
-      "BranchName": "Hasanpur Dhalua Road Upo Cumilla",
-      "Code": 8646
-    },
-    {
-      "Sl": 1200,
-      "BranchName": "Laksham Junction Station Road Upo",
-      "Code": 8647
-    },
-    {"Sl": 1201, "BranchName": "Ananda Bazar Chandpur Uposhakha", "Code": 8655},
-    {"Sl": 1202, "BranchName": "Faridganj Uposhakha Chandpur", "Code": 8656},
-    {
-      "Sl": 1203,
-      "BranchName": "Sujatpur Bazar Uposhakha Chandpur",
-      "Code": 8657
-    },
-    {
-      "Sl": 1204,
-      "BranchName": "Meher Kalibari Uposhakha Chandpur",
-      "Code": 8658
-    },
-    {"Sl": 1205, "BranchName": "Bakila Bazar Uposhakha Chandpur", "Code": 8659},
-    {
-      "Sl": 1206,
-      "BranchName": "Chandra Bazar Uposhakha Chandpur",
-      "Code": 8660
-    },
-    {"Sl": 1207, "BranchName": "Palakhal Uposhakha  Chandpur", "Code": 8662},
-    {"Sl": 1208, "BranchName": "Dotter Hat Uposhakha Noakhali", "Code": 8665},
-    {"Sl": 1209, "BranchName": "Sebarhat Noakhali", "Code": 8666},
-    {"Sl": 1210, "BranchName": "Shantir Hat Uposhakha Noakhali", "Code": 8667},
-    {
-      "Sl": 1211,
-      "BranchName": "Uday Sadhur Hat Uposhakha Noakhali",
-      "Code": 8668
-    },
-    {"Sl": 1212, "BranchName": "Dagonbhuiyan Uposhakha Feni", "Code": 8669},
-    {
-      "Sl": 1213,
-      "BranchName": "Musapur Banglabazar upo  Noakhali",
-      "Code": 8670
-    },
-    {"Sl": 1214, "BranchName": "Jamiderhat Uposhakha Noakhali", "Code": 8672},
-    {
-      "Sl": 1215,
-      "BranchName": "Rahattar Pool Uposhakha  Chattogram",
-      "Code": 8765
-    },
-    {
-      "Sl": 1216,
-      "BranchName": "Patharghata Uposhakha Chattogram",
-      "Code": 8766
-    },
-    {
-      "Sl": 1217,
-      "BranchName": "Korbaniganj Uposhakha Chattogram",
-      "Code": 8767
-    },
-    {"Sl": 1218, "BranchName": "Laldighi Uposhakha Chattogram", "Code": 8768},
-    {"Sl": 1219, "BranchName": "Chaktai Uposhakha  Chattogram", "Code": 8769},
-    {
-      "Sl": 1220,
-      "BranchName": "Dewan Bazar Uposhakha  Chattogram",
-      "Code": 8780
-    },
-    {"Sl": 1221, "BranchName": "Teri Bazar Uposhakha Chattogram", "Code": 8781},
-    {"Sl": 1222, "BranchName": "Kanungopara Chattogram", "Code": 8782},
-    {"Sl": 1223, "BranchName": "Munsef Bazar Chattogram", "Code": 8783},
-    {"Sl": 1224, "BranchName": "Mohammadpur Ismail Colony CTG", "Code": 8790},
-    {"Sl": 1225, "BranchName": "Puratan Chandgaon Uposhakha CTG", "Code": 8791},
-    {
-      "Sl": 1226,
-      "BranchName": "B.Ed College Gate Upo. Chattogram",
-      "Code": 8792
-    },
-    {"Sl": 1227, "BranchName": "Panchlaish Uposhakha Chattogram", "Code": 8793},
-    {"Sl": 1228, "BranchName": "Sadarghat Road Uposhakha  CTG", "Code": 8800},
-    {"Sl": 1229, "BranchName": "Madarbari Uposhakha Chattogram", "Code": 8801},
-    {"Sl": 1230, "BranchName": "Bou Bazar Uposhakha Chattagram", "Code": 8802},
-    {
-      "Sl": 1231,
-      "BranchName": "Enayet Bazar Uposhakha Chattogram",
-      "Code": 8803
-    },
-    {"Sl": 1232, "BranchName": "Jamal Khan Road Chattogram", "Code": 8804},
-    {"Sl": 1233, "BranchName": "Kadamtoli Chattogram Uposhakha", "Code": 8810},
-    {"Sl": 1234, "BranchName": "P. C. Road Uposhakha Chattogram", "Code": 8811},
-    {
-      "Sl": 1235,
-      "BranchName": "Agrabad Access Road Upo Chattogram",
-      "Code": 8812
-    },
-    {"Sl": 1236, "BranchName": "Dewanhat Uposhakha Chattogram", "Code": 8813},
-    {"Sl": 1237, "BranchName": "Pahartoli Uposhakha Chattagram", "Code": 8814},
-    {"Sl": 1238, "BranchName": "WASA More Uposhakha  Chattogram", "Code": 8820},
-    {"Sl": 1239, "BranchName": "Kala Miah Bazar Uposhakha  CTG", "Code": 8821},
-    {"Sl": 1240, "BranchName": "Kunjachaya Uposhakha Chottogram", "Code": 8822},
-    {"Sl": 1241, "BranchName": "2 No. Gate Chattogram Uposhakha", "Code": 8823},
-    {"Sl": 1242, "BranchName": "Halishahor Uposhakha", "Code": 8835},
-    {
-      "Sl": 1243,
-      "BranchName": "Naya Bazar Uposhakha  Chattogram",
-      "Code": 8836
-    },
-    {"Sl": 1244, "BranchName": "Foillatali Bazar Uposhakha Ctg.", "Code": 8837},
-    {
-      "Sl": 1245,
-      "BranchName": "Artillery Road Uposhakha Chattogram",
-      "Code": 8838
-    },
-    {
-      "Sl": 1246,
-      "BranchName": "Koibulladham Uposhakha Chattogram",
-      "Code": 8839
-    },
-    {"Sl": 1247, "BranchName": "Airport Road Uposhakha", "Code": 8845},
-    {"Sl": 1248, "BranchName": "Steel Mill Uposhakha Chattogram", "Code": 8846},
-    {"Sl": 1249, "BranchName": "CEPZ Uposhakha Chattagram", "Code": 8847},
-    {
-      "Sl": 1250,
-      "BranchName": "Aturar Depot Uposhakha Chattogram",
-      "Code": 8860
-    },
-    {"Sl": 1251, "BranchName": "Khaja Road Uposhakha Chattogram", "Code": 8861},
-    {
-      "Sl": 1252,
-      "BranchName": "Chandgaon R/A Uposhakha Chattogram",
-      "Code": 8862
-    },
-    {"Sl": 1253, "BranchName": "Bayazid Uposhakha Chattogram", "Code": 8863},
-    {
-      "Sl": 1254,
-      "BranchName": "Bahaddarhat Uposhakha  Chattogram",
-      "Code": 8864
-    },
-    {"Sl": 1255, "BranchName": "Head Office", "Code": 9900}
+    {
+      "Code": "894",
+      "Branch_Name": "Abadpukur Uposhakha,Naogaon",
+      "Branch_Mnemonic": "C825"
+    },
+    {
+      "Code": "7515",
+      "Branch_Name": "Abdullahpur Bus Stand Uposhakha",
+      "Branch_Mnemonic": "A516"
+    },
+    {
+      "Code": "8090",
+      "Branch_Name": "Abdullahpur Uposhakha",
+      "Branch_Mnemonic": "B090"
+    },
+    {
+      "Code": "8401",
+      "Branch_Name": "Abdulpur Station Bazar Upo, Natore",
+      "Branch_Mnemonic": "G901"
+    },
+    {
+      "Code": "7095",
+      "Branch_Name": "Abul Hasnat Road Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A696"
+    },
+    {
+      "Code": "8520",
+      "Branch_Name": "Academy Road Uposhakha",
+      "Branch_Mnemonic": "B520"
+    },
+    {
+      "Code": "7440",
+      "Branch_Name": "Adabor 16 Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A441"
+    },
+    {
+      "Code": "7444",
+      "Branch_Name": "Adabor-11 Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A445"
+    },
+    {
+      "Code": "280",
+      "Branch_Name": "Adampur Bazar Uposhakha,Moulvibazar",
+      "Branch_Mnemonic": "D331"
+    },
+    {
+      "Code": "8563",
+      "Branch_Name": "Adda Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B563"
+    },
+    {
+      "Code": "779",
+      "Branch_Name": "Aditmari Uposhakha,Lalmonirhat",
+      "Branch_Mnemonic": "F878"
+    },
+    {
+      "Code": "138",
+      "Branch_Name": "Adunagar Bazar Uposhakha,Chattogram",
+      "Branch_Mnemonic": "F567"
+    },
+    {
+      "Code": "7564",
+      "Branch_Name": "Aftabnagar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A565"
+    },
+    {
+      "Code": "1219",
+      "Branch_Name": "Aganagar Branch",
+      "Branch_Mnemonic": "AGAN"
+    },
+    {
+      "Code": "8812",
+      "Branch_Name": "Agrabad Access Road Upo,Chattogram",
+      "Branch_Mnemonic": "D938"
+    },
+    {"Code": "2030", "Branch_Name": "Agrabad Branch", "Branch_Mnemonic": "801"},
+    {
+      "Code": "8400",
+      "Branch_Name": "Ahmedpur-Natore Uposhakha, Natore",
+      "Branch_Mnemonic": "G900"
+    },
+    {
+      "Code": "8845",
+      "Branch_Name": "Airport Road Uposhakha",
+      "Branch_Mnemonic": "D971"
+    },
+    {
+      "Code": "7866",
+      "Branch_Name": "Ajmeribag Tallah,Narayanganj",
+      "Branch_Mnemonic": "D467"
+    },
+    {
+      "Code": "2250",
+      "Branch_Name": "Akhaura Branch",
+      "Branch_Mnemonic": "AKUR"
+    },
+    {
+      "Code": "851",
+      "Branch_Name": "Akkelpur Uposhakha,Joypurhat",
+      "Branch_Mnemonic": "C782"
+    },
+    {
+      "Code": "8083",
+      "Branch_Name": "Al Amin Bazar Uposhakha,Munshigonj",
+      "Branch_Mnemonic": "D684"
+    },
+    {
+      "Code": "635",
+      "Branch_Name": "Alamdanga Uposhakha,Chuadanga",
+      "Branch_Mnemonic": "C586"
+    },
+    {
+      "Code": "2056",
+      "Branch_Name": "Alankar More Branch",
+      "Branch_Mnemonic": "ALAN"
+    },
+    {
+      "Code": "8623",
+      "Branch_Name": "Alekhar Char Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B623"
+    },
+    {
+      "Code": "7850",
+      "Branch_Name": "Alfadanga Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D451"
+    },
+    {
+      "Code": "7974",
+      "Branch_Name": "Aliganj Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D575"
+    },
+    {
+      "Code": "415",
+      "Branch_Name": "Alipur Uposhakha,Patuakhali",
+      "Branch_Mnemonic": "B650"
+    },
+    {
+      "Code": "186",
+      "Branch_Name": "Alir Jahal Uposhakha, Coxs Bazar",
+      "Branch_Mnemonic": "F615"
+    },
+    {
+      "Code": "7341",
+      "Branch_Name": "Alir Moor Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A342"
+    },
+    {
+      "Code": "692",
+      "Branch_Name": "Allahar Dorga Uposhakha,Kushtia",
+      "Branch_Mnemonic": "F861"
+    },
+    {
+      "Code": "8029",
+      "Branch_Name": "Alukanda Stand Bazar,Dhaka",
+      "Branch_Mnemonic": "D630"
+    },
+    {
+      "Code": "41",
+      "Branch_Name": "Aman Bazar Uposhakha, Chattogram",
+      "Branch_Mnemonic": "B724"
+    },
+    {
+      "Code": "8041",
+      "Branch_Name": "Ambagan Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D642"
+    },
+    {
+      "Code": "3139",
+      "Branch_Name": "Ambarkhana Branch",
+      "Branch_Mnemonic": "TULT"
+    },
+    {
+      "Code": "8537",
+      "Branch_Name": "Amishapara Uposhakha, Noakhali",
+      "Branch_Mnemonic": "B537"
+    },
+    {
+      "Code": "630",
+      "Branch_Name": "Amla Bazar Uposhakha, Kushtia",
+      "Branch_Mnemonic": "C581"
+    },
+    {
+      "Code": "8245",
+      "Branch_Name": "Amraid Bazar Uposhakha, Gazipur",
+      "Branch_Mnemonic": "D846"
+    },
+    {
+      "Code": "410",
+      "Branch_Name": "Amtali Chowrasta Uposhakha,Barguna",
+      "Branch_Mnemonic": "B645"
+    },
+    {
+      "Code": "436",
+      "Branch_Name": "Amua Bazar Uposhakha,Jhalokathi",
+      "Branch_Mnemonic": "B671"
+    },
+    {
+      "Code": "8045",
+      "Branch_Name": "Amulia Staff Quarter Uposhakha",
+      "Branch_Mnemonic": "B045"
+    },
+    {
+      "Code": "8655",
+      "Branch_Name": "Ananda Bazar-Chandpur Uposhakha",
+      "Branch_Mnemonic": "F340"
+    },
+    {
+      "Code": "683",
+      "Branch_Name": "Andulbaria Bazar Upo,Chuadanga",
+      "Branch_Mnemonic": "F852"
+    },
+    {
+      "Code": "8256",
+      "Branch_Name": "Ansar Academy Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D857"
+    },
+    {
+      "Code": "2236",
+      "Branch_Name": "Anwara Branch, Chittagong.",
+      "Branch_Mnemonic": "ANWR"
+    },
+    {
+      "Code": "1253",
+      "Branch_Name": "Araihazar Branch, Narayanganj",
+      "Branch_Mnemonic": "ARAI"
+    },
+    {
+      "Code": "89",
+      "Branch_Name": "Araisidha Bazar Upo,Brahmanbaria",
+      "Branch_Mnemonic": "B772"
+    },
+    {
+      "Code": "7206",
+      "Branch_Name": "Arambagh Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A807"
+    },
+    {
+      "Code": "8299",
+      "Branch_Name": "Aramnagar Bazar-Sarisabari,Jamalpur",
+      "Branch_Mnemonic": "G799"
+    },
+    {
+      "Code": "913",
+      "Branch_Name": "Arani Uposhakha,Rajshahi",
+      "Branch_Mnemonic": "C844"
+    },
+    {
+      "Code": "8072",
+      "Branch_Name": "Aricha Ghat Uposhakha,Manikganj",
+      "Branch_Mnemonic": "D673"
+    },
+    {
+      "Code": "7034",
+      "Branch_Name": "Armanitola Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A635"
+    },
+    {
+      "Code": "1234",
+      "Branch_Name": "Arshinagar Branch, Dhaka.",
+      "Branch_Mnemonic": "ARSH"
+    },
+    {
+      "Code": "8838",
+      "Branch_Name": "Artillery Road Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D963"
+    },
+    {
+      "Code": "7245",
+      "Branch_Name": "Asad Gate Uposhakha",
+      "Branch_Mnemonic": "A846"
+    },
+    {
+      "Code": "334",
+      "Branch_Name": "Asampara Bazar Uposhakha,Habiganj",
+      "Branch_Mnemonic": "D384"
+    },
+    {
+      "Code": "301",
+      "Branch_Name": "Ashirganj Bazar Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D352"
+    },
+    {
+      "Code": "7224",
+      "Branch_Name": "Ashkona Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A825"
+    },
+    {
+      "Code": "2155",
+      "Branch_Name": "Ashuganj Branch",
+      "Branch_Mnemonic": "ASGN"
+    },
+    {
+      "Code": "8044",
+      "Branch_Name": "Ashulia Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D645"
+    },
+    {
+      "Code": "1197",
+      "Branch_Name": "Ashulia Branch",
+      "Branch_Mnemonic": "ASHU"
+    },
+    {
+      "Code": "8301",
+      "Branch_Name": "Asim Bazar Uposhakha, Mymensingh",
+      "Branch_Mnemonic": "G801"
+    },
+    {
+      "Code": "684",
+      "Branch_Name": "Asmankhali Bazar Upo,Chuadanga",
+      "Branch_Mnemonic": "F853"
+    },
+    {
+      "Code": "888",
+      "Branch_Name": "Ataikula Uposhakha,Pabna",
+      "Branch_Mnemonic": "C819"
+    },
+    {
+      "Code": "8281",
+      "Branch_Name": "Atharabari-Raybazar,Mymensingh",
+      "Branch_Mnemonic": "G781"
+    },
+    {
+      "Code": "8211",
+      "Branch_Name": "Ati Bazar,Dhaka",
+      "Branch_Mnemonic": "D812"
+    },
+    {
+      "Code": "8086",
+      "Branch_Name": "Atosh Ali Bazar Uposhakha,Narsingdi",
+      "Branch_Mnemonic": "D687"
+    },
+    {
+      "Code": "8860",
+      "Branch_Name": "Aturar Depot Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D986"
+    },
+    {
+      "Code": "733",
+      "Branch_Name": "Atwari Uposhakha,Panchagarh",
+      "Branch_Mnemonic": "C644"
+    },
+    {
+      "Code": "333",
+      "Branch_Name": "Aushkandi Uposhakha,Habiganj",
+      "Branch_Mnemonic": "D383"
+    },
+    {
+      "Code": "7231",
+      "Branch_Name": "Azampur Kancha Bazar Upo.,Dhaka",
+      "Branch_Mnemonic": "A832"
+    },
+    {
+      "Code": "7136",
+      "Branch_Name": "Azimpur Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A737"
+    },
+    {
+      "Code": "8792",
+      "Branch_Name": "B.Ed College Gate Upo.,Chattogram",
+      "Branch_Mnemonic": "D918"
+    },
+    {
+      "Code": "7437",
+      "Branch_Name": "Babor Road Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A438"
+    },
+    {
+      "Code": "7872",
+      "Branch_Name": "Baburail Bazar Upo,Narayanganj",
+      "Branch_Mnemonic": "D473"
+    },
+    {
+      "Code": "897",
+      "Branch_Name": "Badalgachi Uposhakha,Naogaon",
+      "Branch_Mnemonic": "C828"
+    },
+    {
+      "Code": "7031",
+      "Branch_Name": "Badamtoli Uposhakha",
+      "Branch_Mnemonic": "A632"
+    },
+    {
+      "Code": "705",
+      "Branch_Name": "Badarganj Uposhakha,Rangpur",
+      "Branch_Mnemonic": "C616"
+    },
+    {
+      "Code": "8562",
+      "Branch_Name": "Badarpur Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B562"
+    },
+    {
+      "Code": "640",
+      "Branch_Name": "Badhal Bazar Uposhakha,Bagerhat",
+      "Branch_Mnemonic": "C591"
+    },
+    {
+      "Code": "610",
+      "Branch_Name": "Baganchra Uposhakha,Jashore",
+      "Branch_Mnemonic": "C561"
+    },
+    {
+      "Code": "4212",
+      "Branch_Name": "Bagerhat Branch",
+      "Branch_Mnemonic": "BAGR"
+    },
+    {
+      "Code": "912",
+      "Branch_Name": "Bagha Uposhakha,Rajshahi",
+      "Branch_Mnemonic": "C843"
+    },
+    {
+      "Code": "677",
+      "Branch_Name": "Bagherpara Uposhakha,Jashore",
+      "Branch_Mnemonic": "F846"
+    },
+    {
+      "Code": "8503",
+      "Branch_Name": "Baghmara Bazar Uposhakha, Cumilla",
+      "Branch_Mnemonic": "B503"
+    },
+    {
+      "Code": "8864",
+      "Branch_Name": "Bahaddarhat Uposhakha, Chattogram",
+      "Branch_Mnemonic": "D990"
+    },
+    {
+      "Code": "725",
+      "Branch_Name": "Bahadur Bazar Uposhakha,Dinajpur",
+      "Branch_Mnemonic": "C636"
+    },
+    {
+      "Code": "120",
+      "Branch_Name": "Bailchari Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B803"
+    },
+    {
+      "Code": "7936",
+      "Branch_Name": "Baimail Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D537"
+    },
+    {
+      "Code": "8035",
+      "Branch_Name": "Baipail Uposhakha",
+      "Branch_Mnemonic": "D636"
+    },
+    {
+      "Code": "759",
+      "Branch_Name": "Bairchuna Uposhakha,Thakurgaon",
+      "Branch_Mnemonic": "C670"
+    },
+    {
+      "Code": "1112",
+      "Branch_Name": "Bajitpur Branch",
+      "Branch_Mnemonic": "BJIT"
+    },
+    {
+      "Code": "413",
+      "Branch_Name": "Bakerganj Uposhakha,Barishal",
+      "Branch_Mnemonic": "B648"
+    },
+    {
+      "Code": "8551",
+      "Branch_Name": "Bakhrabad Uposhakha, Cumilla",
+      "Branch_Mnemonic": "B551"
+    },
+    {
+      "Code": "8659",
+      "Branch_Name": "Bakila Bazar Uposhakha,Chandpur",
+      "Branch_Mnemonic": "F344"
+    },
+    {
+      "Code": "1258",
+      "Branch_Name": "Bakshiganj Branch , Jamalpur",
+      "Branch_Mnemonic": "BAKS"
+    },
+    {
+      "Code": "139",
+      "Branch_Name": "Balaghata Uposhakha,Bandarban",
+      "Branch_Mnemonic": "F568"
+    },
+    {
+      "Code": "757",
+      "Branch_Name": "Baliadangi Uposhakha,Thakurgaon",
+      "Branch_Mnemonic": "C668"
+    },
+    {
+      "Code": "8292",
+      "Branch_Name": "Baliakandi-Rajbari Uposhakha",
+      "Branch_Mnemonic": "G792"
+    },
+    {
+      "Code": "7918",
+      "Branch_Name": "Baligaon Uposhakha,Munshiganj",
+      "Branch_Mnemonic": "D517"
+    },
+    {
+      "Code": "8167",
+      "Branch_Name": "Balijuri Uposhakha,Jamalpur",
+      "Branch_Mnemonic": "D768"
+    },
+    {
+      "Code": "8309",
+      "Branch_Name": "Balla Uposhakha,Tangail",
+      "Branch_Mnemonic": "G809"
+    },
+    {
+      "Code": "8095",
+      "Branch_Name": "Baluchar Bazar Upo,Munshiganj",
+      "Branch_Mnemonic": "D695"
+    },
+    {
+      "Code": "8519",
+      "Branch_Name": "Balutupa Bazar,Cumilla",
+      "Branch_Mnemonic": "B519"
+    },
+    {
+      "Code": "440",
+      "Branch_Name": "Bamna Uposhakha,Barguna",
+      "Branch_Mnemonic": "B675"
+    },
+    {
+      "Code": "7491",
+      "Branch_Name": "Bamuil Uposhakha",
+      "Branch_Mnemonic": "A492"
+    },
+    {
+      "Code": "693",
+      "Branch_Name": "Bamundi Uposhakha,Meherpur",
+      "Branch_Mnemonic": "F862"
+    },
+    {
+      "Code": "7395",
+      "Branch_Name": "Banani Bazar Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A396"
+    },
+    {"Code": "1096", "Branch_Name": "Banani Branch", "Branch_Mnemonic": "BANA"},
+    {
+      "Code": "7396",
+      "Branch_Name": "Banani Chairmanbari Upo.,Dhaka",
+      "Branch_Mnemonic": "A397"
+    },
+    {
+      "Code": "7397",
+      "Branch_Name": "Banani Graveyard Road,Dhaka",
+      "Branch_Mnemonic": "A398"
+    },
+    {
+      "Code": "7268",
+      "Branch_Name": "Banarasi Palli Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A869"
+    },
+    {
+      "Code": "7561",
+      "Branch_Name": "Banasree A Block Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A562"
+    },
+    {
+      "Code": "1245",
+      "Branch_Name": "Banasree Branch, Dhaka.",
+      "Branch_Mnemonic": "BNSR"
+    },
+    {
+      "Code": "7563",
+      "Branch_Name": "Banasree F Block Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A564"
+    },
+    {
+      "Code": "8576",
+      "Branch_Name": "Bancharampur Uposhakha,Brahmanbaria",
+      "Branch_Mnemonic": "B576"
+    },
+    {
+      "Code": "1228",
+      "Branch_Name": "Bandar Branch, Narayanganj",
+      "Branch_Mnemonic": "BAND"
+    },
+    {
+      "Code": "2268",
+      "Branch_Name": "Bandarban Branch",
+      "Branch_Mnemonic": "BBAN"
+    },
+    {
+      "Code": "2220",
+      "Branch_Name": "Bandartila Branch",
+      "Branch_Mnemonic": "BNDR"
+    },
+    {"Code": "7993", "Branch_Name": "Bandura,Dhaka", "Branch_Mnemonic": "D594"},
+    {
+      "Code": "6187",
+      "Branch_Name": "Baneshwar Branch",
+      "Branch_Mnemonic": "BNSW"
+    },
+    {
+      "Code": "7204",
+      "Branch_Name": "Bangabandhu Avenue Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A805"
+    },
+    {
+      "Code": "8235",
+      "Branch_Name": "Bangla Bazar Uposhakha",
+      "Branch_Mnemonic": "D836"
+    },
+    {
+      "Code": "8624",
+      "Branch_Name": "Bangla Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B624"
+    },
+    {
+      "Code": "408",
+      "Branch_Name": "Bangla Bazar-Barishal,Barishal",
+      "Branch_Mnemonic": "B643"
+    },
+    {
+      "Code": "7157",
+      "Branch_Name": "Banglamotor Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A756"
+    },
+    {
+      "Code": "8591",
+      "Branch_Name": "Bangodda Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B591"
+    },
+    {
+      "Code": "8553",
+      "Branch_Name": "Bangora BazarUposhakha,Brahmanbaria",
+      "Branch_Mnemonic": "B553"
+    },
+    {
+      "Code": "1011",
+      "Branch_Name": "Bangshal Branch",
+      "Branch_Mnemonic": "808"
+    },
+    {
+      "Code": "331",
+      "Branch_Name": "Baniachang Uposhakha,Habiganj",
+      "Branch_Mnemonic": "D381"
+    },
+    {
+      "Code": "8071",
+      "Branch_Name": "Baniajuri Bazar Upo.,Manikganj",
+      "Branch_Mnemonic": "D672"
+    },
+    {
+      "Code": "7961",
+      "Branch_Name": "Bank Town Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D562"
+    },
+    {
+      "Code": "613",
+      "Branch_Name": "Bankra Uposhakha,Jashore",
+      "Branch_Mnemonic": "C564"
+    },
+    {
+      "Code": "7925",
+      "Branch_Name": "Banti Bazar Uposhakha",
+      "Branch_Mnemonic": "D526"
+    },
+    {
+      "Code": "961",
+      "Branch_Name": "Banwarinagar-Faridpur Upazila,Pabna",
+      "Branch_Mnemonic": "F960"
+    },
+    {
+      "Code": "8305",
+      "Branch_Name": "Barachaona Bazar Uposhakha,Tangail",
+      "Branch_Mnemonic": "G805"
+    },
+    {
+      "Code": "686",
+      "Branch_Name": "Baradi Bazar-Meherpur Upo,Meherpur",
+      "Branch_Mnemonic": "F855"
+    },
+    {
+      "Code": "7621",
+      "Branch_Name": "Baradi Bus Stop,Narayanganj",
+      "Branch_Mnemonic": "G596"
+    },
+    {
+      "Code": "887",
+      "Branch_Name": "Baraigram,Natore",
+      "Branch_Mnemonic": "C818"
+    },
+    {
+      "Code": "7994",
+      "Branch_Name": "Baraikhali Bazar Upo,Munshiganj",
+      "Branch_Mnemonic": "D595"
+    },
+    {
+      "Code": "8524",
+      "Branch_Name": "Baraiyarhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B524"
+    },
+    {
+      "Code": "5266",
+      "Branch_Name": "Barguna Branch",
+      "Branch_Mnemonic": "BARG"
+    },
+    {
+      "Code": "7832",
+      "Branch_Name": "Barhatta Bazar Uposhakha,Netrokona",
+      "Branch_Mnemonic": "D433"
+    },
+    {
+      "Code": "7322",
+      "Branch_Name": "Baridhara J Block Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A323"
+    },
+    {
+      "Code": "5064",
+      "Branch_Name": "Barisal Branch",
+      "Branch_Mnemonic": "BARI"
+    },
+    {
+      "Code": "402",
+      "Branch_Name": "Barishal Bazar Road Uposhakha",
+      "Branch_Mnemonic": "B637"
+    },
+    {
+      "Code": "403",
+      "Branch_Name": "Barishal Chawk Bazar Upo.,Barishal",
+      "Branch_Mnemonic": "B638"
+    },
+    {
+      "Code": "345",
+      "Branch_Name": "Barlekha Uposhakha,Moulvibazar",
+      "Branch_Mnemonic": "D396"
+    },
+    {
+      "Code": "71",
+      "Branch_Name": "Baro Awlia Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B754"
+    },
+    {
+      "Code": "621",
+      "Branch_Name": "Barobazar Uposhakha,Jhenaidah",
+      "Branch_Mnemonic": "C572"
+    },
+    {
+      "Code": "7898",
+      "Branch_Name": "Baroicha Uposhakha, Narsingdi",
+      "Branch_Mnemonic": "D499"
+    },
+    {
+      "Code": "8061",
+      "Branch_Name": "Baroipara Uposhakha",
+      "Branch_Mnemonic": "D661"
+    },
+    {
+      "Code": "8564",
+      "Branch_Name": "Barura Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B564"
+    },
+    {
+      "Code": "8187",
+      "Branch_Name": "Basail Uposhakha,Tangail",
+      "Branch_Mnemonic": "D788"
+    },
+    {
+      "Code": "7583",
+      "Branch_Name": "Bashabo Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A584"
+    },
+    {
+      "Code": "7887",
+      "Branch_Name": "Bashair Bazar Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D488"
+    },
+    {
+      "Code": "1070",
+      "Branch_Name": "Bashundhara Branch",
+      "Branch_Mnemonic": "BASH"
+    },
+    {
+      "Code": "601",
+      "Branch_Name": "Basundia More Uposhakha,Jashore",
+      "Branch_Mnemonic": "C552"
+    },
+    {
+      "Code": "8536",
+      "Branch_Name": "Basurhat Uposhakha, Noakhali",
+      "Branch_Mnemonic": "B536"
+    },
+    {
+      "Code": "411",
+      "Branch_Name": "Batajor Bazar-Barishal,Barishal",
+      "Branch_Mnemonic": "B646"
+    },
+    {
+      "Code": "8101",
+      "Branch_Name": "Batajore Bazar,Mymenshingh",
+      "Branch_Mnemonic": "D702"
+    },
+    {
+      "Code": "8572",
+      "Branch_Name": "Batakandi Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B572"
+    },
+    {
+      "Code": "553",
+      "Branch_Name": "Batiaghata Uposhakha,Khulna",
+      "Branch_Mnemonic": "C504"
+    },
+    {
+      "Code": "7232",
+      "Branch_Name": "Baunia Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A833"
+    },
+    {
+      "Code": "407",
+      "Branch_Name": "Bauphal Bazar Uposhakha,Patuakhali",
+      "Branch_Mnemonic": "B642"
+    },
+    {
+      "Code": "8863",
+      "Branch_Name": "Bayazid Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D989"
+    },
+    {
+      "Code": "136",
+      "Branch_Name": "Bazalia Uposhakha,Chattogram",
+      "Branch_Mnemonic": "F565"
+    },
+    {
+      "Code": "3138",
+      "Branch_Name": "Beani Bazar Branch",
+      "Branch_Mnemonic": "BEAN"
+    },
+    {
+      "Code": "7021",
+      "Branch_Name": "Becharam Dewri Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A622"
+    },
+    {
+      "Code": "6188",
+      "Branch_Name": "Belkuchi Branch",
+      "Branch_Mnemonic": "BELK"
+    },
+    {
+      "Code": "4166",
+      "Branch_Name": "Benapole Branch",
+      "Branch_Mnemonic": "BENA"
+    },
+    {
+      "Code": "933",
+      "Branch_Name": "Bera Uposhakha,Pabna",
+      "Branch_Mnemonic": "C864"
+    },
+    {
+      "Code": "7320",
+      "Branch_Name": "Beraid Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A321"
+    },
+    {
+      "Code": "8063",
+      "Branch_Name": "Beximco Industrial Park,Gazipur",
+      "Branch_Mnemonic": "D663"
+    },
+    {
+      "Code": "7620",
+      "Branch_Name": "Bhaber Char Bazar,Munsiganj",
+      "Branch_Mnemonic": "G595"
+    },
+    {
+      "Code": "8226",
+      "Branch_Name": "Bhadam Bazar Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D827"
+    },
+    {
+      "Code": "85",
+      "Branch_Name": "Bhairab Bazar Uposhakha,Kishoreganj",
+      "Branch_Mnemonic": "B768"
+    },
+    {
+      "Code": "8100",
+      "Branch_Name": "Bhaluka Uposhakha,Mymensingh",
+      "Branch_Mnemonic": "D701"
+    },
+    {
+      "Code": "5245",
+      "Branch_Name": "Bhandaria BRANCH",
+      "Branch_Mnemonic": "BHND"
+    },
+    {
+      "Code": "7949",
+      "Branch_Name": "Bhanga Bazar Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D550"
+    },
+    {
+      "Code": "622",
+      "Branch_Name": "Bhatai Bazar Uposhakha,Jhenidah",
+      "Branch_Mnemonic": "C573"
+    },
+    {
+      "Code": "7316",
+      "Branch_Name": "Bhatara Uposhakha",
+      "Branch_Mnemonic": "A317"
+    },
+    {
+      "Code": "1239",
+      "Branch_Name": "Bhawal Mirzapur Branch, Gazipur",
+      "Branch_Mnemonic": "BAWL"
+    },
+    {
+      "Code": "940",
+      "Branch_Name": "Bhawaniganj Uposhakha",
+      "Branch_Mnemonic": "C940"
+    },
+    {
+      "Code": "571",
+      "Branch_Name": "Bheramara Uposhakha,Kushtia",
+      "Branch_Mnemonic": "C522"
+    },
+    {
+      "Code": "281",
+      "Branch_Name": "Bhoirab Bazar-Sreemangal",
+      "Branch_Mnemonic": "D332"
+    },
+    {
+      "Code": "421",
+      "Branch_Name": "Bhola Banglabazar Uposhakha,Bhola",
+      "Branch_Mnemonic": "B656"
+    },
+    {"Code": "5202", "Branch_Name": "Bhola Branch", "Branch_Mnemonic": "BHOL"},
+    {
+      "Code": "906",
+      "Branch_Name": "Bholahat Upo, Chapai Nawabganj",
+      "Branch_Mnemonic": "C837"
+    },
+    {
+      "Code": "8518",
+      "Branch_Name": "Bholain Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B518"
+    },
+    {
+      "Code": "7861",
+      "Branch_Name": "Bhuapur Uposhakha,Tangail",
+      "Branch_Mnemonic": "D462"
+    },
+    {
+      "Code": "1235",
+      "Branch_Name": "Bhuigar Branch, Narayanganj",
+      "Branch_Mnemonic": "BHGR"
+    },
+    {
+      "Code": "8047",
+      "Branch_Name": "Bhulta Uposhakha, Narayanganj",
+      "Branch_Mnemonic": "D647"
+    },
+    {
+      "Code": "712",
+      "Branch_Name": "Bhurungamari Uposhakha,Kurigram",
+      "Branch_Mnemonic": "C623"
+    },
+    {
+      "Code": "12",
+      "Branch_Name": "Bijoynagar Amtoli Bazar",
+      "Branch_Mnemonic": "B695"
+    },
+    {
+      "Code": "7200",
+      "Branch_Name": "Bijoynagar Uposhakha",
+      "Branch_Mnemonic": "A801"
+    },
+    {
+      "Code": "879",
+      "Branch_Name": "Biman More Uposhakha,Bogura",
+      "Branch_Mnemonic": "C810"
+    },
+    {
+      "Code": "8508",
+      "Branch_Name": "Bipulashar Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B508"
+    },
+    {
+      "Code": "729",
+      "Branch_Name": "Birampur Uposhakha,Dinajpur",
+      "Branch_Mnemonic": "C640"
+    },
+    {
+      "Code": "731",
+      "Branch_Name": "Birganj Uposhakha,Dinajpur",
+      "Branch_Mnemonic": "C642"
+    },
+    {
+      "Code": "6209",
+      "Branch_Name": "Birol Bazar Branch",
+      "Branch_Mnemonic": "BRLB"
+    },
+    {
+      "Code": "372",
+      "Branch_Name": "Bishwanath Uposhakha, Sylhet",
+      "Branch_Mnemonic": "F701"
+    },
+    {
+      "Code": "7",
+      "Branch_Name": "Biswaroad Point,Brahmanbaria",
+      "Branch_Mnemonic": "B690"
+    },
+    {
+      "Code": "13",
+      "Branch_Name": "Bitghar Bazar Upo, Brahmanbaria",
+      "Branch_Mnemonic": "B696"
+    },
+    {
+      "Code": "8510",
+      "Branch_Name": "Bizra Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B510"
+    },
+    {
+      "Code": "2256",
+      "Branch_Name": "Boalkhali Branch",
+      "Branch_Mnemonic": "BOAL"
+    },
+    {
+      "Code": "7849",
+      "Branch_Name": "Boalmari Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D450"
+    },
+    {
+      "Code": "1177",
+      "Branch_Name": "Board Bazar Branch",
+      "Branch_Mnemonic": "BORD"
+    },
+    {
+      "Code": "8205",
+      "Branch_Name": "Bochila Uposhakha, Dhaka",
+      "Branch_Mnemonic": "D806"
+    },
+    {
+      "Code": "732",
+      "Branch_Name": "Boda Bazar Uposhakha,Panchagarh",
+      "Branch_Mnemonic": "C643"
+    },
+    {
+      "Code": "452",
+      "Branch_Name": "Boga Bazar Uposhakha, Patuakhali",
+      "Branch_Mnemonic": "F731"
+    },
+    {
+      "Code": "8102",
+      "Branch_Name": "Bogar Bazar Uposhakha,Mymenshing",
+      "Branch_Mnemonic": "D703"
+    },
+    {"Code": "6082", "Branch_Name": "Bogra Branch", "Branch_Mnemonic": "812"},
+    {
+      "Code": "875",
+      "Branch_Name": "Bogura Bou Bazar Uposhakha,Bogura",
+      "Branch_Mnemonic": "C806"
+    },
+    {
+      "Code": "876",
+      "Branch_Name": "Bogura Shibganj Uposhakha,Bogura",
+      "Branch_Mnemonic": "C807"
+    },
+    {
+      "Code": "877",
+      "Branch_Name": "Bogura Uposhahar Uposhakha,Bogura",
+      "Branch_Mnemonic": "C808"
+    },
+    {
+      "Code": "57",
+      "Branch_Name": "Boidyer Hat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B740"
+    },
+    {
+      "Code": "7975",
+      "Branch_Name": "Boktaboli Bazar Upo,Narayanganj",
+      "Branch_Mnemonic": "D576"
+    },
+    {
+      "Code": "8527",
+      "Branch_Name": "Boktar Munshir Bazar ,Feni",
+      "Branch_Mnemonic": "B527"
+    },
+    {
+      "Code": "722",
+      "Branch_Name": "Bonarpara Uposhakha,Gaibandha",
+      "Branch_Mnemonic": "C633"
+    },
+    {
+      "Code": "934",
+      "Branch_Name": "Bonogram Bazar Uposhakha, Pabna",
+      "Branch_Mnemonic": "C865"
+    },
+    {"Code": "889", "Branch_Name": "Bonpara-Natore", "Branch_Mnemonic": "C820"},
+    {
+      "Code": "8052",
+      "Branch_Name": "Borabo Bus Stand,Narayanganj",
+      "Branch_Mnemonic": "D652"
+    },
+    {
+      "Code": "8001",
+      "Branch_Name": "Boro Bari Uposhakha, Gazipur",
+      "Branch_Mnemonic": "D602"
+    },
+    {
+      "Code": "4067",
+      "Branch_Name": "Boro Bazar Branch",
+      "Branch_Mnemonic": "BORO"
+    },
+    {
+      "Code": "7482",
+      "Branch_Name": "Boro Bazar-Gabtoli Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A482"
+    },
+    {
+      "Code": "8278",
+      "Branch_Name": "Boro Bazar-Kishoreganj Uposhakha",
+      "Branch_Mnemonic": "G778"
+    },
+    {
+      "Code": "755",
+      "Branch_Name": "Boro Khochabari, THAKURGAON",
+      "Branch_Mnemonic": "C666"
+    },
+    {
+      "Code": "7112",
+      "Branch_Name": "Borobagh Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A713"
+    },
+    {
+      "Code": "952",
+      "Branch_Name": "Borogola Uposhakha,Bogura",
+      "Branch_Mnemonic": "F951"
+    },
+    {
+      "Code": "253",
+      "Branch_Name": "Boroikandi Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D303"
+    },
+    {
+      "Code": "8051",
+      "Branch_Name": "Borpa Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D651"
+    },
+    {
+      "Code": "7856",
+      "Branch_Name": "Bottola Uposhakha,Tangail",
+      "Branch_Mnemonic": "D457"
+    },
+    {
+      "Code": "8802",
+      "Branch_Name": "Bou Bazar Uposhakha,Chattagram",
+      "Branch_Mnemonic": "D928"
+    },
+    {
+      "Code": "7587",
+      "Branch_Name": "Bouddho Mondir-Sabujbag Uposhakha",
+      "Branch_Mnemonic": "A588"
+    },
+    {
+      "Code": "653",
+      "Branch_Name": "Boyra Uposhakha,Khulna",
+      "Branch_Mnemonic": "C604"
+    },
+    {
+      "Code": "8545",
+      "Branch_Name": "Bozra Bazar Uposhakha,Noakhali",
+      "Branch_Mnemonic": "B545"
+    },
+    {
+      "Code": "347",
+      "Branch_Name": "Brahman Bazar Upo,Moulvi Bazar",
+      "Branch_Mnemonic": "D398"
+    },
+    {
+      "Code": "2034",
+      "Branch_Name": "Brahmanbaria Branch",
+      "Branch_Mnemonic": "BBAR"
+    },
+    {
+      "Code": "8514",
+      "Branch_Name": "Brahmanpara Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B514"
+    },
+    {
+      "Code": "585",
+      "Branch_Name": "Brahmarajpur Bazar Upo,Satkhira",
+      "Branch_Mnemonic": "C536"
+    },
+    {
+      "Code": "8502",
+      "Branch_Name": "Burichang Uposhakha, Cumilla",
+      "Branch_Mnemonic": "B502"
+    },
+    {
+      "Code": "8588",
+      "Branch_Name": "Buschi Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B588"
+    },
+    {
+      "Code": "7303",
+      "Branch_Name": "BCC Road Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A304"
+    },
+    {
+      "Code": "7980",
+      "Branch_Name": "BSCIC Fakir Market Uposhaka,Gazipur",
+      "Branch_Mnemonic": "D581"
+    },
+    {
+      "Code": "8521",
+      "Branch_Name": "Chagalnaiya Uposhakha,Feni",
+      "Branch_Mnemonic": "B521"
+    },
+    {
+      "Code": "2252",
+      "Branch_Name": "Chakaria Branch, Cox's Bazar",
+      "Branch_Mnemonic": "CKRA"
+    },
+    {
+      "Code": "8062",
+      "Branch_Name": "Chakrabarti Bazar Uposhakha",
+      "Branch_Mnemonic": "D662"
+    },
+    {
+      "Code": "8769",
+      "Branch_Name": "Chaktai Uposhakha, Chattogram",
+      "Branch_Mnemonic": "D895"
+    },
+    {
+      "Code": "664",
+      "Branch_Name": "Chalna Bazar Uposhakha,Khulna",
+      "Branch_Mnemonic": "F833"
+    },
+    {
+      "Code": "144",
+      "Branch_Name": "Chambal Bazar Uposhakha,Chattogram",
+      "Branch_Mnemonic": "F573"
+    },
+    {
+      "Code": "127",
+      "Branch_Name": "Champaknagar Upo.,Brahmanbaria",
+      "Branch_Mnemonic": "B810"
+    },
+    {
+      "Code": "957",
+      "Branch_Name": "Chandaikona Uposhakha,Sirajganj",
+      "Branch_Mnemonic": "F956"
+    },
+    {
+      "Code": "8784",
+      "Branch_Name": "Chandanaish Uposhakha, Chattogram",
+      "Branch_Mnemonic": "D910"
+    },
+    {
+      "Code": "8862",
+      "Branch_Name": "Chandgaon R/A Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D988"
+    },
+    {
+      "Code": "2157",
+      "Branch_Name": "Chandina Branch",
+      "Branch_Mnemonic": "CHAN"
+    },
+    {
+      "Code": "8619",
+      "Branch_Name": "Chandpur Baburhat Uposhakha,",
+      "Branch_Mnemonic": "B619"
+    },
+    {
+      "Code": "2272",
+      "Branch_Name": "Chandpur Branch",
+      "Branch_Mnemonic": "CHAD"
+    },
+    {
+      "Code": "8616",
+      "Branch_Name": "Chandpur Puran Bazar Upo.,Chandpur",
+      "Branch_Mnemonic": "B616"
+    },
+    {
+      "Code": "8660",
+      "Branch_Name": "Chandra Bazar Uposhakha,Chandpur",
+      "Branch_Mnemonic": "F345"
+    },
+    {
+      "Code": "1205",
+      "Branch_Name": "Chandra SME Krishi Branch",
+      "Branch_Mnemonic": "CNDR"
+    },
+    {
+      "Code": "8060",
+      "Branch_Name": "Chandra Uposhakha",
+      "Branch_Mnemonic": "B060"
+    },
+    {
+      "Code": "2222",
+      "Branch_Name": "Chandraganj Branch",
+      "Branch_Mnemonic": "CNGN"
+    },
+    {
+      "Code": "7928",
+      "Branch_Name": "Chanpara Bazar Upo.,Narayanganj",
+      "Branch_Mnemonic": "D529"
+    },
+    {
+      "Code": "6086",
+      "Branch_Name": "Chapai Nawabganj Branch",
+      "Branch_Mnemonic": "CHAP"
+    },
+    {
+      "Code": "7138",
+      "Branch_Name": "Chapra Mosjid-Azimpur,Dhaka",
+      "Branch_Mnemonic": "A739"
+    },
+    {
+      "Code": "8547",
+      "Branch_Name": "Chaprashir Hat,Noakhali",
+      "Branch_Mnemonic": "B547"
+    },
+    {
+      "Code": "8291",
+      "Branch_Name": "Char Hajiganj-Faridpur,Faridpur",
+      "Branch_Mnemonic": "G791"
+    },
+    {
+      "Code": "123",
+      "Branch_Name": "Char Patharghata Upo, Chattogram",
+      "Branch_Mnemonic": "B806"
+    },
+    {
+      "Code": "8169",
+      "Branch_Name": "Char Rajibpur Uposhakha,Kurigram",
+      "Branch_Mnemonic": "D770"
+    },
+    {
+      "Code": "7842",
+      "Branch_Name": "Charbhadrasan Bazar Upo.,Faridpur",
+      "Branch_Mnemonic": "D443"
+    },
+    {
+      "Code": "423",
+      "Branch_Name": "Charfassion Uposhakha,Bhola",
+      "Branch_Mnemonic": "B658"
+    },
+    {
+      "Code": "910",
+      "Branch_Name": "Charghat Uposhakha",
+      "Branch_Mnemonic": "C841"
+    },
+    {
+      "Code": "8074",
+      "Branch_Name": "Charigram Bazar Uposhakha,Manikganj",
+      "Branch_Mnemonic": "D675"
+    },
+    {
+      "Code": "7948",
+      "Branch_Name": "Charmuguria Uposhakha,Madaripur",
+      "Branch_Mnemonic": "D549"
+    },
+    {
+      "Code": "7831",
+      "Branch_Name": "Charpara Uposhakha,Mymensingh",
+      "Branch_Mnemonic": "D432"
+    },
+    {
+      "Code": "7888",
+      "Branch_Name": "Charsindur Bazar Upo.,Narshingdi",
+      "Branch_Mnemonic": "D489"
+    },
+    {
+      "Code": "8088",
+      "Branch_Name": "Charsubuddi Bazar Upo.,Narsingdhi",
+      "Branch_Mnemonic": "D689"
+    },
+    {
+      "Code": "7871",
+      "Branch_Name": "Chashara Balur Math,Narayanganj",
+      "Branch_Mnemonic": "D472"
+    },
+    {
+      "Code": "8542",
+      "Branch_Name": "Chaterpaiya Uposhakha,Noakhali",
+      "Branch_Mnemonic": "B542"
+    },
+    {
+      "Code": "339",
+      "Branch_Name": "Chatian-Madhabpur,Habiganj",
+      "Branch_Mnemonic": "D390"
+    },
+    {
+      "Code": "8539",
+      "Branch_Name": "Chatkhil Uposhakha,Noakhali",
+      "Branch_Mnemonic": "B539"
+    },
+    {
+      "Code": "884",
+      "Branch_Name": "Chatmohor Uposhakha,Pabna",
+      "Branch_Mnemonic": "C815"
+    },
+    {
+      "Code": "8593",
+      "Branch_Name": "Chauddagram Uposhakha, Cumilla",
+      "Branch_Mnemonic": "B593"
+    },
+    {
+      "Code": "2040",
+      "Branch_Name": "Chawk Bazar Branch",
+      "Branch_Mnemonic": "CBZR"
+    },
+    {
+      "Code": "8675",
+      "Branch_Name": "Chawkbazar-Cumilla Upo, Cumilla",
+      "Branch_Mnemonic": "F360"
+    },
+    {
+      "Code": "7963",
+      "Branch_Name": "Chayabithi Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D564"
+    },
+    {
+      "Code": "874",
+      "Branch_Name": "Chelopara Uposhakha,Bogura",
+      "Branch_Mnemonic": "C805"
+    },
+    {
+      "Code": "8580",
+      "Branch_Name": "Chengarchar,Chandpur",
+      "Branch_Mnemonic": "B580"
+    },
+    {
+      "Code": "1237",
+      "Branch_Name": "Cherag Ali Branch, Gazipur",
+      "Branch_Mnemonic": "CHRG"
+    },
+    {
+      "Code": "8600",
+      "Branch_Name": "Chhayani Bazar Uposhakha,Noakhali",
+      "Branch_Mnemonic": "B600"
+    },
+    {
+      "Code": "780",
+      "Branch_Name": "Chilmari Uposhakha, Kurigram",
+      "Branch_Mnemonic": "F879"
+    },
+    {
+      "Code": "726",
+      "Branch_Name": "Chirirbondor Uposhakha,Dinajpur",
+      "Branch_Mnemonic": "C637"
+    },
+    {
+      "Code": "642",
+      "Branch_Name": "Chitalmari Bazar,Bagherhat",
+      "Branch_Mnemonic": "C593"
+    },
+    {
+      "Code": "8645",
+      "Branch_Name": "Chitoshi Bazar Uposhakha,Chandpur",
+      "Branch_Mnemonic": "F330"
+    },
+    {
+      "Code": "7024",
+      "Branch_Name": "Choto Katra Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A625"
+    },
+    {
+      "Code": "70",
+      "Branch_Name": "Choto Kumira Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B753"
+    },
+    {
+      "Code": "340",
+      "Branch_Name": "Choumuhani Bazar-Madhabpur,Habiganj",
+      "Branch_Mnemonic": "D391"
+    },
+    {
+      "Code": "2050",
+      "Branch_Name": "Choumuhani Branch",
+      "Branch_Mnemonic": "CHOU"
+    },
+    {
+      "Code": "570",
+      "Branch_Name": "Chourhash Uposhakha, Kushtia",
+      "Branch_Mnemonic": "C521"
+    },
+    {
+      "Code": "8549",
+      "Branch_Name": "Chowdhury Hat,Noakhali",
+      "Branch_Mnemonic": "B549"
+    },
+    {
+      "Code": "46",
+      "Branch_Name": "Chowdhuryhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B729"
+    },
+    {
+      "Code": "567",
+      "Branch_Name": "Chowgacha Bazar Uposhakha,Jashore",
+      "Branch_Mnemonic": "C518"
+    },
+    {
+      "Code": "891",
+      "Branch_Name": "Chowmashia Uposhakha,Naogaon",
+      "Branch_Mnemonic": "C822"
+    },
+    {
+      "Code": "405",
+      "Branch_Name": "Chowmatha Uposhakha,Barishal",
+      "Branch_Mnemonic": "B640"
+    },
+    {
+      "Code": "575",
+      "Branch_Name": "Chuadanga Sadar Uposhakha,Chuadanga",
+      "Branch_Mnemonic": "C526"
+    },
+    {
+      "Code": "662",
+      "Branch_Name": "Chuknagar Bazar Uposhakha,Khulna",
+      "Branch_Mnemonic": "F831"
+    },
+    {
+      "Code": "327",
+      "Branch_Name": "Chunarughat Uposhakha",
+      "Branch_Mnemonic": "D377"
+    },
+    {
+      "Code": "8026",
+      "Branch_Name": "Chunkutia Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D627"
+    },
+    {
+      "Code": "146",
+      "Branch_Name": "Chunti Bazar Uposhakha,Chattogram",
+      "Branch_Mnemonic": "F575"
+    },
+    {
+      "Code": "614",
+      "Branch_Name": "Chutipur Bazar Uposhakha,Jashore",
+      "Branch_Mnemonic": "C565"
+    },
+    {
+      "Code": "116",
+      "Branch_Name": "College Bazar Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B799"
+    },
+    {
+      "Code": "7862",
+      "Branch_Name": "College Para Uposhakha,Tangail",
+      "Branch_Mnemonic": "D463"
+    },
+    {
+      "Code": "2035",
+      "Branch_Name": "Comilla Branch",
+      "Branch_Mnemonic": "COMI"
+    },
+    {
+      "Code": "2148",
+      "Branch_Name": "Companyganj Branch",
+      "Branch_Mnemonic": "CPNY"
+    },
+    {
+      "Code": "21",
+      "Branch_Name": "Court Bazar Uposhakha,Cox's Bazar",
+      "Branch_Mnemonic": "B704"
+    },
+    {
+      "Code": "328",
+      "Branch_Name": "Court Station Road Uposhakha,Habi.",
+      "Branch_Mnemonic": "D378"
+    },
+    {
+      "Code": "2044",
+      "Branch_Name": "Coxs Bazar Branch",
+      "Branch_Mnemonic": "COX"
+    },
+    {
+      "Code": "8505",
+      "Branch_Name": "Cumilla EPZ Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B505"
+    },
+    {"Code": "1000", "Branch_Name": "CCIS BRANCH", "Branch_Mnemonic": "CCIS"},
+    {
+      "Code": "2054",
+      "Branch_Name": "CDA Avenue Branch",
+      "Branch_Mnemonic": "CDAB"
+    },
+    {
+      "Code": "8847",
+      "Branch_Name": "CEPZ Uposhakha,Chattagram",
+      "Branch_Mnemonic": "D973"
+    },
+    {
+      "Code": "8669",
+      "Branch_Name": "Dagonbhuiyan Uposhakha,Feni",
+      "Branch_Mnemonic": "F354"
+    },
+    {
+      "Code": "627",
+      "Branch_Name": "Dak Bangla Bazar,Jhenaidah",
+      "Branch_Mnemonic": "C578"
+    },
+    {
+      "Code": "7588",
+      "Branch_Name": "Dakhingaon Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A589"
+    },
+    {
+      "Code": "8555",
+      "Branch_Name": "Dakshin Bangora Rupbabu Bazar Upo",
+      "Branch_Mnemonic": "B555"
+    },
+    {
+      "Code": "7228",
+      "Branch_Name": "Dakshinkhan Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A829"
+    },
+    {
+      "Code": "8635",
+      "Branch_Name": "Dalal Bazar-Laxmipur,Laxmipur",
+      "Branch_Mnemonic": "F320"
+    },
+    {
+      "Code": "7875",
+      "Branch_Name": "Damudya Uposhakha,Shariatpur",
+      "Branch_Mnemonic": "D476"
+    },
+    {
+      "Code": "681",
+      "Branch_Name": "Damurhuda,Chuadanga",
+      "Branch_Mnemonic": "F850"
+    },
+    {"Code": "1193", "Branch_Name": "Dania Branch", "Branch_Mnemonic": "DANI"},
+    {
+      "Code": "882",
+      "Branch_Name": "Dapunia Bazar Uposhakha,Pabna",
+      "Branch_Mnemonic": "C813"
+    },
+    {
+      "Code": "8390",
+      "Branch_Name": "Dapunia- Mymensingh Uposhakha",
+      "Branch_Mnemonic": "G890"
+    },
+    {
+      "Code": "4224",
+      "Branch_Name": "Darshana Branch",
+      "Branch_Mnemonic": "DSNA"
+    },
+    {
+      "Code": "1232",
+      "Branch_Name": "Darus Salam Road Branch, Dhaka",
+      "Branch_Mnemonic": "DSLM"
+    },
+    {
+      "Code": "8602",
+      "Branch_Name": "Dattapara Bazar-Laxmipur Uposhakha",
+      "Branch_Mnemonic": "B602"
+    },
+    {
+      "Code": "8225",
+      "Branch_Name": "Dattapara Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D826"
+    },
+    {
+      "Code": "8571",
+      "Branch_Name": "Daudkandi Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B571"
+    },
+    {
+      "Code": "420",
+      "Branch_Name": "Daulatkhan Uposhakha,Bhola",
+      "Branch_Mnemonic": "B655"
+    },
+    {
+      "Code": "551",
+      "Branch_Name": "Daulatpur Uposhakha,Khulna",
+      "Branch_Mnemonic": "C502"
+    },
+    {
+      "Code": "106",
+      "Branch_Name": "Debashish Nagor Upo.,Rangamati",
+      "Branch_Mnemonic": "B789"
+    },
+    {
+      "Code": "8550",
+      "Branch_Name": "Debidwar Uposhakha",
+      "Branch_Mnemonic": "B550"
+    },
+    {
+      "Code": "8216",
+      "Branch_Name": "Delpara Bazar Uposhakha",
+      "Branch_Mnemonic": "D817"
+    },
+    {
+      "Code": "7870",
+      "Branch_Name": "Deobhog Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D471"
+    },
+    {
+      "Code": "8780",
+      "Branch_Name": "Dewan Bazar Uposhakha, Chattogram",
+      "Branch_Mnemonic": "D906"
+    },
+    {
+      "Code": "8813",
+      "Branch_Name": "Dewanhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D939"
+    },
+    {
+      "Code": "7273",
+      "Branch_Name": "Dewanpara Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A874"
+    },
+    {
+      "Code": "7050",
+      "Branch_Name": "Dhaka New Market Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A650"
+    },
+    {
+      "Code": "7435",
+      "Branch_Name": "Dhaka Uddan Uposhakha",
+      "Branch_Mnemonic": "A436"
+    },
+    {
+      "Code": "853",
+      "Branch_Name": "Dhamoirhat Uposhakha,Naogaon",
+      "Branch_Mnemonic": "C784"
+    },
+    {
+      "Code": "1178",
+      "Branch_Name": "Dhamrai SME Krishi Branch",
+      "Branch_Mnemonic": "DHAM"
+    },
+    {
+      "Code": "404",
+      "Branch_Name": "Dhamura Bandar Uposhakha,Barishal",
+      "Branch_Mnemonic": "B639"
+    },
+    {
+      "Code": "7533",
+      "Branch_Name": "Dhan Kheter More Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A537"
+    },
+    {
+      "Code": "1255",
+      "Branch_Name": "Dhanbari Branch, Tangail.",
+      "Branch_Mnemonic": "DHNB"
+    },
+    {
+      "Code": "972",
+      "Branch_Name": "Dhangora Bazar Uposhakha,Sirajganj",
+      "Branch_Mnemonic": "F971"
+    },
+    {
+      "Code": "1006",
+      "Branch_Name": "Dhanmondi Branch",
+      "Branch_Mnemonic": "814"
+    },
+    {
+      "Code": "702",
+      "Branch_Name": "Dhap Uposhakha,Rangpur",
+      "Branch_Mnemonic": "C613"
+    },
+    {
+      "Code": "721",
+      "Branch_Name": "Dhaperhat Uposhakha,Gaibandha",
+      "Branch_Mnemonic": "C632"
+    },
+    {
+      "Code": "7971",
+      "Branch_Name": "Dharmaganj Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D572"
+    },
+    {
+      "Code": "338",
+      "Branch_Name": "Dharmaghar Bazar Uposhakha,Habiganj",
+      "Branch_Mnemonic": "D389"
+    },
+    {
+      "Code": "7302",
+      "Branch_Name": "Dholaikhal Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A303"
+    },
+    {
+      "Code": "7420",
+      "Branch_Name": "Dholaipar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A420"
+    },
+    {
+      "Code": "8589",
+      "Branch_Name": "Dhorkora Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B589"
+    },
+    {
+      "Code": "760",
+      "Branch_Name": "Dhukurjhari Uposhakha,Dinajpur",
+      "Branch_Mnemonic": "C671"
+    },
+    {
+      "Code": "956",
+      "Branch_Name": "Dhunat Uposhakha,Bogura",
+      "Branch_Mnemonic": "F955"
+    },
+    {
+      "Code": "872",
+      "Branch_Name": "Dhupchachia Uposhakha, Bogura",
+      "Branch_Mnemonic": "C803"
+    },
+    {
+      "Code": "8285",
+      "Branch_Name": "Dhuptara Kalibari,Narayanganj",
+      "Branch_Mnemonic": "G785"
+    },
+    {
+      "Code": "109",
+      "Branch_Name": "Dighinala,Khagrachhari",
+      "Branch_Mnemonic": "B792"
+    },
+    {
+      "Code": "646",
+      "Branch_Name": "Digraj,Bagerhat",
+      "Branch_Mnemonic": "C597"
+    },
+    {
+      "Code": "7155",
+      "Branch_Name": "Dilu Road Uposhakha",
+      "Branch_Mnemonic": "A155"
+    },
+    {
+      "Code": "713",
+      "Branch_Name": "Dimla Uposhakha,Nilphamari",
+      "Branch_Mnemonic": "C624"
+    },
+    {
+      "Code": "6083",
+      "Branch_Name": "Dinajpur Branch",
+      "Branch_Mnemonic": "DINA"
+    },
+    {
+      "Code": "7301",
+      "Branch_Name": "Distillery Road Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A302"
+    },
+    {
+      "Code": "8335",
+      "Branch_Name": "Dobli Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "F835"
+    },
+    {
+      "Code": "7494",
+      "Branch_Name": "Dogair Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A495"
+    },
+    {
+      "Code": "8336",
+      "Branch_Name": "Dohar Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "F836"
+    },
+    {
+      "Code": "140",
+      "Branch_Name": "Dohazari Uposhakha,Chattogram",
+      "Branch_Mnemonic": "F569"
+    },
+    {
+      "Code": "7889",
+      "Branch_Name": "Dolan Bazar Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D490"
+    },
+    {
+      "Code": "8028",
+      "Branch_Name": "Doleshwar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D629"
+    },
+    {
+      "Code": "771",
+      "Branch_Name": "Domar,Nilphamari",
+      "Branch_Mnemonic": "F870"
+    },
+    {
+      "Code": "8525",
+      "Branch_Name": "Dorbesher Hat Uposhakha,Feni",
+      "Branch_Mnemonic": "B525"
+    },
+    {
+      "Code": "7929",
+      "Branch_Name": "Dorgaon Uposhakha, Narayanganj",
+      "Branch_Mnemonic": "D530"
+    },
+    {
+      "Code": "8665",
+      "Branch_Name": "Dotter Hat Uposhakha,Noakhali",
+      "Branch_Mnemonic": "F350"
+    },
+    {
+      "Code": "35",
+      "Branch_Name": "Dovashi Bazar Uposhakha",
+      "Branch_Mnemonic": "B718"
+    },
+    {
+      "Code": "150",
+      "Branch_Name": "Dulahazara,Cox's Bazar",
+      "Branch_Mnemonic": "F579"
+    },
+    {
+      "Code": "8177",
+      "Branch_Name": "Dumni Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D778"
+    },
+    {
+      "Code": "554",
+      "Branch_Name": "Dumuria Uposhakha,Khulna",
+      "Branch_Mnemonic": "C505"
+    },
+    {
+      "Code": "911",
+      "Branch_Name": "Durgapur Bazar Uposhakha,Rajshahi",
+      "Branch_Mnemonic": "C842"
+    },
+    {
+      "Code": "8351",
+      "Branch_Name": "Durgapur-Netrokona Uposhakha",
+      "Branch_Mnemonic": "G851"
+    },
+    {
+      "Code": "8027",
+      "Branch_Name": "East Chorail Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D628"
+    },
+    {
+      "Code": "7422",
+      "Branch_Name": "East Jurain Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A422"
+    },
+    {
+      "Code": "7115",
+      "Branch_Name": "East Kafrul Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A716"
+    },
+    {
+      "Code": "7456",
+      "Branch_Name": "East Nakhalpara Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A457"
+    },
+    {
+      "Code": "22",
+      "Branch_Name": "Eidgah Bazar Uposhakha,Coxs Bazar",
+      "Branch_Mnemonic": "B705"
+    },
+    {
+      "Code": "883",
+      "Branch_Name": "Ekdanta Bazar Uposhakha,Pabna",
+      "Branch_Mnemonic": "C814"
+    },
+    {
+      "Code": "7857",
+      "Branch_Name": "Elenga Uposhakha,Tangail",
+      "Branch_Mnemonic": "D458"
+    },
+    {
+      "Code": "1014",
+      "Branch_Name": "Elephant Road Branch",
+      "Branch_Mnemonic": "810"
+    },
+    {
+      "Code": "8574",
+      "Branch_Name": "Eliotganj Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B574"
+    },
+    {
+      "Code": "8803",
+      "Branch_Name": "Enayet Bazar Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D929"
+    },
+    {
+      "Code": "926",
+      "Branch_Name": "Enayetpur-Sirajganj Uposhakha",
+      "Branch_Mnemonic": "C857"
+    },
+    {
+      "Code": "7274",
+      "Branch_Name": "ECB Chattar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A875"
+    },
+    {
+      "Code": "643",
+      "Branch_Name": "Fakirhat Uposhakha,Bagerhat",
+      "Branch_Mnemonic": "C594"
+    },
+    {
+      "Code": "8656",
+      "Branch_Name": "Faridganj Uposhakha,Chandpur",
+      "Branch_Mnemonic": "F341"
+    },
+    {
+      "Code": "1023",
+      "Branch_Name": "Faridpur Branch",
+      "Branch_Mnemonic": "FDP"
+    },
+    {
+      "Code": "2152",
+      "Branch_Name": "Fatikchari Branch",
+      "Branch_Mnemonic": "FATK"
+    },
+    {
+      "Code": "7973",
+      "Branch_Name": "Fatullah Bazar, NARAYANGANJ",
+      "Branch_Mnemonic": "D574"
+    },
+    {
+      "Code": "1008",
+      "Branch_Name": "Federation Branch",
+      "Branch_Mnemonic": "807"
+    },
+    {
+      "Code": "1238",
+      "Branch_Name": "Federation Branch",
+      "Branch_Mnemonic": "LOCL"
+    },
+    {
+      "Code": "291",
+      "Branch_Name": "Fenchuganj Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D342"
+    },
+    {"Code": "2041", "Branch_Name": "Feni Branch", "Branch_Mnemonic": "FENI"},
+    {
+      "Code": "8837",
+      "Branch_Name": "Foillatali Bazar Uposhakha,Ctg.",
+      "Branch_Mnemonic": "D962"
+    },
+    {
+      "Code": "8156",
+      "Branch_Name": "Forazikanda Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D757"
+    },
+    {
+      "Code": "645",
+      "Branch_Name": "Foylahat Uposhakha,Bagerhat",
+      "Branch_Mnemonic": "C596"
+    },
+    {
+      "Code": "663",
+      "Branch_Name": "Fulbari Gate Uposhakha,Khulna",
+      "Branch_Mnemonic": "F832"
+    },
+    {
+      "Code": "734",
+      "Branch_Name": "Fulbari-Dinajpur Uposhakha,Dinajpur",
+      "Branch_Mnemonic": "C645"
+    },
+    {
+      "Code": "7516",
+      "Branch_Name": "Fulbaria Bazar Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A517"
+    },
+    {
+      "Code": "8240",
+      "Branch_Name": "Fulbaria Bazar-Kaliakoir ,Gazipur",
+      "Branch_Mnemonic": "D841"
+    },
+    {
+      "Code": "8",
+      "Branch_Name": "Fulbaria-Brahmanbaria Uposhakha",
+      "Branch_Mnemonic": "B691"
+    },
+    {
+      "Code": "8522",
+      "Branch_Name": "Fulgazi Uposhakha,Feni",
+      "Branch_Mnemonic": "B522"
+    },
+    {
+      "Code": "7824",
+      "Branch_Name": "Fulpur Uposhakha,Mymensingh",
+      "Branch_Mnemonic": "D425"
+    },
+    {
+      "Code": "607",
+      "Branch_Name": "Fultola Bazar Uposhakha, Khulna",
+      "Branch_Mnemonic": "C558"
+    },
+    {
+      "Code": "8084",
+      "Branch_Name": "Fultola Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D685"
+    },
+    {
+      "Code": "142",
+      "Branch_Name": "Fultola Bazar-Satkania,Chattogram",
+      "Branch_Mnemonic": "F571"
+    },
+    {
+      "Code": "351",
+      "Branch_Name": "Gabindaganj-Sunamganj Uposhakha",
+      "Branch_Mnemonic": "F680"
+    },
+    {
+      "Code": "1207",
+      "Branch_Name": "Gabtoli Bagbari Branch",
+      "Branch_Mnemonic": "GBTL"
+    },
+    {
+      "Code": "873",
+      "Branch_Name": "Gabtoli Upozila Uposhakha,Bogura",
+      "Branch_Mnemonic": "C804"
+    },
+    {
+      "Code": "145",
+      "Branch_Name": "Gachbaria Uposhakha,Chattogram",
+      "Branch_Mnemonic": "F574"
+    },
+    {
+      "Code": "7830",
+      "Branch_Name": "Gafargaon Uposhakha,Mymensingh",
+      "Branch_Mnemonic": "D431"
+    },
+    {
+      "Code": "6271",
+      "Branch_Name": "Gaibandha Branch",
+      "Branch_Mnemonic": "GAIB"
+    },
+    {
+      "Code": "454",
+      "Branch_Name": "Galachipa Bazar Upo, Patuakhali",
+      "Branch_Mnemonic": "F733"
+    },
+    {
+      "Code": "7990",
+      "Branch_Name": "Galimpur Uposhakha, Dhaka",
+      "Branch_Mnemonic": "D591"
+    },
+    {
+      "Code": "717",
+      "Branch_Name": "Gangachara Uposhakha,Rangpur",
+      "Branch_Mnemonic": "C628"
+    },
+    {
+      "Code": "572",
+      "Branch_Name": "Gangni Uposhakha,Kushtia",
+      "Branch_Mnemonic": "C523"
+    },
+    {
+      "Code": "1217",
+      "Branch_Name": "Garibe Newaz Avenue Branch",
+      "Branch_Mnemonic": "GARI"
+    },
+    {
+      "Code": "8311",
+      "Branch_Name": "Garo Bazar Uposhakha,Tangail",
+      "Branch_Mnemonic": "G811"
+    },
+    {
+      "Code": "11",
+      "Branch_Name": "Gas Field Gate ,Brahmanbaria",
+      "Branch_Mnemonic": "B694"
+    },
+    {
+      "Code": "7220",
+      "Branch_Name": "Gausul Azam Avenue Uposhakha",
+      "Branch_Mnemonic": "A821"
+    },
+    {
+      "Code": "1225",
+      "Branch_Name": "Gazipur Chowrasta Branch",
+      "Branch_Mnemonic": "GZCR"
+    },
+    {
+      "Code": "7955",
+      "Branch_Name": "Genda Uposhakha",
+      "Branch_Mnemonic": "D556"
+    },
+    {
+      "Code": "7300",
+      "Branch_Name": "Gendaria Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A301"
+    },
+    {
+      "Code": "7858",
+      "Branch_Name": "Ghatail Uposhakha,Tangail",
+      "Branch_Mnemonic": "D459"
+    },
+    {
+      "Code": "8070",
+      "Branch_Name": "Ghior Bazar Uposhakha",
+      "Branch_Mnemonic": "D671"
+    },
+    {
+      "Code": "857",
+      "Branch_Name": "Ghoraghat Uposhakha, Dinajpur",
+      "Branch_Mnemonic": "C788"
+    },
+    {
+      "Code": "1109",
+      "Branch_Name": "Ghorasal Branch",
+      "Branch_Mnemonic": "GHO"
+    },
+    {
+      "Code": "7877",
+      "Branch_Name": "Ghorishar Uposhakha,Shariatpur",
+      "Branch_Mnemonic": "D478"
+    },
+    {
+      "Code": "8042",
+      "Branch_Name": "Ghoshbag Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D643"
+    },
+    {
+      "Code": "3151",
+      "Branch_Name": "Goala Bazar Branch",
+      "Branch_Mnemonic": "GOAL"
+    },
+    {
+      "Code": "1248",
+      "Branch_Name": "Goalanda Branch",
+      "Branch_Mnemonic": "GOLN"
+    },
+    {
+      "Code": "8265",
+      "Branch_Name": "Goalanda Moor Uposhakha, Rajbari",
+      "Branch_Mnemonic": "D866"
+    },
+    {
+      "Code": "7840",
+      "Branch_Name": "Goalchamot Uposhakha",
+      "Branch_Mnemonic": "D441"
+    },
+    {
+      "Code": "710",
+      "Branch_Name": "Gobindaganj-Gaibandha Uposhakha",
+      "Branch_Mnemonic": "C621"
+    },
+    {
+      "Code": "602",
+      "Branch_Name": "Gobra Bazar Uposhakha,Narail",
+      "Branch_Mnemonic": "C553"
+    },
+    {
+      "Code": "901",
+      "Branch_Name": "Godagari,Rajshahi",
+      "Branch_Mnemonic": "C832"
+    },
+    {
+      "Code": "878",
+      "Branch_Name": "Godarpara Uposhakha",
+      "Branch_Mnemonic": "C809"
+    },
+    {
+      "Code": "8050",
+      "Branch_Name": "Godnail Chowdhurybari,Narayanganj",
+      "Branch_Mnemonic": "D650"
+    },
+    {
+      "Code": "43",
+      "Branch_Name": "Gohira Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B726"
+    },
+    {
+      "Code": "7357",
+      "Branch_Name": "Golapbagh Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A358"
+    },
+    {
+      "Code": "259",
+      "Branch_Name": "Golapganj-Sylhet,Sylhet",
+      "Branch_Mnemonic": "D309"
+    },
+    {
+      "Code": "694",
+      "Branch_Name": "Golapnagar Bazar Uposhakha,Kushtia",
+      "Branch_Mnemonic": "F863"
+    },
+    {
+      "Code": "7479",
+      "Branch_Name": "Golartek Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A479"
+    },
+    {
+      "Code": "650",
+      "Branch_Name": "Gollamari Uposhakha, Khulna",
+      "Branch_Mnemonic": "C601"
+    },
+    {
+      "Code": "8077",
+      "Branch_Name": "Golora I/A Uposhakha,Manikganj",
+      "Branch_Mnemonic": "D678"
+    },
+    {
+      "Code": "1273",
+      "Branch_Name": "Gopalganj Branch",
+      "Branch_Mnemonic": "GOPL"
+    },
+    {
+      "Code": "8306",
+      "Branch_Name": "Gopalpur Uposhakha,Tangail",
+      "Branch_Mnemonic": "G806"
+    },
+    {
+      "Code": "8065",
+      "Branch_Name": "Gorai Uposhakha,Tangail",
+      "Branch_Mnemonic": "D665"
+    },
+    {
+      "Code": "8135",
+      "Branch_Name": "Gorgoria Master Bari, Gazipur",
+      "Branch_Mnemonic": "D736"
+    },
+    {
+      "Code": "7881",
+      "Branch_Name": "Gosairhat Uposhakha,Shariatpur",
+      "Branch_Mnemonic": "D482"
+    },
+    {
+      "Code": "416",
+      "Branch_Name": "Gouranadi Uposhakha,Barishal",
+      "Branch_Mnemonic": "B651"
+    },
+    {
+      "Code": "2210",
+      "Branch_Name": "Gouripur Bazar Branch",
+      "Branch_Mnemonic": "GOUR"
+    },
+    {
+      "Code": "8578",
+      "Branch_Name": "Gouripur Bus Stand,Cumilla",
+      "Branch_Mnemonic": "B578"
+    },
+    {
+      "Code": "7835",
+      "Branch_Name": "Gouripur- Mymensingh,Mymensingh",
+      "Branch_Mnemonic": "D436"
+    },
+    {
+      "Code": "256",
+      "Branch_Name": "Gowainghat Bazar Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D306"
+    },
+    {
+      "Code": "7844",
+      "Branch_Name": "Gozaria Bazar Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D445"
+    },
+    {
+      "Code": "7046",
+      "Branch_Name": "Green Road Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A646"
+    },
+    {
+      "Code": "7098",
+      "Branch_Name": "Gulistan Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A699"
+    },
+    {"Code": "1002", "Branch_Name": "Gulshan Branch", "Branch_Mnemonic": "802"},
+    {
+      "Code": "7340",
+      "Branch_Name": "Gulshan Lake Drive Road Upo.,Dhaka",
+      "Branch_Mnemonic": "A341"
+    },
+    {
+      "Code": "7338",
+      "Branch_Name": "Gulshan-Badda Link Road,Dhaka",
+      "Branch_Mnemonic": "A339"
+    },
+    {
+      "Code": "1203",
+      "Branch_Name": "Gulshan-Tejgaon Link Road Branch",
+      "Branch_Mnemonic": "GTLR"
+    },
+    {
+      "Code": "8592",
+      "Branch_Name": "Gunabati Uposhakha, Cumilla",
+      "Branch_Mnemonic": "B592"
+    },
+    {
+      "Code": "944",
+      "Branch_Name": "Gurudashpur Uposhakha,Natore",
+      "Branch_Mnemonic": "C874"
+    },
+    {
+      "Code": "3216",
+      "Branch_Name": "Habiganj Branch",
+      "Branch_Mnemonic": "HABI"
+    },
+    {
+      "Code": "8636",
+      "Branch_Name": "Haiderganj Uposhakha,Laxmipur",
+      "Branch_Mnemonic": "F321"
+    },
+    {
+      "Code": "8614",
+      "Branch_Name": "Haimchar Bazar Uposhakha,Chandpur",
+      "Branch_Mnemonic": "B614"
+    },
+    {
+      "Code": "8611",
+      "Branch_Name": "Hajiganj Bazar Uposhakha",
+      "Branch_Mnemonic": "B611"
+    },
+    {
+      "Code": "8111",
+      "Branch_Name": "Hajiganj Wapdar Pool,Narayanganj",
+      "Branch_Mnemonic": "D712"
+    },
+    {
+      "Code": "8523",
+      "Branch_Name": "Hajir Bazar Uposhakha,Feni",
+      "Branch_Mnemonic": "B523"
+    },
+    {
+      "Code": "8835",
+      "Branch_Name": "Halishahor Uposhakha",
+      "Branch_Mnemonic": "B835"
+    },
+    {
+      "Code": "634",
+      "Branch_Name": "Halsha Bazar Uposhakha,Kushtia",
+      "Branch_Mnemonic": "C585"
+    },
+    {
+      "Code": "7836",
+      "Branch_Name": "Haluaghat Uposhakha Mymensingh",
+      "Branch_Mnemonic": "D437"
+    },
+    {
+      "Code": "928",
+      "Branch_Name": "Harina Pipulbaria,Sirajganj",
+      "Branch_Mnemonic": "C859"
+    },
+    {
+      "Code": "625",
+      "Branch_Name": "Harinakunda Uposhakha,Jhenaidah",
+      "Branch_Mnemonic": "C576"
+    },
+    {
+      "Code": "8117",
+      "Branch_Name": "Harinal Uposhakha, Gazipur",
+      "Branch_Mnemonic": "D717"
+    },
+    {
+      "Code": "578",
+      "Branch_Name": "Harinarayanpur Uposhakha,Kushtia",
+      "Branch_Mnemonic": "C529"
+    },
+    {
+      "Code": "758",
+      "Branch_Name": "Haripur-Thakurgoan Upo,Thakurgaon",
+      "Branch_Mnemonic": "C669"
+    },
+    {
+      "Code": "8646",
+      "Branch_Name": "Hasanpur-Dhalua Road Upo,Cumilla",
+      "Branch_Mnemonic": "F331"
+    },
+    {
+      "Code": "1218",
+      "Branch_Name": "Hasnabad Branch",
+      "Branch_Mnemonic": "HASN"
+    },
+    {
+      "Code": "8093",
+      "Branch_Name": "Hasnabad-Ekuria",
+      "Branch_Mnemonic": "D693"
+    },
+    {
+      "Code": "472",
+      "Branch_Name": "Hatfazilpur Uposhakha, Jhenidah",
+      "Branch_Mnemonic": "F751"
+    },
+    {
+      "Code": "946",
+      "Branch_Name": "Hatgangopara Uposhakha,Rajshahi",
+      "Branch_Mnemonic": "C876"
+    },
+    {
+      "Code": "628",
+      "Branch_Name": "Hatgopalpur,Jhenaidah",
+      "Branch_Mnemonic": "C579"
+    },
+    {
+      "Code": "2137",
+      "Branch_Name": "Hathazari Branch",
+      "Branch_Mnemonic": "HATH"
+    },
+    {
+      "Code": "774",
+      "Branch_Name": "Hatibandha Uposhakha,Lalmonirhat",
+      "Branch_Mnemonic": "F873"
+    },
+    {
+      "Code": "7916",
+      "Branch_Name": "Hatimara Uposhakha, Munshiganj",
+      "Branch_Mnemonic": "D515"
+    },
+    {
+      "Code": "7900",
+      "Branch_Name": "Hatirdia Bazar Uposhakha,Narsingdi",
+      "Branch_Mnemonic": "D501"
+    },
+    {
+      "Code": "7135",
+      "Branch_Name": "Hatirpool Uposhakha",
+      "Branch_Mnemonic": "A736"
+    },
+    {
+      "Code": "7359",
+      "Branch_Name": "Hatkhola Fokir Banu Market,Dhaka",
+      "Branch_Mnemonic": "A360"
+    },
+    {
+      "Code": "7846",
+      "Branch_Name": "Hatkrisnapur Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D447"
+    },
+    {
+      "Code": "8171",
+      "Branch_Name": "Hazipur Bazar- Jamalpur Uposhakha",
+      "Branch_Mnemonic": "D772"
+    },
+    {"Code": "9900", "Branch_Name": "Head Office", "Branch_Mnemonic": "HO"},
+    {
+      "Code": "7475",
+      "Branch_Name": "Hemayetpur Uposhakha",
+      "Branch_Mnemonic": "A475"
+    },
+    {
+      "Code": "854",
+      "Branch_Name": "Hilli Bandar Uposhakha,Dinajpur",
+      "Branch_Mnemonic": "C785"
+    },
+    {
+      "Code": "8217",
+      "Branch_Name": "Hirajheel Uposhakha, Narayanganj",
+      "Branch_Mnemonic": "D818"
+    },
+    {
+      "Code": "27",
+      "Branch_Name": "Hnila Bazar Uposhakha,Coxs Bazar",
+      "Branch_Mnemonic": "B710"
+    },
+    {
+      "Code": "7610",
+      "Branch_Name": "Holan Bazar, Dakshinkhan, Dhaka",
+      "Branch_Mnemonic": "G585"
+    },
+    {
+      "Code": "7161",
+      "Branch_Name": "Holiday Inn Dhaka City Center",
+      "Branch_Mnemonic": "A760"
+    },
+    {
+      "Code": "8570",
+      "Branch_Name": "Homna Bazar Uposhakha",
+      "Branch_Mnemonic": "B570"
+    },
+    {
+      "Code": "778",
+      "Branch_Name": "Honuman Tola Uposhakha, Rangpur",
+      "Branch_Mnemonic": "F877"
+    },
+    {
+      "Code": "8279",
+      "Branch_Name": "Hossainpur Uposhakha,Kishoreganj",
+      "Branch_Mnemonic": "G779"
+    },
+    {
+      "Code": "7117",
+      "Branch_Name": "Ibrahimpur Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A718"
+    },
+    {
+      "Code": "8094",
+      "Branch_Name": "Ichapura Bazar- Munshiganj Upo",
+      "Branch_Mnemonic": "D694"
+    },
+    {
+      "Code": "7159",
+      "Branch_Name": "Indira Road Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A758"
+    },
+    {
+      "Code": "441",
+      "Branch_Name": "Indurkani Bazar Uposhakha,Pirojpur",
+      "Branch_Mnemonic": "B676"
+    },
+    {
+      "Code": "1230",
+      "Branch_Name": "Isapura Bazar Branch",
+      "Branch_Mnemonic": "ISPR"
+    },
+    {
+      "Code": "880",
+      "Branch_Name": "Ishwardi Uposhakha,Pabna",
+      "Branch_Mnemonic": "C811"
+    },
+    {
+      "Code": "7827",
+      "Branch_Name": "Ishwarganj Uposhakha,Mymensingh",
+      "Branch_Mnemonic": "D428"
+    },
+    {
+      "Code": "7025",
+      "Branch_Name": "Islambagh Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A626"
+    },
+    {
+      "Code": "10",
+      "Branch_Name": "Islampur Bazar Upo.,Brahmanbaria",
+      "Branch_Mnemonic": "B693"
+    },
+    {
+      "Code": "8168",
+      "Branch_Name": "Islampur Bazar-Jamalpur Uposhakha",
+      "Branch_Mnemonic": "D769"
+    },
+    {
+      "Code": "1005",
+      "Branch_Name": "Islampur Branch",
+      "Branch_Mnemonic": "799"
+    },
+    {
+      "Code": "7899",
+      "Branch_Name": "Itakhola Uposhakha,Narsingdi",
+      "Branch_Mnemonic": "D500"
+    },
+    {
+      "Code": "7355",
+      "Branch_Name": "Ittefaq More Uposhakha",
+      "Branch_Mnemonic": "A356"
+    },
+    {
+      "Code": "756",
+      "Branch_Name": "Jadurani Bazar Uposhakha,Thakurgaon",
+      "Branch_Mnemonic": "C667"
+    },
+    {
+      "Code": "8517",
+      "Branch_Name": "Jafarganj Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B517"
+    },
+    {
+      "Code": "258",
+      "Branch_Name": "Jaflong Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D308"
+    },
+    {
+      "Code": "7230",
+      "Branch_Name": "Jahura Market Road Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A831"
+    },
+    {
+      "Code": "371",
+      "Branch_Name": "Jaintapur Uposhakha,Sylhet",
+      "Branch_Mnemonic": "F700"
+    },
+    {
+      "Code": "706",
+      "Branch_Name": "Jaldhaka Uposhakha,Nilphamari",
+      "Branch_Mnemonic": "C617"
+    },
+    {
+      "Code": "118",
+      "Branch_Name": "Jaldi Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B801"
+    },
+    {
+      "Code": "7945",
+      "Branch_Name": "Jalirpar Bazar Uposhakha,Gopalganj",
+      "Branch_Mnemonic": "D546"
+    },
+    {
+      "Code": "8804",
+      "Branch_Name": "Jamal Khan Road,Chattogram",
+      "Branch_Mnemonic": "D930"
+    },
+    {
+      "Code": "7622",
+      "Branch_Name": "Jamaldi Uposhakha,Munshiganj",
+      "Branch_Mnemonic": "G597"
+    },
+    {
+      "Code": "852",
+      "Branch_Name": "Jamalganj-Joypurhat Uposhakha",
+      "Branch_Mnemonic": "C783"
+    },
+    {
+      "Code": "1229",
+      "Branch_Name": "Jamalpur Branch, Jamalpur",
+      "Branch_Mnemonic": "JMAL"
+    },
+    {
+      "Code": "8385",
+      "Branch_Name": "Jamalpur Bypass Road Upo, Jamalpur",
+      "Branch_Mnemonic": "G885"
+    },
+    {
+      "Code": "8238",
+      "Branch_Name": "Jamalpur Chowrasta Bazar, Gazipur",
+      "Branch_Mnemonic": "D839"
+    },
+    {
+      "Code": "8672",
+      "Branch_Name": "Jamiderhat Uposhakha,Noakhali",
+      "Branch_Mnemonic": "F357"
+    },
+    {
+      "Code": "8075",
+      "Branch_Name": "Jamsha Bazar,Manikganj",
+      "Branch_Mnemonic": "D676"
+    },
+    {
+      "Code": "924",
+      "Branch_Name": "Jamtoil Bazar Uposhakha,Sirajganj",
+      "Branch_Mnemonic": "C855"
+    },
+    {
+      "Code": "8257",
+      "Branch_Name": "Jamtola Mouchak Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D858"
+    },
+    {
+      "Code": "8296",
+      "Branch_Name": "Jamtoli Bazar-Jamalpur Uposhakha",
+      "Branch_Mnemonic": "G796"
+    },
+    {
+      "Code": "7939",
+      "Branch_Name": "Jarun Bazar Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D540"
+    },
+    {
+      "Code": "564",
+      "Branch_Name": "Jashore Kolabagan Uposhakha,Jashore",
+      "Branch_Mnemonic": "C515"
+    },
+    {
+      "Code": "673",
+      "Branch_Name": "Jashore University of SciT (JUST)",
+      "Branch_Mnemonic": "F842"
+    },
+    {
+      "Code": "641",
+      "Branch_Name": "Jatrapur Uposhakha,Bagerhat",
+      "Branch_Mnemonic": "C592"
+    },
+    {
+      "Code": "8209",
+      "Branch_Name": "Jawlahati Chawrasta Upo.,Dhaka",
+      "Branch_Mnemonic": "D810"
+    },
+    {"Code": "4061", "Branch_Name": "Jessore Branch", "Branch_Mnemonic": "811"},
+    {
+      "Code": "8215",
+      "Branch_Name": "Jhalkuri Uposhakha",
+      "Branch_Mnemonic": "D816"
+    },
+    {
+      "Code": "5243",
+      "Branch_Name": "Jhalokathi Branch, Jhalokathi",
+      "Branch_Mnemonic": "JLKT"
+    },
+    {
+      "Code": "8210",
+      "Branch_Name": "Jhawchar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D811"
+    },
+    {
+      "Code": "581",
+      "Branch_Name": "Jhawdanga Bazar Uposhakha,Satkhira",
+      "Branch_Mnemonic": "C532"
+    },
+    {
+      "Code": "623",
+      "Branch_Name": "Jhenaidah Sadar Uposhakha,Jhenaidah",
+      "Branch_Mnemonic": "C574"
+    },
+    {
+      "Code": "8148",
+      "Branch_Name": "Jhenaigati Uposhakha,Sherpur",
+      "Branch_Mnemonic": "D749"
+    },
+    {
+      "Code": "612",
+      "Branch_Name": "Jhikargacha Uposhakha,Jashore",
+      "Branch_Mnemonic": "C563"
+    },
+    {
+      "Code": "8076",
+      "Branch_Name": "Jhitka Bazar Uposhakha,Manikganj",
+      "Branch_Mnemonic": "D677"
+    },
+    {
+      "Code": "682",
+      "Branch_Name": "Jibonnagar Uposhakha,Chuadanga",
+      "Branch_Mnemonic": "F851"
+    },
+    {
+      "Code": "251",
+      "Branch_Name": "Jitu Miah's Point Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D301"
+    },
+    {
+      "Code": "7317",
+      "Branch_Name": "Joar Shahara Bazar Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A318"
+    },
+    {
+      "Code": "8136",
+      "Branch_Name": "Joina Bazar Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D737"
+    },
+    {
+      "Code": "7229",
+      "Branch_Name": "Joynal Market- Dakshinkhan, Dhaka",
+      "Branch_Mnemonic": "A830"
+    },
+    {
+      "Code": "8081",
+      "Branch_Name": "Joypara Uposhakha, Dhaka",
+      "Branch_Mnemonic": "D682"
+    },
+    {
+      "Code": "6058",
+      "Branch_Name": "Joypurhat Branch",
+      "Branch_Mnemonic": "JOYP"
+    },
+    {
+      "Code": "8078",
+      "Branch_Name": "Joyra Road-Manikganj Uposhakha",
+      "Branch_Mnemonic": "D679"
+    },
+    {
+      "Code": "8648",
+      "Branch_Name": "Juktikhola Bazar Uposhakha, Cumilla",
+      "Branch_Mnemonic": "F333"
+    },
+    {"Code": "3251", "Branch_Name": "Juri Branch", "Branch_Mnemonic": "JURI"},
+    {
+      "Code": "7946",
+      "Branch_Name": "Kabirajpur Bazar Upo.,Madaripur",
+      "Branch_Mnemonic": "D547"
+    },
+    {
+      "Code": "8540",
+      "Branch_Name": "Kabirhat Uposhakha,Noakhali",
+      "Branch_Mnemonic": "B540"
+    },
+    {
+      "Code": "8610",
+      "Branch_Name": "Kachua Bazar Uposhakha",
+      "Branch_Mnemonic": "B610"
+    },
+    {
+      "Code": "2246",
+      "Branch_Name": "Kachua Branch, Chandpur",
+      "Branch_Mnemonic": "KACU"
+    },
+    {
+      "Code": "7111",
+      "Branch_Name": "Kachukhet Uposhakha",
+      "Branch_Mnemonic": "A712"
+    },
+    {
+      "Code": "250",
+      "Branch_Name": "Kadamtoli Uposhakha, Sylhet",
+      "Branch_Mnemonic": "C250"
+    },
+    {
+      "Code": "8810",
+      "Branch_Name": "Kadamtoli-Chattogram Uposhakha",
+      "Branch_Mnemonic": "D936"
+    },
+    {
+      "Code": "959",
+      "Branch_Name": "Kahaloo Uposhakha,Bogura",
+      "Branch_Mnemonic": "F958"
+    },
+    {
+      "Code": "761",
+      "Branch_Name": "Kaharole Uposhakha,Dinajpur",
+      "Branch_Mnemonic": "C672"
+    },
+    {
+      "Code": "904",
+      "Branch_Name": "Kakonhat Uposhakha,Rajshahi",
+      "Branch_Mnemonic": "C835"
+    },
+    {
+      "Code": "119",
+      "Branch_Name": "Kala Bibi Dighi,Chattogram",
+      "Branch_Mnemonic": "B802"
+    },
+    {
+      "Code": "8821",
+      "Branch_Name": "Kala Miah Bazar Uposhakha, CTG",
+      "Branch_Mnemonic": "D946"
+    },
+    {
+      "Code": "7049",
+      "Branch_Name": "Kalabagan 3rd Lane Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A649"
+    },
+    {
+      "Code": "8016",
+      "Branch_Name": "Kalampur Uposhakha, Dhaka",
+      "Branch_Mnemonic": "D617"
+    },
+    {
+      "Code": "453",
+      "Branch_Name": "Kalapara Bazar Upo, Patuakhali",
+      "Branch_Mnemonic": "F732"
+    },
+    {
+      "Code": "584",
+      "Branch_Name": "Kalaroa Uposhakha,Satkhira",
+      "Branch_Mnemonic": "C535"
+    },
+    {
+      "Code": "8207",
+      "Branch_Name": "Kalatiya Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D808"
+    },
+    {
+      "Code": "406",
+      "Branch_Name": "Kalaya Bandar Uposhakha,Patuakhali",
+      "Branch_Mnemonic": "B641"
+    },
+    {
+      "Code": "8064",
+      "Branch_Name": "Kaliakoir Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D664"
+    },
+    {
+      "Code": "8298",
+      "Branch_Name": "Kalibari BusStand Gabtoli,Mymensing",
+      "Branch_Mnemonic": "G798"
+    },
+    {
+      "Code": "7885",
+      "Branch_Name": "Kaliganj Bazar Uposhakha, Gazipur",
+      "Branch_Mnemonic": "D486"
+    },
+    {
+      "Code": "4168",
+      "Branch_Name": "Kaliganj SME Krishi Branch",
+      "Branch_Mnemonic": "KALI"
+    },
+    {
+      "Code": "8308",
+      "Branch_Name": "Kalihati Uposhakha,Tangail",
+      "Branch_Mnemonic": "G808"
+    },
+    {
+      "Code": "7869",
+      "Branch_Name": "Kalir Bazar Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D470"
+    },
+    {
+      "Code": "8621",
+      "Branch_Name": "Kalir Bazar-Cumilla,Cumilla",
+      "Branch_Mnemonic": "B621"
+    },
+    {
+      "Code": "414",
+      "Branch_Name": "Kalisuri Bazar Uposhakha,Patuakhali",
+      "Branch_Mnemonic": "B649"
+    },
+    {
+      "Code": "7950",
+      "Branch_Name": "Kalkini Uposhakha,Madaripur",
+      "Branch_Mnemonic": "D551"
+    },
+    {
+      "Code": "7478",
+      "Branch_Name": "Kallayanpur Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A478"
+    },
+    {
+      "Code": "7536",
+      "Branch_Name": "Kallayanpur Natun Bazar,Dhaka",
+      "Branch_Mnemonic": "A540"
+    },
+    {
+      "Code": "7956",
+      "Branch_Name": "Kalma Uposhakha",
+      "Branch_Mnemonic": "D557"
+    },
+    {
+      "Code": "7833",
+      "Branch_Name": "Kalmakanda Uposhakha,Netrokona",
+      "Branch_Mnemonic": "D434"
+    },
+    {
+      "Code": "282",
+      "Branch_Name": "Kamalganj Uposhakha,Moulvi Bazar",
+      "Branch_Mnemonic": "D333"
+    },
+    {
+      "Code": "8380",
+      "Branch_Name": "Kamarkhali Uposhakha, Faridpur",
+      "Branch_Mnemonic": "G880"
+    },
+    {
+      "Code": "7517",
+      "Branch_Name": "Kamarpara Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A518"
+    },
+    {
+      "Code": "7205",
+      "Branch_Name": "Kamlapur Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A806"
+    },
+    {
+      "Code": "87",
+      "Branch_Name": "Kamolpur Uposhakha,Kishoreganj",
+      "Branch_Mnemonic": "B770"
+    },
+    {
+      "Code": "7030",
+      "Branch_Name": "Kamrangir Char Uposhakha",
+      "Branch_Mnemonic": "A631"
+    },
+    {
+      "Code": "257",
+      "Branch_Name": "Kanaighat Bazar Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D307"
+    },
+    {
+      "Code": "7843",
+      "Branch_Name": "Kanaipur Bazar Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D444"
+    },
+    {
+      "Code": "8176",
+      "Branch_Name": "Kanchan Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D777"
+    },
+    {
+      "Code": "7225",
+      "Branch_Name": "Kanchkura Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A826"
+    },
+    {
+      "Code": "8049",
+      "Branch_Name": "Kanchpur Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D649"
+    },
+    {
+      "Code": "8507",
+      "Branch_Name": "Kandirpar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B507"
+    },
+    {
+      "Code": "8622",
+      "Branch_Name": "Kangshanagar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B622"
+    },
+    {
+      "Code": "8671",
+      "Branch_Name": "Kankir Hat Uposhakha,Noakhali",
+      "Branch_Mnemonic": "F356"
+    },
+    {
+      "Code": "903",
+      "Branch_Name": "Kansat,Chapai Nawabganj",
+      "Branch_Mnemonic": "C834"
+    },
+    {
+      "Code": "8782",
+      "Branch_Name": "Kanungopara,Chattogram",
+      "Branch_Mnemonic": "D908"
+    },
+    {
+      "Code": "8138",
+      "Branch_Name": "Kaoraid Bazar Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D739"
+    },
+    {
+      "Code": "1240",
+      "Branch_Name": "Kapasia Branch, Gazipur",
+      "Branch_Mnemonic": "KPSA"
+    },
+    {
+      "Code": "661",
+      "Branch_Name": "Kapilmuni Uposhakha,Khulna",
+      "Branch_Mnemonic": "F830"
+    },
+    {
+      "Code": "31",
+      "Branch_Name": "Kaptai Rastar Matha Uposhakha",
+      "Branch_Mnemonic": "B714"
+    },
+    {
+      "Code": "1231",
+      "Branch_Name": "Karatia Branch",
+      "Branch_Mnemonic": "KRTA"
+    },
+    {
+      "Code": "8276",
+      "Branch_Name": "Karimganj Uposhakha,Kishoreganj",
+      "Branch_Mnemonic": "G776"
+    },
+    {
+      "Code": "7896",
+      "Branch_Name": "Karimpur Uposhakha, Narsingdi",
+      "Branch_Mnemonic": "D497"
+    },
+    {
+      "Code": "7506",
+      "Branch_Name": "Karimullahbagh Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A506"
+    },
+    {
+      "Code": "685",
+      "Branch_Name": "Karpashdanga Uposhakha,Chuadanga",
+      "Branch_Mnemonic": "F854"
+    },
+    {
+      "Code": "126",
+      "Branch_Name": "Kasba Uposhakha,Brahmanbaria",
+      "Branch_Mnemonic": "B809"
+    },
+    {
+      "Code": "1256",
+      "Branch_Name": "Kashiani Branch",
+      "Branch_Mnemonic": "KASI"
+    },
+    {
+      "Code": "7941",
+      "Branch_Name": "Kashimpur Jailkhana Rd Upo, Gazipur",
+      "Branch_Mnemonic": "D542"
+    },
+    {
+      "Code": "7935",
+      "Branch_Name": "Kashimpur Uposhakha, Gazipur",
+      "Branch_Mnemonic": "D536"
+    },
+    {
+      "Code": "8586",
+      "Branch_Name": "Kashinagar Uposhakha",
+      "Branch_Mnemonic": "B586"
+    },
+    {
+      "Code": "6189",
+      "Branch_Name": "Kashinathpur SME Krishi Branch",
+      "Branch_Mnemonic": "KASH"
+    },
+    {
+      "Code": "7810",
+      "Branch_Name": "Kashipur Uposhakha, Narayanganj",
+      "Branch_Mnemonic": "D411"
+    },
+    {
+      "Code": "8307",
+      "Branch_Name": "Kasturipara Bazar Uposhakha,Tangail",
+      "Branch_Mnemonic": "G807"
+    },
+    {
+      "Code": "7441",
+      "Branch_Name": "Katasur Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A442"
+    },
+    {
+      "Code": "8037",
+      "Branch_Name": "Kathgora Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D638"
+    },
+    {
+      "Code": "7906",
+      "Branch_Name": "Katiadi Uposhakha,Kishoreganj",
+      "Branch_Mnemonic": "D507"
+    },
+    {
+      "Code": "45",
+      "Branch_Name": "Katirhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B728"
+    },
+    {
+      "Code": "7481",
+      "Branch_Name": "Kaundia Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A481"
+    },
+    {
+      "Code": "777",
+      "Branch_Name": "Kaunia Uposhakha, Rangpur",
+      "Branch_Mnemonic": "F876"
+    },
+    {
+      "Code": "439",
+      "Branch_Name": "Kawkhali,Pirojpur",
+      "Branch_Mnemonic": "B674"
+    },
+    {
+      "Code": "1017",
+      "Branch_Name": "Kawran Bazar Branch",
+      "Branch_Mnemonic": "816"
+    },
+    {
+      "Code": "2",
+      "Branch_Name": "Kawtali Uposhakha, Brahmanbaria",
+      "Branch_Mnemonic": "B685"
+    },
+    {
+      "Code": "7096",
+      "Branch_Name": "Kazi Alauddin Road Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A697"
+    },
+    {
+      "Code": "59",
+      "Branch_Name": "Kazirhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B742"
+    },
+    {
+      "Code": "7493",
+      "Branch_Name": "Kazla Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A494"
+    },
+    {
+      "Code": "7838",
+      "Branch_Name": "Kendua Bazar Uposhakha,Netrokona",
+      "Branch_Mnemonic": "D439"
+    },
+    {
+      "Code": "1195",
+      "Branch_Name": "Keraniganj Branch",
+      "Branch_Mnemonic": "KERN"
+    },
+    {
+      "Code": "2251",
+      "Branch_Name": "Keranihat Branch, Satkania, CTG.",
+      "Branch_Mnemonic": "KHAT"
+    },
+    {
+      "Code": "558",
+      "Branch_Name": "Keshabpur Bazar Uposhakha,Jashore",
+      "Branch_Mnemonic": "C509"
+    },
+    {
+      "Code": "945",
+      "Branch_Name": "Keshorhat Uposhakha,Rajshahi",
+      "Branch_Mnemonic": "C875"
+    },
+    {
+      "Code": "7837",
+      "Branch_Name": "Kewatkhali Uposhakha,Mymensingh",
+      "Branch_Mnemonic": "D438"
+    },
+    {
+      "Code": "8227",
+      "Branch_Name": "Kha-Para Road-Tongi,Gazipur",
+      "Branch_Mnemonic": "D828"
+    },
+    {
+      "Code": "321",
+      "Branch_Name": "Khadimpur Bazar Uposhakha, Sylhet",
+      "Branch_Mnemonic": "D372"
+    },
+    {
+      "Code": "2267",
+      "Branch_Name": "Khagrachari Branch",
+      "Branch_Mnemonic": "KHAG"
+    },
+    {
+      "Code": "8861",
+      "Branch_Name": "Khaja Road Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D987"
+    },
+    {
+      "Code": "636",
+      "Branch_Name": "Khajanagar Bazar,Kushtia",
+      "Branch_Mnemonic": "C587"
+    },
+    {
+      "Code": "7323",
+      "Branch_Name": "Khandaker Bari Moor Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A324"
+    },
+    {
+      "Code": "7865",
+      "Branch_Name": "Khanpur Bazar,Narayanganj",
+      "Branch_Mnemonic": "D466"
+    },
+    {
+      "Code": "737",
+      "Branch_Name": "Khansama Uposhakha, Dinajpur",
+      "Branch_Mnemonic": "C648"
+    },
+    {
+      "Code": "311",
+      "Branch_Name": "Khasdobir Point Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D362"
+    },
+    {
+      "Code": "8673",
+      "Branch_Name": "Khasherhat Upo, Noakhali",
+      "Branch_Mnemonic": "F358"
+    },
+    {
+      "Code": "2031",
+      "Branch_Name": "Khatunganj Branch",
+      "Branch_Mnemonic": "800"
+    },
+    {
+      "Code": "8025",
+      "Branch_Name": "Khejurbag Uposhakha",
+      "Branch_Mnemonic": "D626"
+    },
+    {
+      "Code": "855",
+      "Branch_Name": "Khetalal Uposhakha,Joypurhat",
+      "Branch_Mnemonic": "C786"
+    },
+    {
+      "Code": "1249",
+      "Branch_Name": "Khilgaon Branch",
+      "Branch_Mnemonic": "KLGN"
+    },
+    {
+      "Code": "8175",
+      "Branch_Name": "Khilkhet Uposhakha, Dhaka",
+      "Branch_Mnemonic": "D776"
+    },
+    {
+      "Code": "8603",
+      "Branch_Name": "Khilpara Bazar Uposhakha,Noakhali",
+      "Branch_Mnemonic": "B603"
+    },
+    {
+      "Code": "7876",
+      "Branch_Name": "Khoajpur Uposhakha,Madaripur",
+      "Branch_Mnemonic": "D477"
+    },
+    {
+      "Code": "632",
+      "Branch_Name": "Khoksha Uposhakha,Kushtia",
+      "Branch_Mnemonic": "C583"
+    },
+    {
+      "Code": "8208",
+      "Branch_Name": "Kholamora Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D809"
+    },
+    {
+      "Code": "7845",
+      "Branch_Name": "Kholilpur Bazar Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D446"
+    },
+    {
+      "Code": "7926",
+      "Branch_Name": "Khoria Bazar Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D527"
+    },
+    {"Code": "4060", "Branch_Name": "Khulna Branch", "Branch_Mnemonic": "804"},
+    {
+      "Code": "592",
+      "Branch_Name": "Khulna New Market Uposhakha,Khulna",
+      "Branch_Mnemonic": "C543"
+    },
+    {
+      "Code": "2241",
+      "Branch_Name": "Khulshi Branch, Chittagong",
+      "Branch_Mnemonic": "PNCL"
+    },
+    {
+      "Code": "955",
+      "Branch_Name": "Kichak Uposhakha,Bogura",
+      "Branch_Mnemonic": "F954"
+    },
+    {
+      "Code": "1251",
+      "Branch_Name": "Kishoreganj Branch, Kishoreganj",
+      "Branch_Mnemonic": "KISO"
+    },
+    {
+      "Code": "775",
+      "Branch_Name": "Kishoreganj-Nilphamari ,Nilphamari",
+      "Branch_Mnemonic": "F874"
+    },
+    {
+      "Code": "8839",
+      "Branch_Name": "Koibulladham Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D964"
+    },
+    {
+      "Code": "552",
+      "Branch_Name": "Koiya Bazar Uposhakha,Khulna",
+      "Branch_Mnemonic": "C503"
+    },
+    {
+      "Code": "8269",
+      "Branch_Name": "Kolar Hat Uposhakha,Rajbari",
+      "Branch_Mnemonic": "D870"
+    },
+    {
+      "Code": "137",
+      "Branch_Name": "Komol Munshir Hat,Chattogram",
+      "Branch_Mnemonic": "F566"
+    },
+    {
+      "Code": "7991",
+      "Branch_Name": "Komorganj Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D592"
+    },
+    {
+      "Code": "1121",
+      "Branch_Name": "Konabari Branch",
+      "Branch_Mnemonic": "KONA"
+    },
+    {
+      "Code": "1208",
+      "Branch_Name": "Konapara Branch",
+      "Branch_Mnemonic": "KNPR"
+    },
+    {
+      "Code": "8767",
+      "Branch_Name": "Korbaniganj Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D893"
+    },
+    {
+      "Code": "8293",
+      "Branch_Name": "Kotalipara Uposhakha,Gopalganj",
+      "Branch_Mnemonic": "G793"
+    },
+    {
+      "Code": "8504",
+      "Branch_Name": "Kotbari Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B504"
+    },
+    {
+      "Code": "620",
+      "Branch_Name": "Kotchandpur Uposhakha,Jhenaidah",
+      "Branch_Mnemonic": "C571"
+    },
+    {
+      "Code": "8300",
+      "Branch_Name": "Koyra Bazar Uposhakha,Jamalpur",
+      "Branch_Mnemonic": "G800"
+    },
+    {
+      "Code": "9",
+      "Branch_Name": "Krishnanagar Bazar Uposhakha,Bbaria",
+      "Branch_Mnemonic": "B692"
+    },
+    {
+      "Code": "346",
+      "Branch_Name": "Kulaura Uposhakha,Moulvi Bazar",
+      "Branch_Mnemonic": "D397"
+    },
+    {
+      "Code": "580",
+      "Branch_Name": "Kulia Bazar Uposhakha,Satkhira",
+      "Branch_Mnemonic": "C531"
+    },
+    {
+      "Code": "7907",
+      "Branch_Name": "Kuliarchar Uposhakha,Kishoreganj",
+      "Branch_Mnemonic": "D508"
+    },
+    {
+      "Code": "577",
+      "Branch_Name": "Kumarkhali Uposhakha,Kushtia",
+      "Branch_Mnemonic": "C528"
+    },
+    {
+      "Code": "7457",
+      "Branch_Name": "Kunipara Happy Homes,Dhaka",
+      "Branch_Mnemonic": "A458"
+    },
+    {
+      "Code": "8822",
+      "Branch_Name": "Kunjachaya Uposhakha,Chottogram",
+      "Branch_Mnemonic": "D947"
+    },
+    {
+      "Code": "424",
+      "Branch_Name": "Kunjer Hat Uposhakha,Bhola",
+      "Branch_Mnemonic": "B659"
+    },
+    {
+      "Code": "7321",
+      "Branch_Name": "Kuratoli Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A322"
+    },
+    {
+      "Code": "8039",
+      "Branch_Name": "Kurgaon Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D640"
+    },
+    {
+      "Code": "711",
+      "Branch_Name": "Kurigram Sadar Uposhakha,Kurigram",
+      "Branch_Mnemonic": "C622"
+    },
+    {
+      "Code": "7315",
+      "Branch_Name": "Kuril Chowrasta Uposhakha",
+      "Branch_Mnemonic": "A316"
+    },
+    {
+      "Code": "8350",
+      "Branch_Name": "Kurpar Uposhakha, Netrokona",
+      "Branch_Mnemonic": "G850"
+    },
+    {
+      "Code": "4062",
+      "Branch_Name": "Kushtia Branch",
+      "Branch_Mnemonic": "KUSH"
+    },
+    {
+      "Code": "633",
+      "Branch_Name": "Kushtia Mirpur Bazar,Kushtia",
+      "Branch_Mnemonic": "C584"
+    },
+    {
+      "Code": "8147",
+      "Branch_Name": "Kusumhati Uposhakha,Sherpur",
+      "Branch_Mnemonic": "D748"
+    },
+    {
+      "Code": "128",
+      "Branch_Name": "Kuti Chowmohani Upo.,Brahmanbaria",
+      "Branch_Mnemonic": "B811"
+    },
+    {
+      "Code": "7958",
+      "Branch_Name": "Kuturia Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D559"
+    },
+    {
+      "Code": "651",
+      "Branch_Name": "Labonchara Bazar Uposhakha,Khulna",
+      "Branch_Mnemonic": "C602"
+    },
+    {
+      "Code": "691",
+      "Branch_Name": "Lahini Bottola Uposhakha,Kushtia",
+      "Branch_Mnemonic": "F860"
+    },
+    {
+      "Code": "2254",
+      "Branch_Name": "Laksham Branch",
+      "Branch_Mnemonic": "LKSM"
+    },
+    {
+      "Code": "8647",
+      "Branch_Name": "Laksham Junction Station Road Upo",
+      "Branch_Mnemonic": "F332"
+    },
+    {
+      "Code": "8509",
+      "Branch_Name": "Lakshmanpur Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B509"
+    },
+    {
+      "Code": "292",
+      "Branch_Name": "Lala Bazar Uposhakha, Sylhet",
+      "Branch_Mnemonic": "D343"
+    },
+    {
+      "Code": "7022",
+      "Branch_Name": "Lalbagh Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A623"
+    },
+    {
+      "Code": "8768",
+      "Branch_Name": "Laldighi Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D894"
+    },
+    {
+      "Code": "7287",
+      "Branch_Name": "Lalkuthi Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A888"
+    },
+    {
+      "Code": "7270",
+      "Branch_Name": "Lalmati Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A871"
+    },
+    {
+      "Code": "1025",
+      "Branch_Name": "Lalmatia Branch",
+      "Branch_Mnemonic": "LAL"
+    },
+    {
+      "Code": "6274",
+      "Branch_Name": "Lalmonirhat Branch",
+      "Branch_Mnemonic": "LALM"
+    },
+    {
+      "Code": "709",
+      "Branch_Name": "Lalmonirhat Sadar,Lalmonirhat",
+      "Branch_Mnemonic": "C620"
+    },
+    {
+      "Code": "88",
+      "Branch_Name": "Lalpur-Brahmanbaria UPOSHAKHA",
+      "Branch_Mnemonic": "B771"
+    },
+    {
+      "Code": "886",
+      "Branch_Name": "Lalpur-Natore Uposhakha,Natore",
+      "Branch_Mnemonic": "C817"
+    },
+    {
+      "Code": "312",
+      "Branch_Name": "Lama Bazar Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D363"
+    },
+    {
+      "Code": "569",
+      "Branch_Name": "Langalbandha Uposhakha,Jhenaidah",
+      "Branch_Mnemonic": "C520"
+    },
+    {
+      "Code": "8528",
+      "Branch_Name": "Laskarhat Uposhakha,Feni",
+      "Branch_Mnemonic": "B528"
+    },
+    {
+      "Code": "7289",
+      "Branch_Name": "Laxmibazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A890"
+    },
+    {
+      "Code": "2253",
+      "Branch_Name": "Laxmipur Branch",
+      "Branch_Mnemonic": "LAXM"
+    },
+    {
+      "Code": "25",
+      "Branch_Name": "Link Road-Cox's Bazar Uposhakha",
+      "Branch_Mnemonic": "B708"
+    },
+    {
+      "Code": "8239",
+      "Branch_Name": "Lohagachhia Bazar,Gazipur",
+      "Branch_Mnemonic": "D840"
+    },
+    {
+      "Code": "568",
+      "Branch_Name": "Lohagara Bazar Uposhakha,Narail",
+      "Branch_Mnemonic": "C519"
+    },
+    {
+      "Code": "178",
+      "Branch_Name": "Lohagara Uposhakha,Chattogram",
+      "Branch_Mnemonic": "F607"
+    },
+    {
+      "Code": "8268",
+      "Branch_Name": "Machpara Uposhakha,Rajbari",
+      "Branch_Mnemonic": "D869"
+    },
+    {
+      "Code": "2153",
+      "Branch_Name": "Madam Bibir Hat Branch",
+      "Branch_Mnemonic": "MBHB"
+    },
+    {
+      "Code": "7834",
+      "Branch_Name": "Madan Uposhakha,Netrokona",
+      "Branch_Mnemonic": "D435"
+    },
+    {
+      "Code": "44",
+      "Branch_Name": "Madanhat Uposhakha,Chattrogram",
+      "Branch_Mnemonic": "B727"
+    },
+    {
+      "Code": "7318",
+      "Branch_Name": "Madani Avenue Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A319"
+    },
+    {
+      "Code": "8801",
+      "Branch_Name": "Madarbari Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D927"
+    },
+    {
+      "Code": "1270",
+      "Branch_Name": "Madaripur Branch",
+      "Branch_Mnemonic": "MADR"
+    },
+    {
+      "Code": "7581",
+      "Branch_Name": "Madartek Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A582"
+    },
+    {
+      "Code": "7476",
+      "Branch_Name": "Maddho Paikpara Uposhakha",
+      "Branch_Mnemonic": "A476"
+    },
+    {
+      "Code": "1118",
+      "Branch_Name": "Madhabdi Branch",
+      "Branch_Mnemonic": "MADB"
+    },
+    {
+      "Code": "3242",
+      "Branch_Name": "Madhabpur Branch, Habiganj.",
+      "Branch_Mnemonic": "MADP"
+    },
+    {
+      "Code": "8565",
+      "Branch_Name": "Madhaiya Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B565"
+    },
+    {
+      "Code": "8290",
+      "Branch_Name": "Madhukhali Bazar Uposhakha,Faridpur",
+      "Branch_Mnemonic": "G790"
+    },
+    {
+      "Code": "8295",
+      "Branch_Name": "Madhupur Uposhakha,Tangail",
+      "Branch_Mnemonic": "G795"
+    },
+    {
+      "Code": "7530",
+      "Branch_Name": "Madhya Pirerbag Uposhakha",
+      "Branch_Mnemonic": "A530"
+    },
+    {
+      "Code": "34",
+      "Branch_Name": "Madunaghat Uposhakha, Chattogram.",
+      "Branch_Mnemonic": "B717"
+    },
+    {"Code": "4261", "Branch_Name": "Magura Branch", "Branch_Mnemonic": "MGRA"},
+    {
+      "Code": "626",
+      "Branch_Name": "Maheshpur Uposhakha,Jhenaidah",
+      "Branch_Mnemonic": "C577"
+    },
+    {
+      "Code": "700",
+      "Branch_Name": "Mahiganj Uposhakha,Rangpur",
+      "Branch_Mnemonic": "C611"
+    },
+    {
+      "Code": "723",
+      "Branch_Name": "Mahimaganj,Gaibandha",
+      "Branch_Mnemonic": "C634"
+    },
+    {
+      "Code": "8172",
+      "Branch_Name": "Mahmudpur Bazar-Jamalpur Uposhakha",
+      "Branch_Mnemonic": "D773"
+    },
+    {
+      "Code": "8541",
+      "Branch_Name": "Maijdee Bazar Uposhakha,Noakhali",
+      "Branch_Mnemonic": "B541"
+    },
+    {
+      "Code": "8535",
+      "Branch_Name": "Maijdee Uposhakha",
+      "Branch_Mnemonic": "B535"
+    },
+    {
+      "Code": "605",
+      "Branch_Name": "Maijpara Bazar Uposhakha,Narail",
+      "Branch_Mnemonic": "C556"
+    },
+    {
+      "Code": "8267",
+      "Branch_Name": "Maishala Bazar Pangsha Upo,Rajbari",
+      "Branch_Mnemonic": "D868"
+    },
+    {
+      "Code": "954",
+      "Branch_Name": "Majhira Uposhakha,Bogura",
+      "Branch_Mnemonic": "F953"
+    },
+    {
+      "Code": "8815",
+      "Branch_Name": "Majhirghat Uposhakha, Chattogram",
+      "Branch_Mnemonic": "D941"
+    },
+    {
+      "Code": "310",
+      "Branch_Name": "Majortila Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D361"
+    },
+    {
+      "Code": "8002",
+      "Branch_Name": "Maleker Bari Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D603"
+    },
+    {
+      "Code": "1019",
+      "Branch_Name": "Malibagh Branch",
+      "Branch_Mnemonic": "MALI"
+    },
+    {
+      "Code": "7068",
+      "Branch_Name": "Malibagh Kancha Bazar Uposhakha",
+      "Branch_Mnemonic": "A668"
+    },
+    {
+      "Code": "7067",
+      "Branch_Name": "Malibagh Moor Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A667"
+    },
+    {
+      "Code": "7586",
+      "Branch_Name": "Manda Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A587"
+    },
+    {
+      "Code": "8637",
+      "Branch_Name": "Mandari Bazar Uposhakha,Laxmipur",
+      "Branch_Mnemonic": "F322"
+    },
+    {
+      "Code": "8579",
+      "Branch_Name": "Manikerchar Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B579"
+    },
+    {
+      "Code": "1206",
+      "Branch_Name": "Manikgonj Branch",
+      "Branch_Mnemonic": "MANK"
+    },
+    {
+      "Code": "7360",
+      "Branch_Name": "Maniknagar Pukurpar Upo,Dhaka",
+      "Branch_Mnemonic": "A361"
+    },
+    {
+      "Code": "8513",
+      "Branch_Name": "Manoharganj Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B513"
+    },
+    {
+      "Code": "176",
+      "Branch_Name": "Manu Fakir Bazar,Chattogram",
+      "Branch_Mnemonic": "F605"
+    },
+    {
+      "Code": "33",
+      "Branch_Name": "Marium Nagar Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B716"
+    },
+    {
+      "Code": "7812",
+      "Branch_Name": "Masdair Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D413"
+    },
+    {
+      "Code": "147",
+      "Branch_Name": "Matarbari Moheskhali,Cox's Bazar",
+      "Branch_Mnemonic": "F576"
+    },
+    {
+      "Code": "438",
+      "Branch_Name": "Mathbaria Bazar Uposhakha ,Pirojpur",
+      "Branch_Mnemonic": "B673"
+    },
+    {
+      "Code": "7185",
+      "Branch_Name": "Matir Masjid - Malibagh Upo, Dhaka",
+      "Branch_Mnemonic": "A786"
+    },
+    {
+      "Code": "8618",
+      "Branch_Name": "Matlab Dakshin Uposhakha,Chandpur",
+      "Branch_Mnemonic": "B618"
+    },
+    {
+      "Code": "7495",
+      "Branch_Name": "Matuail School Road Upo.,Dhaka",
+      "Branch_Mnemonic": "A496"
+    },
+    {
+      "Code": "7417",
+      "Branch_Name": "Matuail Uposhakha",
+      "Branch_Mnemonic": "A417"
+    },
+    {
+      "Code": "1226",
+      "Branch_Name": "Mawna Branch,Gazipur",
+      "Branch_Mnemonic": "MWNA"
+    },
+    {
+      "Code": "7531",
+      "Branch_Name": "Mazar Road Uposhakha",
+      "Branch_Mnemonic": "A531"
+    },
+    {
+      "Code": "701",
+      "Branch_Name": "Medical East Gate Upo.,Rangpur",
+      "Branch_Mnemonic": "C612"
+    },
+    {
+      "Code": "7623",
+      "Branch_Name": "Meghna Ghat Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "G598"
+    },
+    {
+      "Code": "1213",
+      "Branch_Name": "Meghola Bazar Branch",
+      "Branch_Mnemonic": "MEGH"
+    },
+    {
+      "Code": "8658",
+      "Branch_Name": "Meher Kalibari Uposhakha,Chandpur",
+      "Branch_Mnemonic": "F343"
+    },
+    {
+      "Code": "4276",
+      "Branch_Name": "Meherpur Branch",
+      "Branch_Mnemonic": "MEHR"
+    },
+    {
+      "Code": "573",
+      "Branch_Name": "Meherpur Sadar,Meherpur",
+      "Branch_Mnemonic": "C524"
+    },
+    {
+      "Code": "8166",
+      "Branch_Name": "Melandah Bazar Uposhakha,Jamalpur",
+      "Branch_Mnemonic": "D767"
+    },
+    {
+      "Code": "8137",
+      "Branch_Name": "Memberbari Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D738"
+    },
+    {
+      "Code": "7337",
+      "Branch_Name": "Merul Badda Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A338"
+    },
+    {
+      "Code": "2214",
+      "Branch_Name": "Miah Bazar Branch",
+      "Branch_Mnemonic": "MIAH"
+    },
+    {
+      "Code": "7336",
+      "Branch_Name": "Middle Badda Post Office Road,Dhaka",
+      "Branch_Mnemonic": "A337"
+    },
+    {
+      "Code": "7033",
+      "Branch_Name": "Midford Road Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A634"
+    },
+    {
+      "Code": "7981",
+      "Branch_Name": "Mirer Bazar Uposhakha, Gazipur",
+      "Branch_Mnemonic": "D582"
+    },
+    {
+      "Code": "7507",
+      "Branch_Name": "Mirhazirbagh Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A507"
+    },
+    {
+      "Code": "330",
+      "Branch_Name": "Mirpur Bazar Uposhakha,Habiganj",
+      "Branch_Mnemonic": "D380"
+    },
+    {"Code": "1013", "Branch_Name": "Mirpur Branch", "Branch_Mnemonic": "MIRP"},
+    {
+      "Code": "7265",
+      "Branch_Name": "Mirpur DOHS Uposhakha",
+      "Branch_Mnemonic": "A866"
+    },
+    {
+      "Code": "7272",
+      "Branch_Name": "Mirpur 12 Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A873"
+    },
+    {
+      "Code": "7535",
+      "Branch_Name": "Mirpur-1 Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A539"
+    },
+    {
+      "Code": "7271",
+      "Branch_Name": "Mirpur-6 Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A872"
+    },
+    {
+      "Code": "7110",
+      "Branch_Name": "MirpurSherEBangla Stadium Uposhakha",
+      "Branch_Mnemonic": "A711"
+    },
+    {
+      "Code": "143",
+      "Branch_Name": "Mirzakhil Uposhakha,Chattogram",
+      "Branch_Mnemonic": "F572"
+    },
+    {
+      "Code": "8186",
+      "Branch_Name": "Mirzapur Uposhakha,Tangail",
+      "Branch_Mnemonic": "D787"
+    },
+    {
+      "Code": "261",
+      "Branch_Name": "Modina Market Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D312"
+    },
+    {
+      "Code": "8046",
+      "Branch_Name": "Modonpur Uposhakha, Narayanganj",
+      "Branch_Mnemonic": "D646"
+    },
+    {
+      "Code": "7066",
+      "Branch_Name": "Moghbazar Uposhakha",
+      "Branch_Mnemonic": "A666"
+    },
+    {
+      "Code": "896",
+      "Branch_Name": "Mohadevpur Uposhakha,Naogaon",
+      "Branch_Mnemonic": "C827"
+    },
+    {
+      "Code": "606",
+      "Branch_Name": "Mohajan Bazar Uposhakha,Narail",
+      "Branch_Mnemonic": "C557"
+    },
+    {
+      "Code": "1094",
+      "Branch_Name": "Mohakhali Branch",
+      "Branch_Mnemonic": "MOHA"
+    },
+    {
+      "Code": "7424",
+      "Branch_Name": "Mohammadbag Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A424"
+    },
+    {
+      "Code": "7438",
+      "Branch_Name": "Mohammadia Housing Main Road Dhaka",
+      "Branch_Mnemonic": "A439"
+    },
+    {
+      "Code": "1201",
+      "Branch_Name": "Mohammadpur Branch",
+      "Branch_Mnemonic": "MOHD"
+    },
+    {
+      "Code": "7436",
+      "Branch_Name": "Mohammadpur Bus Stand Uposhakha",
+      "Branch_Mnemonic": "A437"
+    },
+    {
+      "Code": "8790",
+      "Branch_Name": "Mohammadpur Ismail Colony,CTG",
+      "Branch_Mnemonic": "D916"
+    },
+    {
+      "Code": "672",
+      "Branch_Name": "Mohammadpur-Magura Uposhakha,Magura",
+      "Branch_Mnemonic": "F841"
+    },
+    {
+      "Code": "8352",
+      "Branch_Name": "Mohanganj-Netrokona Uposhakha",
+      "Branch_Mnemonic": "G852"
+    },
+    {
+      "Code": "998",
+      "Branch_Name": "Mohasthan Garh Uposhakha, Bogura",
+      "Branch_Mnemonic": "F997"
+    },
+    {
+      "Code": "8566",
+      "Branch_Name": "Mohichail,Cumilla",
+      "Branch_Mnemonic": "B566"
+    },
+    {
+      "Code": "942",
+      "Branch_Name": "Mohonganj Uposhakha,Rajshahi",
+      "Branch_Mnemonic": "C872"
+    },
+    {
+      "Code": "8560",
+      "Branch_Name": "Mohonpur Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B560"
+    },
+    {
+      "Code": "7223",
+      "Branch_Name": "Moinertek Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A824"
+    },
+    {
+      "Code": "951",
+      "Branch_Name": "Mokamtola Uposhakha,Bogura",
+      "Branch_Mnemonic": "F950"
+    },
+    {
+      "Code": "7184",
+      "Branch_Name": "Mollabari Bazar-East Rampura, Dhaka",
+      "Branch_Mnemonic": "A785"
+    },
+    {
+      "Code": "7508",
+      "Branch_Name": "Mollartek Kosaibari Upo, Dhaka",
+      "Branch_Mnemonic": "A508"
+    },
+    {
+      "Code": "7854",
+      "Branch_Name": "Momin Khar Hat Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D455"
+    },
+    {
+      "Code": "559",
+      "Branch_Name": "Mongla Bazar Uposhakha,Bagerhat",
+      "Branch_Mnemonic": "C510"
+    },
+    {
+      "Code": "8157",
+      "Branch_Name": "Mongoler Gaon Bottola Bazar,Nganj",
+      "Branch_Mnemonic": "D758"
+    },
+    {
+      "Code": "562",
+      "Branch_Name": "Monihar Bus Stand Uposhakha,Jashore",
+      "Branch_Mnemonic": "C513"
+    },
+    {
+      "Code": "8236",
+      "Branch_Name": "Monipur Bazar Uposhakha,Joydebpur",
+      "Branch_Mnemonic": "D837"
+    },
+    {
+      "Code": "7246",
+      "Branch_Name": "Monipuripara Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A847"
+    },
+    {
+      "Code": "563",
+      "Branch_Name": "Monirampur Uposhakha,Jashore",
+      "Branch_Mnemonic": "C514"
+    },
+    {
+      "Code": "7880",
+      "Branch_Name": "Monohor Bazar Uposhakha,Shariatpur",
+      "Branch_Mnemonic": "D481"
+    },
+    {
+      "Code": "7895",
+      "Branch_Name": "Monohordi Uposhakha",
+      "Branch_Mnemonic": "D496"
+    },
+    {
+      "Code": "337",
+      "Branch_Name": "Montola Bazar Uposhakha,Habiganj",
+      "Branch_Mnemonic": "D388"
+    },
+    {
+      "Code": "29",
+      "Branch_Name": "Moricha Uposhakha,Coxs Bazar",
+      "Branch_Mnemonic": "B712"
+    },
+    {
+      "Code": "644",
+      "Branch_Name": "Morrelganj Uposhakha",
+      "Branch_Mnemonic": "C595"
+    },
+    {
+      "Code": "7947",
+      "Branch_Name": "Mostafapur Uposhakha,Madaripur",
+      "Branch_Mnemonic": "D548"
+    },
+    {
+      "Code": "7065",
+      "Branch_Name": "Mouchak Uposhakha",
+      "Branch_Mnemonic": "A065"
+    },
+    {
+      "Code": "7940",
+      "Branch_Name": "Mouchak-Kaliakair Upo, Gazipur",
+      "Branch_Mnemonic": "D541"
+    },
+    {
+      "Code": "1004",
+      "Branch_Name": "Moulvi Bazar Branch, Dhaka",
+      "Branch_Mnemonic": "797"
+    },
+    {
+      "Code": "3046",
+      "Branch_Name": "Moulvibazar District Branch",
+      "Branch_Mnemonic": "MBD"
+    },
+    {
+      "Code": "7852",
+      "Branch_Name": "Moyendia Bazar Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D453"
+    },
+    {
+      "Code": "654",
+      "Branch_Name": "Moylapota Uposhakha,Khulna",
+      "Branch_Mnemonic": "C605"
+    },
+    {
+      "Code": "2247",
+      "Branch_Name": "Moynamoti Branch, Comilla",
+      "Branch_Mnemonic": "MYNA"
+    },
+    {
+      "Code": "8516",
+      "Branch_Name": "Muddafarganj Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B516"
+    },
+    {
+      "Code": "590",
+      "Branch_Name": "Mujgunni Uposhakha,Khulna",
+      "Branch_Mnemonic": "C541"
+    },
+    {
+      "Code": "687",
+      "Branch_Name": "Mujibnagar Uposhakha,Meherpur",
+      "Branch_Mnemonic": "I000"
+    },
+    {
+      "Code": "8340",
+      "Branch_Name": "Muksudpur-Gopalganj Upo,Gopalganj",
+      "Branch_Mnemonic": "G840"
+    },
+    {
+      "Code": "7823",
+      "Branch_Name": "Muktagacha Uposhakha,Mymensingh",
+      "Branch_Mnemonic": "D424"
+    },
+    {
+      "Code": "1115",
+      "Branch_Name": "Muktarpur Branch",
+      "Branch_Mnemonic": "MKT"
+    },
+    {
+      "Code": "8783",
+      "Branch_Name": "Munsef Bazar,Chattogram",
+      "Branch_Mnemonic": "D909"
+    },
+    {
+      "Code": "7917",
+      "Branch_Name": "Munshiganj Sadar,Munshiganj",
+      "Branch_Mnemonic": "D516"
+    },
+    {
+      "Code": "8590",
+      "Branch_Name": "Munshir Hat Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B590"
+    },
+    {
+      "Code": "8554",
+      "Branch_Name": "Muradnagar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B554"
+    },
+    {
+      "Code": "8670",
+      "Branch_Name": "Musapur-Banglabazar upo ,Noakhali",
+      "Branch_Mnemonic": "F355"
+    },
+    {
+      "Code": "7972",
+      "Branch_Name": "Muslimnagar Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D573"
+    },
+    {
+      "Code": "1022",
+      "Branch_Name": "Mymensingh Branch",
+      "Branch_Mnemonic": "MSIN"
+    },
+    {
+      "Code": "8155",
+      "Branch_Name": "Nabiganj Uposhakha",
+      "Branch_Mnemonic": "D756"
+    },
+    {
+      "Code": "329",
+      "Branch_Name": "Nabiganj Upozilla,Habiganj",
+      "Branch_Mnemonic": "D379"
+    },
+    {
+      "Code": "905",
+      "Branch_Name": "Nachole Bazar Upo,Chapai Nawabganj",
+      "Branch_Mnemonic": "C836"
+    },
+    {
+      "Code": "7319",
+      "Branch_Name": "Nadda Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A320"
+    },
+    {
+      "Code": "931",
+      "Branch_Name": "Nagarbari Uposhakha,Pabna",
+      "Branch_Mnemonic": "C862"
+    },
+    {
+      "Code": "8294",
+      "Branch_Name": "Nagarkanda Uposhakha, Faridpur",
+      "Branch_Mnemonic": "G794"
+    },
+    {
+      "Code": "8310",
+      "Branch_Name": "Nagarpur-Tangail Uposhakha,Tangail",
+      "Branch_Mnemonic": "G810"
+    },
+    {
+      "Code": "7813",
+      "Branch_Name": "Nagbari Uposhakha, Narayanganj",
+      "Branch_Mnemonic": "D414"
+    },
+    {
+      "Code": "719",
+      "Branch_Name": "Nageshwari Uposhakha,Kurigram",
+      "Branch_Mnemonic": "C630"
+    },
+    {
+      "Code": "26",
+      "Branch_Name": "Naikhongchari Uposhakha,Bandarban",
+      "Branch_Mnemonic": "B709"
+    },
+    {
+      "Code": "932",
+      "Branch_Name": "Nakalia Bazar Uposhakha,Pabna",
+      "Branch_Mnemonic": "C863"
+    },
+    {
+      "Code": "8145",
+      "Branch_Name": "Nakla Uttar Bazar Upo.,Sherpur",
+      "Branch_Mnemonic": "D746"
+    },
+    {
+      "Code": "943",
+      "Branch_Name": "Naldanga Uposhakha,Natore",
+      "Branch_Mnemonic": "C873"
+    },
+    {
+      "Code": "8587",
+      "Branch_Name": "Nalghar Uposhakha",
+      "Branch_Mnemonic": "B587"
+    },
+    {
+      "Code": "8073",
+      "Branch_Name": "Nali Bazar Uposhakha,Manikganj",
+      "Branch_Mnemonic": "D674"
+    },
+    {
+      "Code": "8149",
+      "Branch_Name": "Nalitabari Uposhakha,Sherpur",
+      "Branch_Mnemonic": "D750"
+    },
+    {"Code": "8313", "Branch_Name": "Nalua,Tangail", "Branch_Mnemonic": "G813"},
+    {
+      "Code": "953",
+      "Branch_Name": "Namuja Hat Uposhakha,Bogura",
+      "Branch_Mnemonic": "F952"
+    },
+    {
+      "Code": "8275",
+      "Branch_Name": "Nandail Uposhakha,Mymensingh",
+      "Branch_Mnemonic": "G775"
+    },
+    {
+      "Code": "4",
+      "Branch_Name": "Nandanpur Uposhakha,Brahmanbaria",
+      "Branch_Mnemonic": "B687"
+    },
+    {
+      "Code": "958",
+      "Branch_Name": "Nandigram Bus Stand,Bogura",
+      "Branch_Mnemonic": "F957"
+    },
+    {
+      "Code": "8170",
+      "Branch_Name": "Nandina Bazar Uposhakha,Jamalpur",
+      "Branch_Mnemonic": "D771"
+    },
+    {
+      "Code": "7582",
+      "Branch_Name": "Nandipara Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A583"
+    },
+    {
+      "Code": "8512",
+      "Branch_Name": "Nangalkot Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B512"
+    },
+    {
+      "Code": "6085",
+      "Branch_Name": "Naogaon Branch",
+      "Branch_Mnemonic": "NAOG"
+    },
+    {
+      "Code": "149",
+      "Branch_Name": "Napura Uposhakha,Chattogram",
+      "Branch_Mnemonic": "F578"
+    },
+    {"Code": "4260", "Branch_Name": "Narail Branch", "Branch_Mnemonic": "NARL"},
+    {
+      "Code": "566",
+      "Branch_Name": "Narail Sadar Uposhakha,Narail",
+      "Branch_Mnemonic": "C517"
+    },
+    {
+      "Code": "1003",
+      "Branch_Name": "Narayanganj Branch",
+      "Branch_Mnemonic": "798"
+    },
+    {
+      "Code": "7868",
+      "Branch_Name": "Narayanganj BB Road Uposhakha",
+      "Branch_Mnemonic": "D469"
+    },
+    {
+      "Code": "60",
+      "Branch_Name": "Narayanhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B743"
+    },
+    {
+      "Code": "8577",
+      "Branch_Name": "Narayanpur Bazar Uposhakha,Chandpur",
+      "Branch_Mnemonic": "B577"
+    },
+    {
+      "Code": "7901",
+      "Branch_Name": "Narsingdi Bazar Uposhakha,Narsingdi",
+      "Branch_Mnemonic": "D502"
+    },
+    {
+      "Code": "1110",
+      "Branch_Name": "Narsingdi Branch",
+      "Branch_Mnemonic": "NAR"
+    },
+    {
+      "Code": "8272",
+      "Branch_Name": "Narua Bazar Uposhakha, Rajbari",
+      "Branch_Mnemonic": "D873"
+    },
+    {
+      "Code": "8174",
+      "Branch_Name": "Narundi Bazar Uposhakha,Jamalpur",
+      "Branch_Mnemonic": "D775"
+    },
+    {
+      "Code": "5",
+      "Branch_Name": "Nasirnagar Uposhakha,Brahmanbaria",
+      "Branch_Mnemonic": "B688"
+    },
+    {
+      "Code": "8515",
+      "Branch_Name": "Natherpetua Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B515"
+    },
+    {
+      "Code": "400",
+      "Branch_Name": "Nathullahbad Uposhakha,Barisal",
+      "Branch_Mnemonic": "B635"
+    },
+    {
+      "Code": "8185",
+      "Branch_Name": "Natiapara Bazar Uposhakha",
+      "Branch_Mnemonic": "D786"
+    },
+    {"Code": "6264", "Branch_Name": "Natore Branch", "Branch_Mnemonic": "NATO"},
+    {
+      "Code": "941",
+      "Branch_Name": "Natore Sadar Uposhakha,Natore",
+      "Branch_Mnemonic": "C871"
+    },
+    {
+      "Code": "7822",
+      "Branch_Name": "Natun Bazar Uposhakha,Mymensingh",
+      "Branch_Mnemonic": "D423"
+    },
+    {
+      "Code": "611",
+      "Branch_Name": "Navaron Uposhakha,Jashore",
+      "Branch_Mnemonic": "C562"
+    },
+    {
+      "Code": "1175",
+      "Branch_Name": "Nawabganj SME Krishi Branch",
+      "Branch_Mnemonic": "NAWB"
+    },
+    {
+      "Code": "735",
+      "Branch_Name": "Nawabganj-Dinajpur Uposhakha",
+      "Branch_Mnemonic": "C646"
+    },
+    {
+      "Code": "1029",
+      "Branch_Name": "Nawabpur Road Branch",
+      "Branch_Mnemonic": "817"
+    },
+    {
+      "Code": "8617",
+      "Branch_Name": "Nawabpur,Cumilla",
+      "Branch_Mnemonic": "B617"
+    },
+    {
+      "Code": "860",
+      "Branch_Name": "Nawhata Bazar Uposhakha,Rajshahi",
+      "Branch_Mnemonic": "C791"
+    },
+    {
+      "Code": "7097",
+      "Branch_Name": "Naya Bazar Moor Uposhakha Dhaka",
+      "Branch_Mnemonic": "A698"
+    },
+    {
+      "Code": "8836",
+      "Branch_Name": "Naya Bazar Uposhakha, Chattogram",
+      "Branch_Mnemonic": "D961"
+    },
+    {
+      "Code": "1020",
+      "Branch_Name": "Naya Paltan Branch",
+      "Branch_Mnemonic": "NAYA"
+    },
+    {
+      "Code": "129",
+      "Branch_Name": "Nayanpur Bazar Upo,Brahmanbaria",
+      "Branch_Mnemonic": "B812"
+    },
+    {
+      "Code": "8015",
+      "Branch_Name": "Nayarhat Bazar Uposhakha",
+      "Branch_Mnemonic": "D616"
+    },
+    {
+      "Code": "8575",
+      "Branch_Name": "Nayergaon Uposhakha,Chandpur",
+      "Branch_Mnemonic": "B575"
+    },
+    {
+      "Code": "7020",
+      "Branch_Name": "Nazimuddin Road Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A621"
+    },
+    {
+      "Code": "898",
+      "Branch_Name": "Nazipur Uposhakha,Naogaon",
+      "Branch_Mnemonic": "C829"
+    },
+    {
+      "Code": "56",
+      "Branch_Name": "Nazirhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B739"
+    },
+    {
+      "Code": "604",
+      "Branch_Name": "Nehalpur Bazar Uposhakha,Jashore",
+      "Branch_Mnemonic": "C555"
+    },
+    {
+      "Code": "754",
+      "Branch_Name": "Nekmarad Bazar Uposhakha,Thakurgoan",
+      "Branch_Mnemonic": "C665"
+    },
+    {
+      "Code": "1016",
+      "Branch_Name": "Netaiganj Branch",
+      "Branch_Mnemonic": "NTG"
+    },
+    {
+      "Code": "1257",
+      "Branch_Name": "Netrokona Branch",
+      "Branch_Mnemonic": "NTRO"
+    },
+    {
+      "Code": "892",
+      "Branch_Name": "Niamatpur Uposhakha,Naogaon",
+      "Branch_Mnemonic": "C823"
+    },
+    {
+      "Code": "7376",
+      "Branch_Name": "Niketon Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A377"
+    },
+    {
+      "Code": "7909",
+      "Branch_Name": "Nikli,Kishoreganj",
+      "Branch_Mnemonic": "D510"
+    },
+    {
+      "Code": "1252",
+      "Branch_Name": "Nikunja Branch, Dhaka",
+      "Branch_Mnemonic": "NIKU"
+    },
+    {
+      "Code": "7226",
+      "Branch_Name": "Nikunja-2 Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A827"
+    },
+    {
+      "Code": "6275",
+      "Branch_Name": "Nilphamari Branch",
+      "Branch_Mnemonic": "NILP"
+    },
+    {
+      "Code": "971",
+      "Branch_Name": "Nimgachi Uposhakha,Sirajganj",
+      "Branch_Mnemonic": "F970"
+    },
+    {
+      "Code": "727",
+      "Branch_Name": "Nimnagar-Balubari Upo.,Dinajpur",
+      "Branch_Mnemonic": "C638"
+    },
+    {
+      "Code": "8620",
+      "Branch_Name": "Nimsar Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B620"
+    },
+    {
+      "Code": "8091",
+      "Branch_Name": "Nimtola Uposhakha,Munshiganj",
+      "Branch_Mnemonic": "D691"
+    },
+    {
+      "Code": "550",
+      "Branch_Name": "Nirala Uposhakha, Khulna",
+      "Branch_Mnemonic": "C501"
+    },
+    {
+      "Code": "58",
+      "Branch_Name": "Noajishpur Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B741"
+    },
+    {
+      "Code": "2269",
+      "Branch_Name": "Noakhali Branch",
+      "Branch_Mnemonic": "NKLI"
+    },
+    {
+      "Code": "336",
+      "Branch_Name": "Noapara Bazar Uposhakha,Habiganj",
+      "Branch_Mnemonic": "D387"
+    },
+    {"Code": "4163", "Branch_Name": "Noapara Branch", "Branch_Mnemonic": "815"},
+    {
+      "Code": "6",
+      "Branch_Name": "Nobinagar Uposhakha,Brahmanbaria",
+      "Branch_Mnemonic": "B689"
+    },
+    {
+      "Code": "680",
+      "Branch_Name": "Nohata Bazar-Magura Upo, Magura",
+      "Branch_Mnemonic": "F849"
+    },
+    {
+      "Code": "2132",
+      "Branch_Name": "Noju Miah Hat Branch",
+      "Branch_Mnemonic": "NOJU"
+    },
+    {
+      "Code": "7848",
+      "Branch_Name": "Nolia Jamalpur Bazar, Faridpur",
+      "Branch_Mnemonic": "D449"
+    },
+    {
+      "Code": "7443",
+      "Branch_Name": "Noorjahan Road Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A444"
+    },
+    {
+      "Code": "1028",
+      "Branch_Name": "North Brooke Hall Road Branch",
+      "Branch_Mnemonic": "NBHR"
+    },
+    {
+      "Code": "7584",
+      "Branch_Name": "North Mugda Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A585"
+    },
+    {
+      "Code": "7937",
+      "Branch_Name": "Noser Market Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D538"
+    },
+    {
+      "Code": "7181",
+      "Branch_Name": "Noyatola Road Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A782"
+    },
+    {
+      "Code": "960",
+      "Branch_Name": "Noymile- Bogura Uposhakha,Bogura",
+      "Branch_Mnemonic": "F959"
+    },
+    {
+      "Code": "600",
+      "Branch_Name": "Nurbag Main Road Uposhakha,Jashore",
+      "Branch_Mnemonic": "C551"
+    },
+    {
+      "Code": "7418",
+      "Branch_Name": "Nurpur Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A418"
+    },
+    {
+      "Code": "9910",
+      "Branch_Name": "Offshore Banking Unit (OBU)",
+      "Branch_Mnemonic": "OFBU"
+    },
+    {
+      "Code": "326",
+      "Branch_Name": "Olipur Highway Uposhakha",
+      "Branch_Mnemonic": "D376"
+    },
+    {
+      "Code": "262",
+      "Branch_Name": "Osmani Medical College Road ,Sylhet",
+      "Branch_Mnemonic": "D313"
+    },
+    {
+      "Code": "30",
+      "Branch_Name": "Oxygen MoorUposhakha,Chattogram",
+      "Branch_Mnemonic": "B713"
+    },
+    {
+      "Code": "8811",
+      "Branch_Name": "P. C. Road Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D937"
+    },
+    {
+      "Code": "8501",
+      "Branch_Name": "Paaduar Bazar Uposhakha",
+      "Branch_Mnemonic": "B501"
+    },
+    {"Code": "6084", "Branch_Name": "Pabna Branch", "Branch_Mnemonic": "PBNA"},
+    {
+      "Code": "141",
+      "Branch_Name": "Padua Uposhakha,Chattagram",
+      "Branch_Mnemonic": "F570"
+    },
+    {
+      "Code": "7970",
+      "Branch_Name": "Pagla Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D571"
+    },
+    {
+      "Code": "773",
+      "Branch_Name": "Paglapir Bazar Uposhakha,Rangpur",
+      "Branch_Mnemonic": "F872"
+    },
+    {
+      "Code": "8814",
+      "Branch_Name": "Pahartoli Uposhakha,Chattagram",
+      "Branch_Mnemonic": "D940"
+    },
+    {
+      "Code": "555",
+      "Branch_Name": "Paikgacha Uposhakha,Khulna",
+      "Branch_Mnemonic": "C506"
+    },
+    {
+      "Code": "921",
+      "Branch_Name": "Paikosha Bazar Uposhakha,Sirajganj",
+      "Branch_Mnemonic": "C852"
+    },
+    {
+      "Code": "8277",
+      "Branch_Name": "Pakundia Upo.,Kishoreganj",
+      "Branch_Mnemonic": "G777"
+    },
+    {
+      "Code": "7227",
+      "Branch_Name": "Pakuria Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A828"
+    },
+    {
+      "Code": "8662",
+      "Branch_Name": "Palakhal Uposhakha, Chandpur",
+      "Branch_Mnemonic": "F347"
+    },
+    {
+      "Code": "7886",
+      "Branch_Name": "Palash Uposhakha, Narsingdi",
+      "Branch_Mnemonic": "D487"
+    },
+    {
+      "Code": "6217",
+      "Branch_Name": "Palashbari Branch, Gaibandha",
+      "Branch_Mnemonic": "PLSH"
+    },
+    {
+      "Code": "561",
+      "Branch_Name": "Palbari Moor Uposhakha, Jashore",
+      "Branch_Mnemonic": "C512"
+    },
+    {
+      "Code": "1027",
+      "Branch_Name": "Pallabi Branch",
+      "Branch_Mnemonic": "PLLB"
+    },
+    {
+      "Code": "7267",
+      "Branch_Name": "Pallabi Extension Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A868"
+    },
+    {
+      "Code": "7266",
+      "Branch_Name": "Pallabi Phase - II Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A867"
+    },
+    {
+      "Code": "8315",
+      "Branch_Name": "Palli Bidyut-Ashulia,Dhaka",
+      "Branch_Mnemonic": "G815"
+    },
+    {
+      "Code": "7201",
+      "Branch_Name": "Paltan Uposhakha",
+      "Branch_Mnemonic": "A802"
+    },
+    {
+      "Code": "576",
+      "Branch_Name": "Panch Raster More Uposhakha,Kushtia",
+      "Branch_Mnemonic": "C527"
+    },
+    {
+      "Code": "1173",
+      "Branch_Name": "Panchaboti Branch",
+      "Branch_Mnemonic": "PANC"
+    },
+    {
+      "Code": "6263",
+      "Branch_Name": "Panchagarh Branch",
+      "Branch_Mnemonic": "PNCH"
+    },
+    {
+      "Code": "730",
+      "Branch_Name": "Panchagarh Sadar, Panchagarh",
+      "Branch_Mnemonic": "C641"
+    },
+    {
+      "Code": "1259",
+      "Branch_Name": "Panchar Branch, Madaripur",
+      "Branch_Mnemonic": "PNCR"
+    },
+    {
+      "Code": "850",
+      "Branch_Name": "Panchbibi Uposhakha, Joypurhat",
+      "Branch_Mnemonic": "C781"
+    },
+    {
+      "Code": "1233",
+      "Branch_Name": "Panchdona Branch",
+      "Branch_Mnemonic": "PDNA"
+    },
+    {
+      "Code": "8793",
+      "Branch_Name": "Panchlaish Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D919"
+    },
+    {
+      "Code": "7156",
+      "Branch_Name": "Panthapath Uposhakha",
+      "Branch_Mnemonic": "A156"
+    },
+    {
+      "Code": "7992",
+      "Branch_Name": "Paragram Hat,Dhaka",
+      "Branch_Mnemonic": "D593"
+    },
+    {
+      "Code": "762",
+      "Branch_Name": "Parbatipur Uposhakha,Dinajpur",
+      "Branch_Mnemonic": "C673"
+    },
+    {
+      "Code": "8312",
+      "Branch_Name": "Parkhi Bazar Uposhakha,Tangail",
+      "Branch_Mnemonic": "G812"
+    },
+    {
+      "Code": "8526",
+      "Branch_Name": "Parshuram Uposhakha,Feni",
+      "Branch_Mnemonic": "B526"
+    },
+    {
+      "Code": "583",
+      "Branch_Name": "Parulia Bazar Uposhakha",
+      "Branch_Mnemonic": "C534"
+    },
+    {
+      "Code": "7920",
+      "Branch_Name": "Paschim Mukterpur Upo,Munshiganj",
+      "Branch_Mnemonic": "D519"
+    },
+    {
+      "Code": "718",
+      "Branch_Name": "Patgram Uposhakha,Lalmonirhat",
+      "Branch_Mnemonic": "C629"
+    },
+    {
+      "Code": "8766",
+      "Branch_Name": "Patharghata Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D892"
+    },
+    {
+      "Code": "7855",
+      "Branch_Name": "Pathrail Uposhakha",
+      "Branch_Mnemonic": "D456"
+    },
+    {
+      "Code": "2036",
+      "Branch_Name": "Patiya Branch, Chattogram",
+      "Branch_Mnemonic": "809"
+    },
+    {
+      "Code": "582",
+      "Branch_Name": "Patkelghata Uposhakha,Satkhira",
+      "Branch_Mnemonic": "C533"
+    },
+    {
+      "Code": "5244",
+      "Branch_Name": "Patuakhali Branch, Patuakhali",
+      "Branch_Mnemonic": "PATU"
+    },
+    {
+      "Code": "451",
+      "Branch_Name": "Patuakhali Puran Bazar Uposhakha",
+      "Branch_Mnemonic": "F730"
+    },
+    {
+      "Code": "148",
+      "Branch_Name": "Pekua Uposhakha,Cox's Bazar",
+      "Branch_Mnemonic": "F577"
+    },
+    {
+      "Code": "335",
+      "Branch_Name": "Phandauk Bazar Upo.,Brahmanbaria",
+      "Branch_Mnemonic": "D386"
+    },
+    {
+      "Code": "708",
+      "Branch_Name": "Phulbari-Kurigram Uposhakha",
+      "Branch_Mnemonic": "C619"
+    },
+    {
+      "Code": "715",
+      "Branch_Name": "Pirgacha-Rangpur Uposhakha,Rangpur",
+      "Branch_Mnemonic": "C626"
+    },
+    {
+      "Code": "750",
+      "Branch_Name": "Pirganj Uposhakha,Thakurgaon",
+      "Branch_Mnemonic": "C661"
+    },
+    {
+      "Code": "720",
+      "Branch_Name": "Pirganj-Rangpur Uposhakha",
+      "Branch_Mnemonic": "C631"
+    },
+    {
+      "Code": "252",
+      "Branch_Name": "Pirijpur Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D302"
+    },
+    {
+      "Code": "5262",
+      "Branch_Name": "Pirojpur Branch",
+      "Branch_Mnemonic": "PIRJ"
+    },
+    {
+      "Code": "437",
+      "Branch_Name": "Pirojpur Sadar Uposhakha,Pirojpur",
+      "Branch_Mnemonic": "B672"
+    },
+    {
+      "Code": "7421",
+      "Branch_Name": "Polashpur Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A421"
+    },
+    {
+      "Code": "4169",
+      "Branch_Name": "Poradah Branch",
+      "Branch_Mnemonic": "PRDA"
+    },
+    {
+      "Code": "7902",
+      "Branch_Name": "Poradia Bazar Uposhakha,Narsingdi",
+      "Branch_Mnemonic": "D503"
+    },
+    {
+      "Code": "422",
+      "Branch_Name": "Poranganj Uposhakha,Bhola",
+      "Branch_Mnemonic": "B657"
+    },
+    {
+      "Code": "1072",
+      "Branch_Name": "Pragati Sarani Branch",
+      "Branch_Mnemonic": "PROG"
+    },
+    {
+      "Code": "1001",
+      "Branch_Name": "Principal Branch",
+      "Branch_Mnemonic": "796"
+    },
+    {
+      "Code": "7983",
+      "Branch_Name": "Pubail Bazar Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D584"
+    },
+    {
+      "Code": "7984",
+      "Branch_Name": "Pubail Thana Road Upo, Gazipur",
+      "Branch_Mnemonic": "D585"
+    },
+    {
+      "Code": "8280",
+      "Branch_Name": "Puler Ghat Bazar Uposhakha",
+      "Branch_Mnemonic": "G780"
+    },
+    {
+      "Code": "560",
+      "Branch_Name": "Pulerhat Uposhakha, Jashore",
+      "Branch_Mnemonic": "C511"
+    },
+    {
+      "Code": "736",
+      "Branch_Name": "Pulhat Uposhakha, Dinajpur",
+      "Branch_Mnemonic": "C647"
+    },
+    {
+      "Code": "361",
+      "Branch_Name": "Puran Munsafi Road Upo,Habiganj",
+      "Branch_Mnemonic": "F690"
+    },
+    {
+      "Code": "8791",
+      "Branch_Name": "Puratan Chandgaon Uposhakha,CTG",
+      "Branch_Mnemonic": "D917"
+    },
+    {
+      "Code": "7139",
+      "Branch_Name": "Puraton Jail Gate-Dhaka Uposhakha",
+      "Branch_Mnemonic": "A740"
+    },
+    {
+      "Code": "7425",
+      "Branch_Name": "Purba Muradpur Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A425"
+    },
+    {
+      "Code": "7839",
+      "Branch_Name": "Purbadhala Bazar Upo,Netrokona",
+      "Branch_Mnemonic": "D440"
+    },
+    {
+      "Code": "7826",
+      "Branch_Name": "Purbadhola Uposhakha,Netrokona",
+      "Branch_Mnemonic": "D427"
+    },
+    {
+      "Code": "914",
+      "Branch_Name": "Qadirabad Cantonment,Natore",
+      "Branch_Mnemonic": "C845"
+    },
+    {
+      "Code": "7358",
+      "Branch_Name": "R.K. Mission Road Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A359"
+    },
+    {
+      "Code": "8500",
+      "Branch_Name": "Racecourse Uposhakha",
+      "Branch_Mnemonic": "B500"
+    },
+    {
+      "Code": "8085",
+      "Branch_Name": "Radhaganj Uposhakha",
+      "Branch_Mnemonic": "D686"
+    },
+    {
+      "Code": "671",
+      "Branch_Name": "Radhanagar Bazar Uposhakha,Magura",
+      "Branch_Mnemonic": "F840"
+    },
+    {
+      "Code": "8765",
+      "Branch_Name": "Rahattar Pool Uposhakha, Chattogram",
+      "Branch_Mnemonic": "D891"
+    },
+    {
+      "Code": "8615",
+      "Branch_Name": "Rahima Nagar Uposhakha,Chandpur",
+      "Branch_Mnemonic": "B615"
+    },
+    {
+      "Code": "856",
+      "Branch_Name": "Raikali Bazar Uposhakha,Joypurhat",
+      "Branch_Mnemonic": "C787"
+    },
+    {
+      "Code": "7532",
+      "Branch_Name": "Rainkhola Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A536"
+    },
+    {
+      "Code": "8601",
+      "Branch_Name": "Raipur Uposhakha,Lakshmipur",
+      "Branch_Mnemonic": "B601"
+    },
+    {
+      "Code": "8087",
+      "Branch_Name": "Raipura Bazar Uposhakha,Narsingdi",
+      "Branch_Mnemonic": "D688"
+    },
+    {
+      "Code": "7520",
+      "Branch_Name": "Rajabari Chowrasta Upo.,Dhaka",
+      "Branch_Mnemonic": "A521"
+    },
+    {
+      "Code": "435",
+      "Branch_Name": "Rajapur Uposhakha,Jhalokathi",
+      "Branch_Mnemonic": "B670"
+    },
+    {
+      "Code": "8266",
+      "Branch_Name": "Rajbari Uposhakha,Rajbari",
+      "Branch_Mnemonic": "D867"
+    },
+    {
+      "Code": "8237",
+      "Branch_Name": "Rajendrapur,Gazipur",
+      "Branch_Mnemonic": "D838"
+    },
+    {
+      "Code": "7960",
+      "Branch_Name": "Rajfulbaria Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D561"
+    },
+    {
+      "Code": "473",
+      "Branch_Name": "Rajganj Bazar Uposhakha, Jashore",
+      "Branch_Mnemonic": "F752"
+    },
+    {
+      "Code": "6080",
+      "Branch_Name": "Rajshahi Branch",
+      "Branch_Mnemonic": "805"
+    },
+    {
+      "Code": "863",
+      "Branch_Name": "Rajshahi Court Bazar Uposhakha",
+      "Branch_Mnemonic": "C794"
+    },
+    {
+      "Code": "862",
+      "Branch_Name": "Rajshahi Laxmipur Uposhakha",
+      "Branch_Mnemonic": "C793"
+    },
+    {
+      "Code": "861",
+      "Branch_Name": "Rajshahi Uposhahar,Rajshahi",
+      "Branch_Mnemonic": "C792"
+    },
+    {
+      "Code": "8638",
+      "Branch_Name": "Rakhalia Bazar Uposhakha,Laxmipur",
+      "Branch_Mnemonic": "F323"
+    },
+    {
+      "Code": "8561",
+      "Branch_Name": "Ram Mohan Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B561"
+    },
+    {
+      "Code": "8552",
+      "Branch_Name": "Ramchandrapur Bazar,Cumilla",
+      "Branch_Mnemonic": "B552"
+    },
+    {
+      "Code": "8639",
+      "Branch_Name": "Ramganj-Laxmipur Upo,Laxmipur",
+      "Branch_Mnemonic": "F324"
+    },
+    {
+      "Code": "8573",
+      "Branch_Name": "Ramkrishnopur Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B573"
+    },
+    {
+      "Code": "7183",
+      "Branch_Name": "Rampura Bou Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A784"
+    },
+    {
+      "Code": "20",
+      "Branch_Name": "Ramu Uposhakha,Coxs Bazar",
+      "Branch_Mnemonic": "B703"
+    },
+    {
+      "Code": "2204",
+      "Branch_Name": "Rangamati Branch",
+      "Branch_Mnemonic": "RGMT"
+    },
+    {
+      "Code": "6081",
+      "Branch_Name": "Rangpur Branch",
+      "Branch_Mnemonic": "RANG"
+    },
+    {
+      "Code": "704",
+      "Branch_Name": "Rangpur Bus Terminal Uposhakha",
+      "Branch_Mnemonic": "C615"
+    },
+    {
+      "Code": "703",
+      "Branch_Name": "Rangpur Lalbagh Uposhakha,Rangpur",
+      "Branch_Mnemonic": "C614"
+    },
+    {
+      "Code": "36",
+      "Branch_Name": "Rangunia Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B719"
+    },
+    {
+      "Code": "8246",
+      "Branch_Name": "Raniganj Bazar Uposhakha, Gazipur",
+      "Branch_Mnemonic": "D847"
+    },
+    {
+      "Code": "893",
+      "Branch_Name": "Raninagar Uposhakha,Naogaon",
+      "Branch_Mnemonic": "C824"
+    },
+    {
+      "Code": "8506",
+      "Branch_Name": "Ranir Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B506"
+    },
+    {
+      "Code": "728",
+      "Branch_Name": "Ranirbandar Uposhakha,Dinajpur",
+      "Branch_Mnemonic": "C639"
+    },
+    {
+      "Code": "108",
+      "Branch_Name": "Ranirhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B791"
+    },
+    {
+      "Code": "752",
+      "Branch_Name": "Ranisankail Uposhakha,Thakurgaon",
+      "Branch_Mnemonic": "C663"
+    },
+    {
+      "Code": "42",
+      "Branch_Name": "Raozan Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B725"
+    },
+    {
+      "Code": "7375",
+      "Branch_Name": "Rasulbagh Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A376"
+    },
+    {
+      "Code": "117",
+      "Branch_Name": "Rawshanhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B800"
+    },
+    {
+      "Code": "7048",
+      "Branch_Name": "Rayer Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A648"
+    },
+    {
+      "Code": "7416",
+      "Branch_Name": "Rayerbagh Uposhakha",
+      "Branch_Mnemonic": "A416"
+    },
+    {
+      "Code": "7864",
+      "Branch_Name": "Registry Para Uposhakha,Tangail",
+      "Branch_Mnemonic": "D465"
+    },
+    {
+      "Code": "105",
+      "Branch_Name": "Reserve Bazar Uposhakha,Rangamati",
+      "Branch_Mnemonic": "B788"
+    },
+    {
+      "Code": "7919",
+      "Branch_Name": "Rikabi Bazar,Munshiganj",
+      "Branch_Mnemonic": "D518"
+    },
+    {
+      "Code": "902",
+      "Branch_Name": "Rohanpur Uposhakha,Chapainawabganj",
+      "Branch_Mnemonic": "C833"
+    },
+    {
+      "Code": "7032",
+      "Branch_Name": "Rony Market Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A633"
+    },
+    {
+      "Code": "8270",
+      "Branch_Name": "Rotondia Bazar Kalukhali,Rajbari",
+      "Branch_Mnemonic": "D871"
+    },
+    {
+      "Code": "8173",
+      "Branch_Name": "Rowmari Uposhakha,Kurigram",
+      "Branch_Mnemonic": "D774"
+    },
+    {
+      "Code": "7286",
+      "Branch_Name": "Roy Saheb Bazar Moor Uposhakha",
+      "Branch_Mnemonic": "A887"
+    },
+    {
+      "Code": "8206",
+      "Branch_Name": "Ruhitpur Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D807"
+    },
+    {
+      "Code": "401",
+      "Branch_Name": "Rupatali Uposhakha,Barisal",
+      "Branch_Mnemonic": "B636"
+    },
+    {
+      "Code": "676",
+      "Branch_Name": "Rupdia Bazar Uposhakha,Jashore",
+      "Branch_Mnemonic": "F845"
+    },
+    {
+      "Code": "8178",
+      "Branch_Name": "Rupganj Sub-Registry Office, N.Ganj",
+      "Branch_Mnemonic": "D779"
+    },
+    {"Code": "1198", "Branch_Name": "Rupgonj Branch", "Branch_Mnemonic": "RUP"},
+    {
+      "Code": "7269",
+      "Branch_Name": "Rupnagar Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A870"
+    },
+    {
+      "Code": "557",
+      "Branch_Name": "Rupsha Ghat Uposhakha,Khulna",
+      "Branch_Mnemonic": "C508"
+    },
+    {
+      "Code": "591",
+      "Branch_Name": "Rupsha Stand Road Uposhakha,Khulna",
+      "Branch_Mnemonic": "C542"
+    },
+    {
+      "Code": "122",
+      "Branch_Name": "Rustomhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B805"
+    },
+    {
+      "Code": "8092",
+      "Branch_Name": "Saban Factory More Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D692"
+    },
+    {
+      "Code": "8612",
+      "Branch_Name": "Sachar Bazar Uposhakha, Chandpur",
+      "Branch_Mnemonic": "B612"
+    },
+    {
+      "Code": "655",
+      "Branch_Name": "Sachibunia Bazar Uposhakha,Khulna",
+      "Branch_Mnemonic": "C606"
+    },
+    {
+      "Code": "678",
+      "Branch_Name": "Sachilapur Bazar Uposhakha,Magura",
+      "Branch_Mnemonic": "F847"
+    },
+    {
+      "Code": "352",
+      "Branch_Name": "Sachna Bazar Uposhakha, Sunamganj",
+      "Branch_Mnemonic": "F681"
+    },
+    {
+      "Code": "973",
+      "Branch_Name": "Sadanandapur-Koddar Moor Uposhakha",
+      "Branch_Mnemonic": "F972"
+    },
+    {
+      "Code": "8800",
+      "Branch_Name": "Sadarghat Road Uposhakha, CTG",
+      "Branch_Mnemonic": "D926"
+    },
+    {
+      "Code": "7847",
+      "Branch_Name": "Sadarpur Bazar Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D448"
+    },
+    {
+      "Code": "8188",
+      "Branch_Name": "Sagardighi Uposhakha,Tangail",
+      "Branch_Mnemonic": "D789"
+    },
+    {
+      "Code": "8195",
+      "Branch_Name": "Saheprotap Bazar Uposhakha",
+      "Branch_Mnemonic": "D796"
+    },
+    {
+      "Code": "7562",
+      "Branch_Name": "Saherunbagh Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A563"
+    },
+    {
+      "Code": "716",
+      "Branch_Name": "Saidpur,Nilphamari",
+      "Branch_Mnemonic": "C627"
+    },
+    {
+      "Code": "7882",
+      "Branch_Name": "Sakhipur-Shariatpur Upo,Shariatpur",
+      "Branch_Mnemonic": "D483"
+    },
+    {
+      "Code": "929",
+      "Branch_Name": "Salanga,Sirajganj",
+      "Branch_Mnemonic": "C860"
+    },
+    {
+      "Code": "8116",
+      "Branch_Name": "Salna Bazar Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D716"
+    },
+    {
+      "Code": "7853",
+      "Branch_Name": "Saltha Bazar Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D454"
+    },
+    {
+      "Code": "8360",
+      "Branch_Name": "Sanandabari Hat Uposhakha, Jamalpur",
+      "Branch_Mnemonic": "G860"
+    },
+    {
+      "Code": "8218",
+      "Branch_Name": "Sanarpar Rahim Market Road,N.ganj",
+      "Branch_Mnemonic": "D819"
+    },
+    {
+      "Code": "7492",
+      "Branch_Name": "Sanarpar Uposhakha",
+      "Branch_Mnemonic": "A493"
+    },
+    {
+      "Code": "2255",
+      "Branch_Name": "Sandwip Branch",
+      "Branch_Mnemonic": "SNDP"
+    },
+    {
+      "Code": "8511",
+      "Branch_Name": "Sankuchail Bazar Uposhakha,Cumilla",
+      "Branch_Mnemonic": "B511"
+    },
+    {
+      "Code": "930",
+      "Branch_Name": "Santhia Uposhakha,Pabna",
+      "Branch_Mnemonic": "C861"
+    },
+    {
+      "Code": "895",
+      "Branch_Name": "Sapahar Uposhakha,Naogaon",
+      "Branch_Mnemonic": "C826"
+    },
+    {
+      "Code": "579",
+      "Branch_Name": "Sarajganj Bazar Uposhakha,Chuadanga",
+      "Branch_Mnemonic": "C530"
+    },
+    {
+      "Code": "3",
+      "Branch_Name": "Sarak Bazar Uposhakha,Brahmanbaria",
+      "Branch_Mnemonic": "B686"
+    },
+    {
+      "Code": "7905",
+      "Branch_Name": "Sararchar Uposhakha, Kishoreganj",
+      "Branch_Mnemonic": "D506"
+    },
+    {
+      "Code": "997",
+      "Branch_Name": "Sariakandi Uposhakha, Bogura",
+      "Branch_Mnemonic": "F996"
+    },
+    {
+      "Code": "271",
+      "Branch_Name": "Sarkar Bazar Bus Stand, Moulvibazar",
+      "Branch_Mnemonic": "D322"
+    },
+    {
+      "Code": "40",
+      "Branch_Name": "Sarkerhat Uposhakha, Chattogram",
+      "Branch_Mnemonic": "B723"
+    },
+    {
+      "Code": "7490",
+      "Branch_Name": "Sarulia Uposhakha",
+      "Branch_Mnemonic": "A491"
+    },
+    {
+      "Code": "7249",
+      "Branch_Name": "Sat Masjid Road Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A850"
+    },
+    {
+      "Code": "8000",
+      "Branch_Name": "Sataish Uposhakha",
+      "Branch_Mnemonic": "D601"
+    },
+    {
+      "Code": "7335",
+      "Branch_Name": "Satarkul Uposhakha",
+      "Branch_Mnemonic": "A336"
+    },
+    {
+      "Code": "922",
+      "Branch_Name": "Satbaria Bazar Uposhakha,Sirajganj",
+      "Branch_Mnemonic": "C853"
+    },
+    {
+      "Code": "177",
+      "Branch_Name": "Satghatia Pukur Par,Chattogram",
+      "Branch_Mnemonic": "F606"
+    },
+    {
+      "Code": "179",
+      "Branch_Name": "Satkania Uposhakha,Chattogram",
+      "Branch_Mnemonic": "F608"
+    },
+    {
+      "Code": "4065",
+      "Branch_Name": "Satkhira Branch",
+      "Branch_Mnemonic": "813"
+    },
+    {
+      "Code": "565",
+      "Branch_Name": "Satmail Bazar Uposhakha,Jashore",
+      "Branch_Mnemonic": "C516"
+    },
+    {
+      "Code": "7851",
+      "Branch_Name": "Satoir Bazar Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D452"
+    },
+    {
+      "Code": "471",
+      "Branch_Name": "Satrujitpur Bazar Upo, Magura",
+      "Branch_Mnemonic": "F750"
+    },
+    {
+      "Code": "8017",
+      "Branch_Name": "Saturia Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D618"
+    },
+    {
+      "Code": "1171",
+      "Branch_Name": "Savar Bazar Branch",
+      "Branch_Mnemonic": "SAVR"
+    },
+    {
+      "Code": "7962",
+      "Branch_Name": "Savar Thana Stand Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D563"
+    },
+    {
+      "Code": "7356",
+      "Branch_Name": "Sayadabad Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A357"
+    },
+    {
+      "Code": "7137",
+      "Branch_Name": "Science Lab Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A738"
+    },
+    {
+      "Code": "8666",
+      "Branch_Name": "Sebarhat,Noakhali",
+      "Branch_Mnemonic": "F351"
+    },
+    {
+      "Code": "7519",
+      "Branch_Name": "Sector 12 Khalpar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A520"
+    },
+    {
+      "Code": "1221",
+      "Branch_Name": "Seed Store Bazar Branch",
+      "Branch_Mnemonic": "SEED"
+    },
+    {
+      "Code": "7203",
+      "Branch_Name": "Segunbagicha Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A804"
+    },
+    {
+      "Code": "8546",
+      "Branch_Name": "Senbag Bazar Uposhakha,Noakhali",
+      "Branch_Mnemonic": "B546"
+    },
+    {
+      "Code": "556",
+      "Branch_Name": "Sener Bazar Uposhakha,Khulna",
+      "Branch_Mnemonic": "C507"
+    },
+    {
+      "Code": "7113",
+      "Branch_Name": "Senpara Parbata Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A714"
+    },
+    {
+      "Code": "6179",
+      "Branch_Name": "Setabgonj SME Krishi Branch",
+      "Branch_Mnemonic": "SHET"
+    },
+    {
+      "Code": "1244",
+      "Branch_Name": "Shafipur Branch, Gazipur.",
+      "Branch_Mnemonic": "SFPR"
+    },
+    {
+      "Code": "2042",
+      "Branch_Name": "Shah Amanat Market Branch",
+      "Branch_Mnemonic": "SAM"
+    },
+    {
+      "Code": "300",
+      "Branch_Name": "Shahabazpur Uposhakha,MoulviBazar",
+      "Branch_Mnemonic": "D351"
+    },
+    {
+      "Code": "925",
+      "Branch_Name": "Shahajadpur-Sirajganj Uposhakha",
+      "Branch_Mnemonic": "C856"
+    },
+    {
+      "Code": "325",
+      "Branch_Name": "Shahestaganj Bazar Uposhakha",
+      "Branch_Mnemonic": "C325"
+    },
+    {
+      "Code": "302",
+      "Branch_Name": "Shahgoli Bazar Uposhakha, Sylhet",
+      "Branch_Mnemonic": "D353"
+    },
+    {
+      "Code": "7959",
+      "Branch_Name": "Shahibag Chowrasta Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D560"
+    },
+    {
+      "Code": "7339",
+      "Branch_Name": "Shahjadpur Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A340"
+    },
+    {
+      "Code": "7480",
+      "Branch_Name": "Shahjahan Market Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A480"
+    },
+    {
+      "Code": "1211",
+      "Branch_Name": "Shahjalal Avenue Branch, Dhaka",
+      "Branch_Mnemonic": "DHOL"
+    },
+    {
+      "Code": "8613",
+      "Branch_Name": "Shahrasti Uposhakha, Chandpur",
+      "Branch_Mnemonic": "B613"
+    },
+    {
+      "Code": "624",
+      "Branch_Name": "Shailkupa Bazar Uposhakha,Jhenaidah",
+      "Branch_Mnemonic": "C575"
+    },
+    {
+      "Code": "7863",
+      "Branch_Name": "Shakhipur Uposhakha,Tangail",
+      "Branch_Mnemonic": "D464"
+    },
+    {
+      "Code": "28",
+      "Branch_Name": "Shamlapur Bazar Upo,Coxs Bazar",
+      "Branch_Mnemonic": "B711"
+    },
+    {
+      "Code": "270",
+      "Branch_Name": "Shamsher NagarUpo.,Moulvi Bazar",
+      "Branch_Mnemonic": "D321"
+    },
+    {
+      "Code": "7247",
+      "Branch_Name": "Shankar Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A848"
+    },
+    {
+      "Code": "890",
+      "Branch_Name": "Shantahar Uposhakha,Bogura",
+      "Branch_Mnemonic": "C821"
+    },
+    {
+      "Code": "1007",
+      "Branch_Name": "Shantinagar Branch",
+      "Branch_Mnemonic": "SHAN"
+    },
+    {
+      "Code": "8667",
+      "Branch_Name": "Shantir Hat Uposhakha,Noakhali",
+      "Branch_Mnemonic": "F352"
+    },
+    {
+      "Code": "115",
+      "Branch_Name": "Shantirhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B798"
+    },
+    {
+      "Code": "32",
+      "Branch_Name": "Sharafvata Uposhakha,Chattagram",
+      "Branch_Mnemonic": "B715"
+    },
+    {
+      "Code": "1092",
+      "Branch_Name": "Shariatpur Branch",
+      "Branch_Mnemonic": "SHAR"
+    },
+    {
+      "Code": "707",
+      "Branch_Name": "Shathibari Bazar Uposhakha,Rangpur",
+      "Branch_Mnemonic": "C618"
+    },
+    {
+      "Code": "2045",
+      "Branch_Name": "Sheikh Mujib Road Branch",
+      "Branch_Mnemonic": "SMR"
+    },
+    {
+      "Code": "574",
+      "Branch_Name": "Sheikhpara Bazar,Jhinaidah",
+      "Branch_Mnemonic": "C525"
+    },
+    {
+      "Code": "652",
+      "Branch_Name": "Sheikhpara Power House Upo., Khulna",
+      "Branch_Mnemonic": "C603"
+    },
+    {
+      "Code": "7927",
+      "Branch_Name": "Shekharchar Baburhat,Narsingdi",
+      "Branch_Mnemonic": "D528"
+    },
+    {
+      "Code": "1227",
+      "Branch_Name": "Sherpur Branch, Sherpur",
+      "Branch_Mnemonic": "SHER"
+    },
+    {
+      "Code": "870",
+      "Branch_Name": "Sherpur Road Colony Uposhakha",
+      "Branch_Mnemonic": "C801"
+    },
+    {
+      "Code": "871",
+      "Branch_Name": "Sherpur Upozilla Uposhakha, Bogura",
+      "Branch_Mnemonic": "C802"
+    },
+    {
+      "Code": "322",
+      "Branch_Name": "Sherpur-Sylhet,Moulvibazar",
+      "Branch_Mnemonic": "D373"
+    },
+    {
+      "Code": "7116",
+      "Branch_Name": "Shewrapara Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A717"
+    },
+    {
+      "Code": "7951",
+      "Branch_Name": "Shibchar Uposhakha,Madaripur",
+      "Branch_Mnemonic": "D552"
+    },
+    {
+      "Code": "72",
+      "Branch_Name": "Shiberhat Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B755"
+    },
+    {
+      "Code": "290",
+      "Branch_Name": "Shibganj Bazar Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D341"
+    },
+    {
+      "Code": "900",
+      "Branch_Name": "Shibganj Upo.,Chapai Nawabganj",
+      "Branch_Mnemonic": "C831"
+    },
+    {
+      "Code": "7897",
+      "Branch_Name": "Shibpur Bazar Uposhakha, Narsingdi",
+      "Branch_Mnemonic": "D498"
+    },
+    {
+      "Code": "1224",
+      "Branch_Name": "Shibu Market Branch",
+      "Branch_Mnemonic": "SHBU"
+    },
+    {
+      "Code": "8048",
+      "Branch_Name": "Shiddhirganj Uposhakha, Narayanganj",
+      "Branch_Mnemonic": "D648"
+    },
+    {
+      "Code": "409",
+      "Branch_Name": "Shikarpur Uposhakha,Barishal",
+      "Branch_Mnemonic": "B644"
+    },
+    {
+      "Code": "675",
+      "Branch_Name": "Shimakhali Bazar Uposhakha,Magura",
+      "Branch_Mnemonic": "F844"
+    },
+    {
+      "Code": "8115",
+      "Branch_Name": "Shimultoli Uposhakha",
+      "Branch_Mnemonic": "B115"
+    },
+    {
+      "Code": "7821",
+      "Branch_Name": "Shombhuganj Uposhakha, Mymensingh",
+      "Branch_Mnemonic": "D422"
+    },
+    {
+      "Code": "7023",
+      "Branch_Name": "Showari Ghat Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A624"
+    },
+    {
+      "Code": "3047",
+      "Branch_Name": "Shreemongal Branch",
+      "Branch_Mnemonic": "SMGL"
+    },
+    {
+      "Code": "8080",
+      "Branch_Name": "Shreenagar Uposhakha",
+      "Branch_Mnemonic": "D681"
+    },
+    {
+      "Code": "7423",
+      "Branch_Name": "Shuti Khalpar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A423"
+    },
+    {
+      "Code": "7828",
+      "Branch_Name": "Shyamgonj Uposhakha,Netrokona",
+      "Branch_Mnemonic": "D429"
+    },
+    {
+      "Code": "7477",
+      "Branch_Name": "Shyamoli Bus Stand Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A477"
+    },
+    {
+      "Code": "7285",
+      "Branch_Name": "Shyampur Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A886"
+    },
+    {
+      "Code": "8003",
+      "Branch_Name": "Sign Board-Gazipur Uposhakha",
+      "Branch_Mnemonic": "D604"
+    },
+    {
+      "Code": "8219",
+      "Branch_Name": "Signboard Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D820"
+    },
+    {
+      "Code": "7957",
+      "Branch_Name": "Singair Road Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D558"
+    },
+    {
+      "Code": "947",
+      "Branch_Name": "Singra Uposhakha,Natore",
+      "Branch_Mnemonic": "C877"
+    },
+    {
+      "Code": "7439",
+      "Branch_Name": "Sir Salimullah Road,Dhaka",
+      "Branch_Mnemonic": "A440"
+    },
+    {
+      "Code": "6216",
+      "Branch_Name": "Sirajganj Branch",
+      "Branch_Mnemonic": "SRAJ"
+    },
+    {
+      "Code": "923",
+      "Branch_Name": "Sirajganj Sadar Uposhakha,Sirajganj",
+      "Branch_Mnemonic": "C854"
+    },
+    {
+      "Code": "73",
+      "Branch_Name": "Sitakunda Uposhakha, Chattogram",
+      "Branch_Mnemonic": "B756"
+    },
+    {
+      "Code": "8165",
+      "Branch_Name": "Sokal Bazar Uposhakha,Jamalpur",
+      "Branch_Mnemonic": "D766"
+    },
+    {
+      "Code": "8548",
+      "Branch_Name": "Somir Munshir Hat,Noakhali",
+      "Branch_Mnemonic": "B548"
+    },
+    {
+      "Code": "8110",
+      "Branch_Name": "Sona Miah Bazar,Narayanganj",
+      "Branch_Mnemonic": "D711"
+    },
+    {
+      "Code": "4223",
+      "Branch_Name": "Sonadanga Branch",
+      "Branch_Mnemonic": "SNDA"
+    },
+    {
+      "Code": "8538",
+      "Branch_Name": "Sonaimuri BazarUposhakha,Noakhali",
+      "Branch_Mnemonic": "B538"
+    },
+    {
+      "Code": "8271",
+      "Branch_Name": "Sonapur Bazar Uposhakha,Rajbari",
+      "Branch_Mnemonic": "D872"
+    },
+    {
+      "Code": "8543",
+      "Branch_Name": "Sonapur Uposhakha,Noakhali",
+      "Branch_Mnemonic": "B543"
+    },
+    {
+      "Code": "23",
+      "Branch_Name": "Sonar Para Uposhakha,Cox's Bazar",
+      "Branch_Mnemonic": "B706"
+    },
+    {
+      "Code": "1254",
+      "Branch_Name": "Sonargaon Branch, Narayanganj",
+      "Branch_Mnemonic": "SOGN"
+    },
+    {
+      "Code": "8286",
+      "Branch_Name": "Sonargaon Taltola Bazar,Narayanganj",
+      "Branch_Mnemonic": "G786"
+    },
+    {
+      "Code": "996",
+      "Branch_Name": "Sonatola Uposhakha, Bogura",
+      "Branch_Mnemonic": "F995"
+    },
+    {
+      "Code": "1",
+      "Branch_Name": "Sorail Upzilla Uposhakha",
+      "Branch_Mnemonic": "C001"
+    },
+    {
+      "Code": "7560",
+      "Branch_Name": "South Banasree Uposhakha",
+      "Branch_Mnemonic": "A561"
+    },
+    {
+      "Code": "8040",
+      "Branch_Name": "South Gazirchat Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D641"
+    },
+    {
+      "Code": "7585",
+      "Branch_Name": "South Goran Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A586"
+    },
+    {
+      "Code": "7496",
+      "Branch_Name": "South Jatrabari Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A497"
+    },
+    {
+      "Code": "8103",
+      "Branch_Name": "Square Masterbari Upo,Mymensingh",
+      "Branch_Mnemonic": "D704"
+    },
+    {
+      "Code": "8146",
+      "Branch_Name": "Sreebordi Uposhakha,Sherpur",
+      "Branch_Mnemonic": "D747"
+    },
+    {
+      "Code": "674",
+      "Branch_Name": "Sreepur-Magura Uposhakha,Magura",
+      "Branch_Mnemonic": "F843"
+    },
+    {
+      "Code": "8112",
+      "Branch_Name": "Station Road Fatullah Uposhakha",
+      "Branch_Mnemonic": "D713"
+    },
+    {
+      "Code": "7982",
+      "Branch_Name": "Station Road Natun Bazar-Tongi,Gazi",
+      "Branch_Mnemonic": "D583"
+    },
+    {
+      "Code": "8846",
+      "Branch_Name": "Steel Mill Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D972"
+    },
+    {
+      "Code": "1090",
+      "Branch_Name": "Stock Exchange Branch",
+      "Branch_Mnemonic": "STOK"
+    },
+    {
+      "Code": "8585",
+      "Branch_Name": "Suagonj Bazar Uposhakha",
+      "Branch_Mnemonic": "B585"
+    },
+    {
+      "Code": "8018",
+      "Branch_Name": "Suapur Bazar Uposhakha, Dhaka",
+      "Branch_Mnemonic": "D619"
+    },
+    {
+      "Code": "8544",
+      "Branch_Name": "Subarnachar Uposhakha,Noakhali",
+      "Branch_Mnemonic": "B544"
+    },
+    {
+      "Code": "3043",
+      "Branch_Name": "Subid Bazar Branch",
+      "Branch_Mnemonic": "SUBD"
+    },
+    {
+      "Code": "885",
+      "Branch_Name": "Sujanagar Uposhakha,Pabna",
+      "Branch_Mnemonic": "C816"
+    },
+    {
+      "Code": "8657",
+      "Branch_Name": "Sujatpur Bazar Uposhakha,Chandpur",
+      "Branch_Mnemonic": "F342"
+    },
+    {
+      "Code": "7938",
+      "Branch_Name": "Sultan Market Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D539"
+    },
+    {
+      "Code": "3252",
+      "Branch_Name": "Sunamganj Branch",
+      "Branch_Mnemonic": "SUNM"
+    },
+    {
+      "Code": "724",
+      "Branch_Name": "Sundarganj Uposhakha,Gaibandha",
+      "Branch_Mnemonic": "C635"
+    },
+    {
+      "Code": "7288",
+      "Branch_Name": "Sutrapur Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A889"
+    },
+    {
+      "Code": "7419",
+      "Branch_Name": "Swamibagh Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A419"
+    },
+    {"Code": "3033", "Branch_Name": "Sylhet Branch", "Branch_Mnemonic": "803"},
+    {
+      "Code": "255",
+      "Branch_Name": "Sylhet Station Road, Sylhet",
+      "Branch_Mnemonic": "D305"
+    },
+    {
+      "Code": "107",
+      "Branch_Name": "Tabalchari Uposhakha,Rangamati",
+      "Branch_Mnemonic": "B790"
+    },
+    {
+      "Code": "7867",
+      "Branch_Name": "Tagarpar Isdair Upo.,Narayanganj",
+      "Branch_Mnemonic": "D468"
+    },
+    {
+      "Code": "6215",
+      "Branch_Name": "Taherpur Branch",
+      "Branch_Mnemonic": "THPR"
+    },
+    {
+      "Code": "7442",
+      "Branch_Name": "Tajmahal Road Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A443"
+    },
+    {
+      "Code": "320",
+      "Branch_Name": "Tajpur Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D371"
+    },
+    {
+      "Code": "1126",
+      "Branch_Name": "Takerhat Branch",
+      "Branch_Mnemonic": "TKHT"
+    },
+    {
+      "Code": "7859",
+      "Branch_Name": "Takterchala Uposhakha,Tangail",
+      "Branch_Mnemonic": "D460"
+    },
+    {
+      "Code": "999",
+      "Branch_Name": "Talora Uposhakha, Bogura",
+      "Branch_Mnemonic": "F998"
+    },
+    {
+      "Code": "86",
+      "Branch_Name": "Talshahar Uposhakha,Brahmanbaria",
+      "Branch_Mnemonic": "B769"
+    },
+    {
+      "Code": "7114",
+      "Branch_Name": "Taltola Bazar Road Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A715"
+    },
+    {
+      "Code": "7580",
+      "Branch_Name": "Taltola Uposhakha",
+      "Branch_Mnemonic": "A581"
+    },
+    {
+      "Code": "920",
+      "Branch_Name": "Tamai Uposhakha,Sirajganj",
+      "Branch_Mnemonic": "C851"
+    },
+    {
+      "Code": "7811",
+      "Branch_Name": "Tamak Potti Uposhakha,Narayanganj",
+      "Branch_Mnemonic": "D412"
+    },
+    {
+      "Code": "1091",
+      "Branch_Name": "Tanbazar Branch",
+      "Branch_Mnemonic": "TANB"
+    },
+    {
+      "Code": "7860",
+      "Branch_Name": "Tangail Baby Stand Uposhakha",
+      "Branch_Mnemonic": "D461"
+    },
+    {
+      "Code": "1076",
+      "Branch_Name": "Tangail Branch",
+      "Branch_Mnemonic": "TANG"
+    },
+    {
+      "Code": "7047",
+      "Branch_Name": "Tannery More Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A647"
+    },
+    {
+      "Code": "125",
+      "Branch_Name": "Tantar Bazar Uposhakha,Brahmanbaria",
+      "Branch_Mnemonic": "B808"
+    },
+    {
+      "Code": "776",
+      "Branch_Name": "Taraganj Uposhakha,Rangpur",
+      "Branch_Mnemonic": "F875"
+    },
+    {
+      "Code": "7908",
+      "Branch_Name": "Tarail Uposhakha,Kishoreganj",
+      "Branch_Mnemonic": "D509"
+    },
+    {
+      "Code": "7825",
+      "Branch_Name": "Tarakanda Uposhakha,Mymensingh",
+      "Branch_Mnemonic": "D426"
+    },
+    {
+      "Code": "8297",
+      "Branch_Name": "Tarakandi Uposhakha,Jamalpur",
+      "Branch_Mnemonic": "G797"
+    },
+    {
+      "Code": "8247",
+      "Branch_Name": "Targaon Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D848"
+    },
+    {
+      "Code": "881",
+      "Branch_Name": "Tebunia Uposhakha,Pabna",
+      "Branch_Mnemonic": "C812"
+    },
+    {
+      "Code": "7160",
+      "Branch_Name": "Tejkunipara Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A759"
+    },
+    {
+      "Code": "7158",
+      "Branch_Name": "Tejturi Bazar RoadUposhakha,Dhaka",
+      "Branch_Mnemonic": "A757"
+    },
+    {
+      "Code": "24",
+      "Branch_Name": "Teknaf Uposhakha,Cox's Bazar",
+      "Branch_Mnemonic": "B707"
+    },
+    {
+      "Code": "7829",
+      "Branch_Name": "Telegati Bazar-Atpara,Netrokona",
+      "Branch_Mnemonic": "D430"
+    },
+    {
+      "Code": "55",
+      "Branch_Name": "Temohoni Bazar Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B738"
+    },
+    {
+      "Code": "272",
+      "Branch_Name": "Tengra Bazar,Moulvibazar",
+      "Branch_Mnemonic": "D323"
+    },
+    {
+      "Code": "7841",
+      "Branch_Name": "Tepakhola Bazar Uposhakha,Faridpur",
+      "Branch_Mnemonic": "D442"
+    },
+    {
+      "Code": "8781",
+      "Branch_Name": "Teri Bazar Uposhakha,Chattogram",
+      "Branch_Mnemonic": "D907"
+    },
+    {
+      "Code": "751",
+      "Branch_Name": "Thakurgaon Sadar,Thakurgaon",
+      "Branch_Mnemonic": "C662"
+    },
+    {
+      "Code": "753",
+      "Branch_Name": "Thakurgoan Road Uposhakha",
+      "Branch_Mnemonic": "C664"
+    },
+    {
+      "Code": "121",
+      "Branch_Name": "Time Bazar Uposhakha,Chattogram",
+      "Branch_Mnemonic": "B804"
+    },
+    {
+      "Code": "8248",
+      "Branch_Name": "Toke Nayon Bazar Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D849"
+    },
+    {
+      "Code": "7534",
+      "Branch_Name": "Tolarbag Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A538"
+    },
+    {
+      "Code": "1174",
+      "Branch_Name": "Tongi SME Krishi Branch",
+      "Branch_Mnemonic": "TONG"
+    },
+    {
+      "Code": "7915",
+      "Branch_Name": "Tongibari Uposhakha, Munshiganj",
+      "Branch_Mnemonic": "D514"
+    },
+    {
+      "Code": "412",
+      "Branch_Name": "Torki Bandar Uposhakha,Barishal",
+      "Branch_Mnemonic": "B647"
+    },
+    {
+      "Code": "7248",
+      "Branch_Name": "Town Hall Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A849"
+    },
+    {
+      "Code": "631",
+      "Branch_Name": "Trimohoni Bazar Uposhakha, Kushtia",
+      "Branch_Mnemonic": "C582"
+    },
+    {
+      "Code": "7820",
+      "Branch_Name": "Trishal Uposhakha, Mymensingh",
+      "Branch_Mnemonic": "D421"
+    },
+    {
+      "Code": "260",
+      "Branch_Name": "Tuker Bazar Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D311"
+    },
+    {
+      "Code": "8341",
+      "Branch_Name": "Tungipara Uposhakha,Gopalganj",
+      "Branch_Mnemonic": "G841"
+    },
+    {
+      "Code": "7415",
+      "Branch_Name": "Tushardhara Uposhakha",
+      "Branch_Mnemonic": "A415"
+    },
+    {
+      "Code": "714",
+      "Branch_Name": "Tushbhandar Uposhakha,Lalmonirhat",
+      "Branch_Mnemonic": "C625"
+    },
+    {
+      "Code": "461",
+      "Branch_Name": "Tushkhali Bazar Uposhakha, Pirojpur",
+      "Branch_Mnemonic": "F740"
+    },
+    {
+      "Code": "254",
+      "Branch_Name": "TB Gate-Sylhet Uposhakha,Sylhet",
+      "Branch_Mnemonic": "D304"
+    },
+    {
+      "Code": "7182",
+      "Branch_Name": "TV Center Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A783"
+    },
+    {
+      "Code": "8668",
+      "Branch_Name": "Uday Sadhur Hat Uposhakha,Noakhali",
+      "Branch_Mnemonic": "F353"
+    },
+    {
+      "Code": "7624",
+      "Branch_Name": "Uddhabganj Uposhakha, Narayanganj",
+      "Branch_Mnemonic": "G599"
+    },
+    {"Code": "2265", "Branch_Name": "Ukhiya Branch", "Branch_Mnemonic": "UKHI"},
+    {
+      "Code": "772",
+      "Branch_Name": "Ulipur,Kurigram",
+      "Branch_Mnemonic": "F871"
+    },
+    {
+      "Code": "927",
+      "Branch_Name": "Ullapara Uposhakha,Sirajganj",
+      "Branch_Mnemonic": "C858"
+    },
+    {
+      "Code": "8179",
+      "Branch_Name": "Ulukhola Bazar Uposhakha,Gazipur",
+      "Branch_Mnemonic": "D780"
+    },
+    {
+      "Code": "332",
+      "Branch_Name": "Umednagar Shilpa Elaka, Habiganj",
+      "Branch_Mnemonic": "D382"
+    },
+    {
+      "Code": "3049",
+      "Branch_Name": "Uposhohar Branch",
+      "Branch_Mnemonic": "UPO"
+    },
+    {"Code": "1024", "Branch_Name": "Uttara Branch", "Branch_Mnemonic": "818"},
+    {
+      "Code": "7221",
+      "Branch_Name": "Uttara Sector 6 Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A822"
+    },
+    {
+      "Code": "7233",
+      "Branch_Name": "Uttara Uttar Metro Station Upo",
+      "Branch_Mnemonic": "A834"
+    },
+    {
+      "Code": "7518",
+      "Branch_Name": "Uttarkhan Masterpara Uposhakha",
+      "Branch_Mnemonic": "A519"
+    },
+    {
+      "Code": "7222",
+      "Branch_Name": "Uttarkhan Mazar Road, Uposhakha",
+      "Branch_Mnemonic": "A823"
+    },
+    {
+      "Code": "8043",
+      "Branch_Name": "Vadail Bazar Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D644"
+    },
+    {
+      "Code": "8082",
+      "Branch_Name": "Vaggyakul Uposhakha,Munshigonj",
+      "Branch_Mnemonic": "D683"
+    },
+    {
+      "Code": "679",
+      "Branch_Name": "Vaina Moor Uposhakha, Magura",
+      "Branch_Mnemonic": "F848"
+    },
+    {
+      "Code": "8255",
+      "Branch_Name": "Vannara Bazar Uposhakha, Gazipur",
+      "Branch_Mnemonic": "D856"
+    },
+    {
+      "Code": "603",
+      "Branch_Name": "Vatpara Bazar Uposhakha,Jashore",
+      "Branch_Mnemonic": "C554"
+    },
+    {
+      "Code": "7878",
+      "Branch_Name": "Vedorganj Uposhakha,Shariatpur",
+      "Branch_Mnemonic": "D479"
+    },
+    {"Code": "8196", "Branch_Name": "Velanagar", "Branch_Mnemonic": "D797"},
+    {
+      "Code": "7202",
+      "Branch_Name": "VIP Road Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A803"
+    },
+    {
+      "Code": "7036",
+      "Branch_Name": "Wais Ghat Uposhakha,Dhaka",
+      "Branch_Mnemonic": "A637"
+    },
+    {
+      "Code": "7505",
+      "Branch_Name": "Wari Uposhakha",
+      "Branch_Mnemonic": "A505"
+    },
+    {
+      "Code": "7455",
+      "Branch_Name": "West Nakhalpara Uposhakha, Dhaka",
+      "Branch_Mnemonic": "A456"
+    },
+    {
+      "Code": "8661",
+      "Branch_Name": "Wireless Moor-Chandpur Uposhakha",
+      "Branch_Mnemonic": "F346"
+    },
+    {
+      "Code": "864",
+      "Branch_Name": "WAPDA Moor - Rajshahi Uposhakha",
+      "Branch_Mnemonic": "C795"
+    },
+    {
+      "Code": "7180",
+      "Branch_Name": "WAPDA Road Uposhakha",
+      "Branch_Mnemonic": "A781"
+    },
+    {
+      "Code": "8820",
+      "Branch_Name": "WASA More Uposhakha, Chattogram",
+      "Branch_Mnemonic": "B820"
+    },
+    {
+      "Code": "8038",
+      "Branch_Name": "Yusuf Market Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D639"
+    },
+    {
+      "Code": "7879",
+      "Branch_Name": "Zazira Uposhakha,Shariatpur",
+      "Branch_Mnemonic": "D480"
+    },
+    {
+      "Code": "7045",
+      "Branch_Name": "Zigatola Uposhakha",
+      "Branch_Mnemonic": "A045"
+    },
+    {
+      "Code": "7035",
+      "Branch_Name": "Zindabahar First Lane,Dhaka",
+      "Branch_Mnemonic": "A636"
+    },
+    {
+      "Code": "8030",
+      "Branch_Name": "Zinzira Uposhakha,Dhaka",
+      "Branch_Mnemonic": "D631"
+    },
+    {
+      "Code": "8036",
+      "Branch_Name": "Zirabo Uposhakha",
+      "Branch_Mnemonic": "D637"
+    },
+    {
+      "Code": "1250",
+      "Branch_Name": "Zirani Bazar Branch, Dhaka",
+      "Branch_Mnemonic": "ZIRA"
+    },
+    {
+      "Code": "8823",
+      "Branch_Name": "2 No. Gate-Chattogram Uposhakha",
+      "Branch_Mnemonic": "D948"
+    }
   ];
 }
