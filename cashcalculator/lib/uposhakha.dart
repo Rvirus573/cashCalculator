@@ -116,6 +116,10 @@ class _UposhakhaState extends State<Uposhakha> {
                                   'Branch Code :  ${results[ind]['Code']}',
                                   style: TextStyle(color: Colors.green[800]),
                                 ),
+                                trailing: Text(
+                                  'Branch Numeric :  ${results[ind]['Branch_Mnemonic']}',
+                                  style: TextStyle(color: Colors.pink[800]),
+                                ),
 
                                 //   trailing:  Text(results[ind]['Sl'].toString()),
 
